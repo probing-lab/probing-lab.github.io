@@ -1,3 +1,11 @@
+nav {
+  height: 100px;
+}
+
+.navbar-brand img {
+  height: 80px;
+}
+
 .link-after {
   content: "";
   display: block;
@@ -5,16 +13,12 @@
   background: $primary;
 }
 
-.nav-link,
-.navbar-brand {
-  &::after {
-    @extend .link-after;
-    width: 0;
-    transition: width 0.35s;
-  }
+.nav-item {
+  font-size: 18px;
+  margin-left: 20px;
 
-  &:hover::after {
-    width: 100%;
+  &:hover {
+    color: $primary !important;
   }
 }
 
@@ -24,12 +28,5 @@
   &::after {
     @extend .link-after;
     width: 100% !important;
-  }
-}
-
-.navbar-brand {
-  margin-bottom: -14px;
-  &::after {
-    margin-top: -0.25em;
   }
 }

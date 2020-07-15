@@ -1,5 +1,11 @@
 .social {
   text-decoration: none !important;
+  font-size: 22px;
+  padding-left: 20px;
+
+  &:first-child {
+    padding-left: 0;
+  }
 }
 
 #attribution {
