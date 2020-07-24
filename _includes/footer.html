@@ -1,9 +1,19 @@
-<footer class="mt-auto py-3 text-center">
+<footer class="py-3 text-center">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm text-right">
+        <a class="tu" href="https://tuwien.ac.at">
+          <img src="{{ '/assets/logo/TU.png'  | relative_url }}" alt="TU Wien" />
+        </a>
+      </div>
+      <div class="col-sm text-left">
+        <small class="text-muted mb-2">
+          <i class="fas fa-code"></i> with <i class="fas fa-heart"></i>
+          by <strong>{{ site.author.name }}</strong>
+        </small>
 
-  <small class="text-muted mb-2">
-    <i class="fas fa-code"></i> with <i class="fas fa-heart"></i>
-    by <strong>{{ site.author.name }}</strong>
-  </small>
-
-  {% include social.html %}
+        {% include social.html %}
+      </div>
+    </div>
+  </div>
 </footer>

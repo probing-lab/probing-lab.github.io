@@ -13,9 +13,9 @@ plugins:
 
 ### Navbar Settings ###
 nav_exclude:                                            # The following paths are excluded from navbar
-  - pages/tags.html
+  - pages/publications-tags.html
   - pages/404.html
-  - pages/index.md
+  - pages/index.html
 
 
 ### Author Info ###
@@ -27,7 +27,7 @@ author:
 
 
 ### Posts ###
-permalink: /blog/:title
+permalink: /posts/:title
 
 
 ### Collections ###
@@ -35,6 +35,9 @@ collections:
   people:
     output: true
     permalink: /people/:name
+  publications:
+    output: true
+    permalink: /publications/:name
 
 
 ### Analytics ###
@@ -53,8 +56,14 @@ defaults:
       layout: "page"
   - scope:
       path: ""
+      type: "publications"
+    values:
+        layout: "page"
+  - scope:
+      path: ""
       type: "posts"
     values:
+      layout: "page"
       comments: false                                   # Set to true to enable disqus comments
 
 ### Exclude from processing ###

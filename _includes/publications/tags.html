@@ -1,0 +1,31 @@
+<!-- Collect tags from all publications -->
+{%- assign tags = blank -%}
+{%- for pub in site.publications -%}
+  {%- assign pub_tags = pub.tags | join:'|' | append:'|' -%}
+  {%- if pub_tags != '|' -%}
+    {%- assign tags = tags | append:pub_tags -%}
+  {%- endif -%}
+{%- endfor -%}
+{%- assign tags = tags | split:'|' | uniq | sort -%}
+
+<!-- List tags & related publications -->
+{% for tag in tags %}
+<div class="py-3">
+  <h4 id="{{ tag | slugify }}">{{ tag }}</h4>
+  <ol>
+  {% for pub in site.publications %}
+    {%- if pub.tags contains tag -%}
+      {%- if pub.external_url -%}
+        {%- assign url = pub.external_url -%}
+      {%- else -%}
+        {%- assign url = pub.url | relative_url -%}
+      {%- endif -%}
+    <a href="{{ url }}"><li>{{ pub.title }}</li></a>
+    <small class="text-muted"> - {{ pub.date | date_to_long_string }}</small>
+    <br/>
+    {%- endif -%}
+  {% endfor %}
+  </ol>
+</div>
+<hr class="bg-light">
+{% endfor %}

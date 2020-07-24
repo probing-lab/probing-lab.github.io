@@ -1,7 +1,7 @@
-<div class="row justify-content-center align-items-center p-4">
+<!--<div class="row justify-content-center align-items-center p-4">
   <div class="col-lg-4 col-md-6 text-center mt-4">
 
-    <!-- Fine Circle Responsive Image -->
+    &lt;!&ndash; Fine Circle Responsive Image &ndash;&gt;
     <div id="container" class="my-2">
       <div id="dummy"></div>
       <div id="element">
@@ -10,6 +10,12 @@
     </div>
 
     <p class="text-muted wow animated slideInUp" data-wow-delay=".15s">{{ site.description }}</p>
-
+  </div>
+</div>-->
+<div class="mt-5">
+  <div class="card-group mt-2">
+    {% for post in site.posts %}
+    {% include post-card.html %}
+    {% endfor %}
   </div>
 </div>

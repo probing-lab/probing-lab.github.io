@@ -20,7 +20,7 @@ layout: page
   {%- if page.tags != empty -%}
     Tags: 
     {% for tag in page.tags %}
-    <a class="text-decoration-none no-underline" href="{{ tag | slugify | prepend:'/blog/tags#' | relative_url }}">
+    <a class="text-decoration-none no-underline" href="{{ tag | slugify | prepend:'/publications/tags#' | relative_url }}">
       <span class="tag badge badge-pill text-primary border border-primary">{{ tag }}</span>
     </a>
     {% endfor %}
@@ -32,6 +32,6 @@ layout: page
 
 {% if page.comments %}
 <div class="pt-5">
-  {% include blog/disqus.html %}
+  {% include disqus.html %}
 </div>
 {% endif %}

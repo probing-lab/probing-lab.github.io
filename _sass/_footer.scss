@@ -1,3 +1,7 @@
+footer {
+  margin-top: 40px;
+}
+
 footer a {
   color: $dark;
 }
@@ -27,5 +31,17 @@ footer a {
     position: fixed;
     bottom: 56px;
     right: 22px;
+  }
+}
+
+footer .tu {
+  opacity: 0.75;
+  transition: opacity 0.2s;
+  img {
+    width: 55px;
+  }
+
+  &:hover {
+    opacity: 1;
   }
 }

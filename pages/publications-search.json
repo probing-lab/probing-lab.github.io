@@ -1,0 +1,15 @@
+---
+layout: null
+permalink: /publications-search.json
+---
+[
+  {% for pub in site.publications %}
+    {
+      "title"    : "{{ pub.title | escape }}",
+      "category" : "{{ pub.category }}",
+      "tags"     : "{{ pub.tags | join: ', ' }}",
+      "url"      : "{{ pub.external_url | default: pub.url | relative_url }}",
+      "date"     : "{{ pub.date }}"
+    } {% unless forloop.last %},{% endunless %}
+  {% endfor %}
+]
