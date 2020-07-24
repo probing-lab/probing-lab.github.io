@@ -1,0 +1,15 @@
+<div class="card-columns m-3 mt-5">
+  {% for person in site.people %}
+
+    {%- assign person_type  = "local" -%}
+    {%- assign person_id    = person.name | slugify -%}
+    {%- assign person_img   = person.image -%}
+    {%- assign person_name  = person.name -%}
+    {%- assign person_desc  = person.description -%}
+    {%- assign person_roles = person.roles -%}
+    {%- assign person_url = person.url | relative_url -%}
+
+    {% include people/person-card.html %}
+
+  {% endfor %}
+</div>

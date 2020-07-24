@@ -32,9 +32,9 @@ permalink: /blog/:title
 
 ### Collections ###
 collections:
-  projects:
+  people:
     output: true
-    permalink: /projects/:name
+    permalink: /people/:name
 
 
 ### Analytics ###
@@ -48,7 +48,7 @@ analytics:
 defaults:
   - scope:
       path: ""
-      type: "projects"
+      type: "people"
     values:
       layout: "page"
   - scope:

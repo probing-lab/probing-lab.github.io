@@ -1,9 +1,14 @@
 nav {
-  height: 100px;
+  height: 150px;
+  z-index: 100;
 }
 
 .navbar-brand img {
-  height: 80px;
+  height: 120px;
+}
+
+.navbar-collapse {
+  background: white;
 }
 
 .link-after {
@@ -14,8 +19,9 @@ nav {
 }
 
 .nav-item {
-  font-size: 18px;
-  margin-left: 20px;
+  font-size: 22px;
+  margin-left: 25px;
+  line-height: 40px;
 
   &:hover {
     color: $primary !important;
