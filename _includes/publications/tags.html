@@ -1,20 +1,20 @@
 <!-- Collect tags from all publications -->
-{%- assign tags = blank -%}
+{%- assign authors = blank -%}
 {%- for pub in site.publications -%}
-  {%- assign pub_tags = pub.tags | join:'|' | append:'|' -%}
-  {%- if pub_tags != '|' -%}
-    {%- assign tags = tags | append:pub_tags -%}
-  {%- endif -%}
+{%- assign pub_authors = pub.authors | join:'|' | append:'|' -%}
+{%- if pub_authors != '|' -%}
+{%- assign authors = authors | append:pub_authors -%}
+{%- endif -%}
 {%- endfor -%}
-{%- assign tags = tags | split:'|' | uniq | sort -%}
+{%- assign authors = authors | split:'|' | uniq | sort -%}
 
 <!-- List tags & related publications -->
-{% for tag in tags %}
+{% for aut in authors %}
 <div class="py-3">
-  <h4 id="{{ tag | slugify }}">{{ tag }}</h4>
+  <h4 id="{{ tag | slugify }}">{{ aut }}</h4>
   <ol>
   {% for pub in site.publications %}
-    {%- if pub.tags contains tag -%}
+    {%- if pub.authors contains aut -%}
       {%- if pub.external_url -%}
         {%- assign url = pub.external_url -%}
       {%- else -%}
