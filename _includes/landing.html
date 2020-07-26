@@ -1,21 +1,25 @@
-<!--<div class="row justify-content-center align-items-center p-4">
-  <div class="col-lg-4 col-md-6 text-center mt-4">
+<div class="landing-group">
+  <img src="{{ '/assets/group.jpg' | relative_url }}" alt="Probing Group" />
 
-    &lt;!&ndash; Fine Circle Responsive Image &ndash;&gt;
-    <div id="container" class="my-2">
-      <div id="dummy"></div>
-      <div id="element">
-        <img src="{{ site.author.image }}" alt="{{ site.title }}" class="circle-image wow animated zoomIn" data-wow-delay=".1s">
-      </div>
-    </div>
-
-    <p class="text-muted wow animated slideInUp" data-wow-delay=".15s">{{ site.description }}</p>
+  <div class="label">
+    <h1>Probabilistic Invariant Generation Group @ TU Wien</h1>
   </div>
-</div>-->
+</div>
+
+<section class="introduction">
+  Some general words about the group.
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+  aliqua. Ornare arcu dui vivamus arcu felis bibendum ut tristique et. Commodo ullamcorper a lacus vestibulum sed.
+  Quam nulla porttitor massa id neque aliquam. Non blandit massa enim nec.
+</section>
+
 <div class="mt-5">
+  <h3>News and Posts</h3>
+
+  {% include posts/search.html %}
   <div class="card-group mt-2">
     {% for post in site.posts %}
-    {% include post-card.html %}
+      {% include post-card.html %}
     {% endfor %}
   </div>
 </div>

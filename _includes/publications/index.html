@@ -1,6 +1,7 @@
 <div class="card-group mt-2">
 
-  {% for post in site.publications %}
+  {% assign sorted = (site.publications | sort: 'date') | reverse %}
+  {% for post in sorted %}
     {% include post-card.html %}
   {% endfor %}
   

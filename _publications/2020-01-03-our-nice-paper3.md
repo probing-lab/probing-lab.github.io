@@ -1,9 +1,10 @@
 ---
-title: A better Hello World
-tags: [Software Development]
+title: Our nice paper 3
+authors: [Efstathia Bura, Ezio Bartocci, Miroslav Stankovic, Laura Kovács]
 style: fill
 color: dark
-description: A different “hello world” to demonstrate language features better.
+description: This is a small description of our paper 3. This is a small description of our paper 3. This is a small description of our paper 3.
+venue: CAV 2020
 ---
 
 Source: [RICO STA. CRUZ](https://ricostacruz.com/til/a-better-hello-world)

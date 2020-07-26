@@ -9,6 +9,8 @@
   height: 100%;
 
   .card-footer {
+    display: flex;
+    justify-content: space-between;
     font-size: 14px;
     margin: 0 -15px -15px -15px;
     padding: 15px 35px;

@@ -35,6 +35,11 @@
         {% endfor %}
       </p>
       <p class="card-text">
+        {% for author in post.authors %}
+        <span class="badge {{ badge_style }}">{{ author }}</span>
+        {% endfor %}
+      </p>
+      <p class="card-text">
         {%- if post.description -%}
         {{ post.description }}
         {%- else -%}
@@ -43,7 +48,8 @@
       </p>
     </div>
     <div class="card-footer {{ text_style }}">
-      {{ post.date | date_to_long_string }}
+      <span>{{ post.venue }}</span>
+      <span>{{ post.date | date_to_long_string }}</span>
     </div>
   </a>
 </div>
