@@ -72,3 +72,19 @@
   margin-bottom: 30px;
   font-size: 18px;
 }
+
+@media only screen and (max-width: 1200px) {
+  .landing-group .label h1 {
+    font-size: 28px;
+  }
+}
+
+@media only screen and (max-width: 995px) {
+  .landing-group .label {
+    position: relative;
+
+    h1 {
+      line-height: 50px;
+    }
+  }
+}
