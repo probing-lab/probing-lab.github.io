@@ -23,4 +23,4 @@ Add images to `assets` folder.
 For writing content you can use Markdown as well as HTML and the Bootstrap framework.
 
 The used theme is portfolYOU.
-[Here is a demo](https://youssefraafatnasry.me/portfolYOU/docs/) of the theme on various feature it provides.
+[Here is a demo](https://youssefraafatnasry.me/portfolYOU/docs/) of the theme on various features it provides.
