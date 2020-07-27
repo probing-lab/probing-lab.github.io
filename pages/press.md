@@ -2,7 +2,7 @@
 layout: page
 title: Press
 permalink: /press/
-weight: 3
+weight: 4
 ---
 
 # Press

@@ -2,7 +2,7 @@
 layout: page
 title: Hiring
 permalink: /hiring/
-weight: 4
+weight: 5
 ---
 
 # Hiring

@@ -38,6 +38,9 @@ collections:
   publications:
     output: true
     permalink: /publications/:name
+  tools:
+    output: true
+    permalink: /tools/:name
 
 
 ### Analytics ###
@@ -59,6 +62,11 @@ defaults:
       type: "publications"
     values:
         layout: "page"
+  - scope:
+      path: ""
+      type: "tools"
+    values:
+      layout: "page"
   - scope:
       path: ""
       type: "posts"
