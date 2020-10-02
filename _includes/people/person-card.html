@@ -10,7 +10,7 @@
           {%- endif -%}
         {{ person_name }}
       </h5>
-      <p id="{{ person_id }}-desc" class="card-text">{{ person_desc }}</p>
+      <p id="{{ person_id }}-desc" class="card-text desc">{{ person_desc }}</p>
       <p id="{{ person_id }}-roles" class="card-text">
         {%- for role in person_roles -%}
         <span class="badge badge-pill text-primary border border-primary ml-1">{{ role }}</span>

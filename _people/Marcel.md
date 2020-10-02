@@ -1,7 +1,7 @@
 ---
 name: Marcel Moosbrugger
 roles: [PhD Student]
-image: https://secure.gravatar.com/avatar/e01fe4a25e70a25ba6863e740b5ca237?size=400
+image: https://de.gravatar.com/userimage/189670680/9128cda3c424ae72e20c00d1fa57ea9a?size=512
 description: I am a PhD student interested in probabilistic programming, almost-sure termination and spec-consistent AI. 
 ---
 

@@ -2,9 +2,25 @@
   border-radius: $rounded-borders;
   text-decoration: none !important;
   margin: 10px auto;
+  text-align: center;
+  overflow: hidden;
 
   .card-img-top {
     border-radius: $rounded-borders $rounded-borders 0 0;
+  }
+
+  img {
+    max-height: 230px;
+    width: auto;
+    max-width: 100%;
+  }
+
+  .desc {
+    height: 120px;
+  }
+
+  .card-body {
+    text-align: left;
   }
 
   transition: transform 400ms;
@@ -27,4 +43,18 @@
     width: 100% !important;
     max-width: 100% !important;
   }
+
+  .person.card img {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    max-height: none !important;
+  }
 }
+
+@media only screen and (max-width: 1200px) {
+  .desc {
+    height: auto !important;
+  }
+}
+
