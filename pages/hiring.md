@@ -7,8 +7,7 @@ weight: 5
 
 # Hiring
 
-The Research Unit Applied Statistics (ASTAT) of the Institute of Statistics and Mathematical Methods in Economics, TU Wien,  the Cyber-Physical System (CPS) and Formal Methods in Systems Engineering (FORSYTE) research divisions of the Faculty of Informatics, TU Wien invite applications for a Predoctoral Research Assistant position to start tentatively in January 1, 2021 (negotiable).
-
+The <a href="https://institute.tuwien.ac.at/astat/home/">Research Unit Applied Statistics (ASTAT)</a> of the Institute of Statistics and Mathematical Methods in Economics, TU Wien, the <a href="http://www.eziobartocci.com/">Cyber-Physical System (CPS)</a> and <a href="http://lkovacs.com/">Formal Methods in Systems Engineering</a> (FORSYTE) research divisions of the Faculty of Informatics, TU Wien invite applications for a Predoctoral Research Assistant position to start tentatively in January 1, 2021 (negotiable).
 The position is offered within the Vienna Science and Technology Fund (WWTF) funded research project ProbInG: Distribution Recovery for Invariant Generation of Probabilistic
 
 Programs. Probabilistic programs are computer programs with control flow statements that may choose probabilistically between several states and define a probability distribution over the possible final values of program variables. This project aims at developing novel and fully automated approaches to recover the value distribution of program variables, without any user guidance. Additional information about the project can be found at https://www.wwtf.at/programmes/information_communication/ICT19-018/index.php?lang=EN
@@ -36,7 +35,7 @@ Requirements: The successful candidate will have a completed master’s degree o
 
 Application Information: The application should include the following documents:
 
-    Statement of Research Interests,
+	Statement of Research Interests,
     Curriculum Vitae,
     Dissertation, thesis or Master thesis,
     Copies of academic credentials (with translation if not in English or German),
