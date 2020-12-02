@@ -8,7 +8,7 @@ description: I am a Full Professor in Computer Science, at TU Wien, and I am lea
 # Ezio Bartocci
 
 <img class="main-image" src="http://www.eziobartocci.com/img/foto_new.png"/>
- am an Associate Professor in Computer Science, at TU Wien, and I am leading the Trustworthy 
+ I am an Associate Professor in Computer Science, at TU Wien, and I am leading the Trustworthy 
  Cyber-Physical Systems (TrustCPS) Group of the Cyber-Physical System Research Division. 
  The primary focus of my research is to develop formal methods, computational tools and 
  techniques that support the modeling and the automated analysis of complex computational 
