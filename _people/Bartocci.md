@@ -4,7 +4,7 @@ roles: [Professor]
 image: http://www.eziobartocci.com/img/foto_new.png
 description: I am a full professor for formal methods in cyber-physical systems 
 engineering at Faculty of Informatics, at TU Wien, leading the trustworthy 
-cyber-physical systems group (TestCPS) group.
+cyber-physical systems group (TrustCPS) group.
 
 ---
 
