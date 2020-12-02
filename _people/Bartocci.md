@@ -2,7 +2,7 @@
 name: Ezio Bartocci
 roles: [Professor]
 image: http://www.eziobartocci.com/img/foto_new.png
-description: I am an Associate Professor in Computer Science, at TU Wien, and I am leading the TrustCPS Group.
+description: I am a Full Professor in Computer Science, at TU Wien, and I am leading the TrustCPS Group.
 ---
 
 # Ezio Bartocci
