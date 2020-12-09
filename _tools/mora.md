@@ -2,7 +2,7 @@
 title: Mora
 style: fill
 color: primary
-description: Mora is an automated tool for generating invariants of probabilistic programs. Inputs to Mora are so-called Prob-solvable loops, that is probabilistic programs with polynomial assignments over random variables and parametrized distributions. 
+description:  <div align="justify">Mora is an automated tool for generating invariants of probabilistic programs. Inputs to Mora are so-called Prob-solvable loops, that is probabilistic programs with polynomial assignments over random variables and parametrized distributions.</div> 
 ---
 
 
