@@ -28,7 +28,7 @@ AI verification, or if you just want to chat and have coffee.
             <ul class="list-group">
               <a class="list-group-item list-group-item-action" href="https://marcelmoos.com/">Personal Website</a>
               <a class="list-group-item list-group-item-action" href="https://linkedin.com/in/marcel-moosbrugger">Linkedin</a>
-              <a class="list-group-item list-group-item-action" href="https://github.com/mmsbrggr">Github</a>
+              <a class="list-group-item list-group-item-action" href="https://marcelmoos.com/assets/cv.pdf">Academic CV</a>
             </ul>
         </div>
         <div class="col-sm">
