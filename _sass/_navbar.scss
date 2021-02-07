@@ -19,8 +19,8 @@ nav {
 }
 
 .nav-item {
-  font-size: 22px;
-  margin-left: 25px;
+  font-size: 20px;
+  margin-left: 15px;
   line-height: 40px;
 
   &:hover {
@@ -34,17 +34,5 @@ nav {
   &::after {
     @extend .link-after;
     width: 100% !important;
-  }
-}
-
-.wwtf-logo {
-  padding-top: 20px;
-  img {
-    width: 120px;
-    filter: grayscale(100%);
-  }
-
-  &:hover img {
-    filter: none
   }
 }
