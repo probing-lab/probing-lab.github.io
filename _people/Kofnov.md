@@ -1,7 +1,7 @@
 ---
 name: Andrey Kofnov
 roles: [PhD Student]
-image:  <img src="/pictures/andrey.jpg" />
+image:  https://probing-lab.github.io/assets/andrey.jpg
 description: TBA
 ---
 
