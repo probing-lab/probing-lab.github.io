@@ -2,7 +2,7 @@
 name: Ezio Bartocci
 roles: [Professor]
 image: http://www.eziobartocci.com/img/foto_new.png
-description: I am a full professor  at Faculty of Informatics, at TU Wien, leading the trustworthy cyber-physical systems (TrustCPS) group.
+description: I am a full professor  at Faculty of Informatics, at TU Wien, leading the trustworthy cyber-physical systems (TrustCPS) group. I am also coordinating the ProgInG project. 
 
 ---
 
@@ -17,5 +17,5 @@ at Faculty of Informatics at TU Wien.  I am leading the Trustworthy
  systems, including software systems, cyber-physical systems and biological systems. 
  On these topics I co-authored 100 referred papers published in the main international 
  journals and top-tier conferences of my research areas (CAV, ICCPS, TACAS, ATVA, CDC, 
- EMSOFT, HSCC, etc.), generating more than 2900 citations (h-index >= 32) according to 
+ EMSOFT, HSCC, etc.), generating more than 3300 citations (h-index >= 34) according to 
  Google Scholar.
