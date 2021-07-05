@@ -13,22 +13,22 @@ weight: 4
   overflow:hidden;padding:10px 5px;word-break:normal;}
 .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
   font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-7ilu{background-color:#3166ff;border-color:#000000;color:#ffffff;font-weight:bold;text-align:center;vertical-align:middle}
 .tg .tg-18eh{border-color:#000000;font-weight:bold;text-align:center;vertical-align:middle}
-.tg .tg-re4c{background-color:#3166ff;border-color:#000000;color:#ffffff;font-weight:bold;text-align:left;vertical-align:top}
-.tg .tg-vvv6{background-color:#3166ff;border-color:#000000;color:#ffffff;font-weight:bold;text-align:center;vertical-align:top}
+.tg .tg-5924{background-color:#3166ff;border-color:#000000;color:#ffffff;font-weight:bold;text-align:left;vertical-align:middle}
 .tg .tg-xwyw{border-color:#000000;text-align:center;vertical-align:middle}
 </style>
 <table class="tg">
 <thead>
   <tr>
-    <th class="tg-re4c">Benchmark</th>
-    <th class="tg-re4c"># Vars</th>
-    <th class="tg-re4c">If-then-else<br>Statements<br></th>
-    <th class="tg-vvv6">Infinite <br>state-space</th>
-    <th class="tg-vvv6">Circular<br>Dependency</th>
-    <th class="tg-vvv6">Symbolic <br>Constants</th>
-    <th class="tg-vvv6">Continuous <br>State-Space</th>
-    <th class="tg-vvv6">Loop <br>Guard</th>
+    <th class="tg-7ilu">Benchmark Name</th>
+    <th class="tg-7ilu">Num <br>Vars</th>
+    <th class="tg-5924">If-then-else<br>Statements<br></th>
+    <th class="tg-7ilu">Infinite <br>state-space</th>
+    <th class="tg-7ilu">Circular<br>Dependency</th>
+    <th class="tg-7ilu">Symbolic <br>Constants</th>
+    <th class="tg-7ilu">Continuous <br>State-Space</th>
+    <th class="tg-7ilu">Loop <br>Guard</th>
   </tr>
 </thead>
 <tbody>
@@ -284,3 +284,4 @@ weight: 4
   </tr>
 </tbody>
 </table>
+
