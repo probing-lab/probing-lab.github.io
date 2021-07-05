@@ -23,13 +23,13 @@ weight: 4
 <thead>
   <tr>
     <th class="tg-re4c">Benchmark</th>
-    <th class="tg-re4c">#Variables</th>
-    <th class="tg-re4c">If-then-else</th>
-    <th class="tg-vvv6">Infinite state-space</th>
-    <th class="tg-re4c">Circular-Dependency</th>
-    <th class="tg-re4c">Symbolic constants</th>
-    <th class="tg-re4c">Continuous State-Space</th>
-    <th class="tg-re4c">Loop Guard</th>
+    <th class="tg-re4c"># Var</th>
+    <th class="tg-re4c">If-then-else<br>Statements<br></th>
+    <th class="tg-vvv6">Infinite <br>state-space</th>
+    <th class="tg-vvv6">Circular<br>Dependency</th>
+    <th class="tg-vvv6">Symbolic <br>Constants</th>
+    <th class="tg-vvv6">Continuous <br>State-Space</th>
+    <th class="tg-vvv6">Loop <br>Guard</th>
   </tr>
 </thead>
 <tbody>
@@ -66,41 +66,41 @@ weight: 4
   <tr>
     <td class="tg-mqa1">DBN-Component-Health</td>
     <td class="tg-wp8o">3</td>
-    <td class="tg-73oq"></td>
-    <td class="tg-73oq"></td>
-    <td class="tg-73oq"></td>
-    <td class="tg-73oq"></td>
-    <td class="tg-73oq"></td>
+    <td class="tg-wp8o">Yes</td>
+    <td class="tg-wp8o">No</td>
+    <td class="tg-wp8o">No</td>
+    <td class="tg-wp8o">No</td>
+    <td class="tg-wp8o">No</td>
     <td class="tg-wp8o">No (True)</td>
   </tr>
   <tr>
     <td class="tg-mqa1">DBN-Umbrella</td>
     <td class="tg-wp8o">2</td>
-    <td class="tg-73oq"></td>
-    <td class="tg-73oq"></td>
-    <td class="tg-73oq"></td>
-    <td class="tg-73oq"></td>
-    <td class="tg-73oq"></td>
+    <td class="tg-wp8o">Yes</td>
+    <td class="tg-wp8o">No</td>
+    <td class="tg-wp8o">No</td>
+    <td class="tg-wp8o">Yes</td>
+    <td class="tg-wp8o">No</td>
     <td class="tg-wp8o">No (True)</td>
   </tr>
   <tr>
     <td class="tg-mqa1">Duelling Cowboys</td>
     <td class="tg-wp8o">4</td>
-    <td class="tg-73oq"></td>
-    <td class="tg-73oq"></td>
-    <td class="tg-73oq"></td>
-    <td class="tg-73oq"></td>
-    <td class="tg-73oq"></td>
+    <td class="tg-wp8o">Yes</td>
+    <td class="tg-wp8o">No</td>
+    <td class="tg-wp8o">Yes</td>
+    <td class="tg-wp8o">Yes</td>
+    <td class="tg-wp8o">No</td>
     <td class="tg-wp8o">No (True)</td>
   </tr>
   <tr>
     <td class="tg-mqa1">Hawk Dove Symbolic</td>
     <td class="tg-wp8o">5</td>
-    <td class="tg-73oq"></td>
-    <td class="tg-73oq"></td>
-    <td class="tg-73oq"></td>
-    <td class="tg-73oq"></td>
-    <td class="tg-73oq"></td>
+    <td class="tg-wp8o">Yes</td>
+    <td class="tg-wp8o">Yes</td>
+    <td class="tg-wp8o">No</td>
+    <td class="tg-wp8o">Yes</td>
+    <td class="tg-wp8o">No</td>
     <td class="tg-wp8o">No (True)</td>
   </tr>
   <tr>
@@ -136,22 +136,22 @@ weight: 4
   <tr>
     <td class="tg-mqa1">Gambler Ruin Momentum</td>
     <td class="tg-wp8o">4</td>
-    <td class="tg-73oq"></td>
-    <td class="tg-73oq"></td>
-    <td class="tg-73oq"></td>
-    <td class="tg-73oq"></td>
-    <td class="tg-73oq"></td>
+    <td class="tg-wp8o">No</td>
+    <td class="tg-wp8o">Yes</td>
+    <td class="tg-wp8o">Yes</td>
+    <td class="tg-wp8o">Yes</td>
+    <td class="tg-wp8o">No</td>
     <td class="tg-wp8o">No (True)</td>
   </tr>
   <tr>
     <td class="tg-mqa1">Martingale-Bet</td>
     <td class="tg-wp8o">4</td>
-    <td class="tg-73oq"></td>
-    <td class="tg-73oq"></td>
-    <td class="tg-73oq"></td>
-    <td class="tg-73oq"></td>
-    <td class="tg-73oq"></td>
-    <td class="tg-73oq"></td>
+    <td class="tg-wp8o">No</td>
+    <td class="tg-wp8o">Yes</td>
+    <td class="tg-wp8o">Yes</td>
+    <td class="tg-wp8o">Yes</td>
+    <td class="tg-wp8o">No</td>
+    <td class="tg-73oq">No (True)</td>
   </tr>
   <tr>
     <td class="tg-mqa1">Random_walk_1D</td>
@@ -161,7 +161,7 @@ weight: 4
     <td class="tg-73oq"></td>
     <td class="tg-73oq"></td>
     <td class="tg-73oq"></td>
-    <td class="tg-73oq"></td>
+    <td class="tg-73oq">No (True)</td>
   </tr>
   <tr>
     <td class="tg-mqa1">Random_walk_2D</td>
@@ -171,17 +171,17 @@ weight: 4
     <td class="tg-73oq"></td>
     <td class="tg-73oq"></td>
     <td class="tg-73oq"></td>
-    <td class="tg-73oq"></td>
+    <td class="tg-73oq">No (True)</td>
   </tr>
   <tr>
     <td class="tg-mqa1">Retransmission Protocol</td>
     <td class="tg-wp8o">4</td>
-    <td class="tg-73oq"></td>
-    <td class="tg-73oq"></td>
-    <td class="tg-73oq"></td>
-    <td class="tg-73oq"></td>
-    <td class="tg-73oq"></td>
-    <td class="tg-73oq"></td>
+    <td class="tg-wp8o">Yes</td>
+    <td class="tg-wp8o">Yes</td>
+    <td class="tg-wp8o">No</td>
+    <td class="tg-wp8o">Yes</td>
+    <td class="tg-wp8o">No</td>
+    <td class="tg-73oq">No (True)</td>
   </tr>
   <tr>
     <td class="tg-wp8o"><span style="font-weight:bold">Sum_rnd_series</span></td>
@@ -191,17 +191,17 @@ weight: 4
     <td class="tg-73oq"></td>
     <td class="tg-73oq"></td>
     <td class="tg-73oq"></td>
-    <td class="tg-73oq"></td>
+    <td class="tg-73oq">No (True)</td>
   </tr>
   <tr>
     <td class="tg-mqa1">Pi Approximation</td>
     <td class="tg-wp8o">4</td>
-    <td class="tg-73oq"></td>
-    <td class="tg-73oq"></td>
-    <td class="tg-73oq"></td>
-    <td class="tg-73oq"></td>
-    <td class="tg-73oq"></td>
-    <td class="tg-73oq"></td>
+    <td class="tg-wp8o">Yes</td>
+    <td class="tg-wp8o">Yes</td>
+    <td class="tg-wp8o">No</td>
+    <td class="tg-wp8o">No</td>
+    <td class="tg-wp8o">Yes</td>
+    <td class="tg-73oq">No (True)</td>
   </tr>
   <tr>
     <td class="tg-wp8o"><span style="font-weight:bold">Product_dep_var</span></td>
@@ -211,7 +211,7 @@ weight: 4
     <td class="tg-73oq"></td>
     <td class="tg-73oq"></td>
     <td class="tg-73oq"></td>
-    <td class="tg-73oq"></td>
+    <td class="tg-73oq">No (True)</td>
   </tr>
   <tr>
     <td class="tg-wp8o"><span style="font-weight:bold">Stuttering_A</span></td>
@@ -221,7 +221,7 @@ weight: 4
     <td class="tg-73oq"></td>
     <td class="tg-73oq"></td>
     <td class="tg-73oq"></td>
-    <td class="tg-73oq"></td>
+    <td class="tg-73oq">No (True)</td>
   </tr>
   <tr>
     <td class="tg-wp8o"><span style="font-weight:bold">Stuttering_B</span></td>
@@ -231,7 +231,7 @@ weight: 4
     <td class="tg-73oq"></td>
     <td class="tg-73oq"></td>
     <td class="tg-73oq"></td>
-    <td class="tg-73oq"></td>
+    <td class="tg-73oq">No (True)</td>
   </tr>
   <tr>
     <td class="tg-wp8o"><span style="font-weight:bold">Stuttering_C</span></td>
@@ -241,7 +241,7 @@ weight: 4
     <td class="tg-73oq"></td>
     <td class="tg-73oq"></td>
     <td class="tg-73oq"></td>
-    <td class="tg-73oq"></td>
+    <td class="tg-73oq">No (True)</td>
   </tr>
   <tr>
     <td class="tg-wp8o"><span style="font-weight:bold">Stuttering_D</span></td>
@@ -251,7 +251,7 @@ weight: 4
     <td class="tg-73oq"></td>
     <td class="tg-73oq"></td>
     <td class="tg-73oq"></td>
-    <td class="tg-73oq"></td>
+    <td class="tg-73oq">No (True)</td>
   </tr>
   <tr>
     <td class="tg-wp8o"><span style="font-weight:bold">Stuttering_P</span></td>
@@ -261,7 +261,7 @@ weight: 4
     <td class="tg-73oq"></td>
     <td class="tg-73oq"></td>
     <td class="tg-73oq"></td>
-    <td class="tg-73oq"></td>
+    <td class="tg-73oq">No (True)</td>
   </tr>
   <tr>
     <td class="tg-wp8o"><span style="font-weight:bold">Square</span></td>
@@ -271,17 +271,17 @@ weight: 4
     <td class="tg-73oq"></td>
     <td class="tg-73oq"></td>
     <td class="tg-73oq"></td>
-    <td class="tg-73oq"></td>
+    <td class="tg-73oq">No (True)</td>
   </tr>
   <tr>
     <td class="tg-mqa1">Variable Swap</td>
     <td class="tg-wp8o">4</td>
+    <td class="tg-wp8o">No</td>
     <td class="tg-73oq"></td>
     <td class="tg-73oq"></td>
+    <td class="tg-wp8o">No</td>
     <td class="tg-73oq"></td>
-    <td class="tg-73oq"></td>
-    <td class="tg-73oq"></td>
-    <td class="tg-73oq"></td>
+    <td class="tg-73oq">No (True)</td>
   </tr>
 </tbody>
 </table>
