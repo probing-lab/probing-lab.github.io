@@ -286,8 +286,9 @@ weight: 4
 </table>
 
 
-```javascript {.line-numbers}
-function add(x, y) {
-  return x + y;
-}
+```python
+x = 0
+while true:
+    x = x + 1 {p} x
+end
 ```
