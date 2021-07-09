@@ -286,9 +286,4 @@ weight: 4
 </table>
 
 
-```python
-x = 0
-while true:
-    x = x + 1 {p} x
-end
-```
+
