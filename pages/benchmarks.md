@@ -53,7 +53,7 @@ weight: 4
     <td class="tg-xwyw">No <br>(true)</td>
   </tr>
   <tr>
-    <td class="tg-18eh">Coupon Collector 4</td>
+    <td class="tg-18eh"><a href="https://probing-lab.github.io/pages/benchmarks/coupon_collector4">Coupon Collector 4</a></td>
     <td class="tg-xwyw">6</td>
     <td class="tg-xwyw">No</td>
     <td class="tg-xwyw">No</td>
@@ -83,7 +83,7 @@ weight: 4
     <td class="tg-xwyw">No <br>(true)</td>
   </tr>
   <tr>
-    <td class="tg-18eh">Duelling Cowboys</td>
+    <td class="tg-18eh"><a href="https://probing-lab.github.io/pages/benchmarks/duelling_cowboys">Duelling Cowboys</a></td>
     <td class="tg-xwyw">4</td>
     <td class="tg-xwyw">Yes</td>
     <td class="tg-xwyw">No</td>
@@ -93,7 +93,7 @@ weight: 4
     <td class="tg-xwyw">No <br>(true)</td>
   </tr>
   <tr>
-    <td class="tg-18eh">Hawk Dove Symbolic</td>
+    <td class="tg-18eh"><a href="https://probing-lab.github.io/pages/benchmarks/hawk_dove_symbolic">Hawk Dove Symbolic</a></td>
     <td class="tg-xwyw">5</td>
     <td class="tg-xwyw">Yes</td>
     <td class="tg-xwyw">Yes</td>
@@ -103,7 +103,7 @@ weight: 4
     <td class="tg-xwyw">No <br>(true)</td>
   </tr>
   <tr>
-    <td class="tg-xwyw"><span style="font-weight:bold">Hermann-3</span></td>
+    <td class="tg-18eh"><a href="https://probing-lab.github.io/pages/benchmarks/hermann3">Hermann-3</a></td>
     <td class="tg-xwyw">10</td>
     <td class="tg-xwyw">Yes</td>
     <td class="tg-xwyw">No</td>
