@@ -43,7 +43,7 @@ weight: 4
     <td class="tg-xwyw">No <br>(true)</td>
   </tr>
   <tr>
-    <td class="tg-xwyw"><span style="font-weight:bold">Coupon</span> <span style="font-weight:bold">Collector</span></td>
+    <td class="tg-18eh"><a href="https://probing-lab.github.io/pages/benchmarks/coupon_collector">Coupon Collector</a></td>
     <td class="tg-xwyw">3</td>
     <td class="tg-xwyw">No</td>
     <td class="tg-xwyw">No</td>
