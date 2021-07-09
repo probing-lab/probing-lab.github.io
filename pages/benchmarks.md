@@ -33,7 +33,7 @@ weight: 4
 </thead>
 <tbody>
   <tr>
-    <td class="tg-18eh">Binomial (p)</td>
+    <td class="tg-18eh"><a href="https://probing-lab.github.io/pages/benchmarks/binomial_p">Binomial (p)</a></td>
     <td class="tg-xwyw">1</td>
     <td class="tg-xwyw">No</td>
     <td class="tg-xwyw">Yes</td>
