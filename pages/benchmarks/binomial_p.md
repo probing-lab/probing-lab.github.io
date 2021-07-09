@@ -9,7 +9,7 @@ contstatesp:    "No"
 loopguard:      "(true)"
 ---
 
-# Code 
+Binomial(p)
 
 ```python
 x = 0
