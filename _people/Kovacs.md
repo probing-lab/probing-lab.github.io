@@ -1,7 +1,7 @@
 ---
 name: Laura Kovács
 roles: [Professor]
-image: https://informatics.tuwien.ac.at/people/laura-kovacs/picture/head-1x.webp
+image: ../assets/lkovacs.jpg
 description: I am a full professor at the Faculty of Informatics of the Vienna University of Technology (TU Wien), leading the research group in automated program reasoning- APRe.
 ---
 
