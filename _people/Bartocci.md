@@ -2,7 +2,7 @@
 name: Ezio Bartocci
 roles: [Professor]
 image: http://www.eziobartocci.com/img/foto_new.png
-description: I am a full professor  at Faculty of Informatics, at TU Wien, leading the trustworthy cyber-physical systems (TrustCPS) group. I am also coordinating the ProgInG project. 
+description: I am a full professor  at Faculty of Informatics, at TU Wien, leading the trustworthy cyber-physical systems (TrustCPS) group. I am the scientific coordinator of the ProgInG project. 
 
 ---
 
@@ -18,4 +18,22 @@ at Faculty of Informatics at TU Wien.  I am leading the Trustworthy
  On these topics I co-authored 100 referred papers published in the main international 
  journals and top-tier conferences of my research areas (CAV, ICCPS, TACAS, ATVA, CDC, 
  EMSOFT, HSCC, etc.), generating more than 3300 citations (h-index >= 34) according to 
- Google Scholar.
+ [Google Scholar](https://scholar.google.com/citations?user=EeK43rAAAAAJ&hl=it&oi=ao). I am the scientific coordinator of the ProgInG project.
+ 
+ 
+<div class="container">
+    <div class="row">
+        <div class="col-sm">
+            <ul class="list-group">
+              <a class="list-group-item list-group-item-action" href="http://www.eziobartocci.com/">Personal Website</a>
+              <a class="list-group-item list-group-item-action" href="https://www.linkedin.com/in/ezio-bartocci-78665b34/">Linkedin</a>
+            </ul>
+        </div>
+        <div class="col-sm">
+            <ul class="list-group">
+              <a class="list-group-item list-group-item-action" href="http://www.eziobartocci.com/team.php">Trust CPS Group</a>
+              <a class="list-group-item list-group-item-action" href="javascript:redirectEmail('ezio', 'bartocci', 'tuwien.ac.at');">Drop me a mail</a>
+            </ul>
+        </div>
+    </div>
+</div>
