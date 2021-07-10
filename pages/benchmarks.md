@@ -153,7 +153,7 @@ weight: 4
     <td class="tg-xwyw">No <br>(true)</td>
   </tr>
   <tr>
-    <td class="tg-18eh">Random_walk_1D</td>
+    <td class="tg-18eh"><a href="https://probing-lab.github.io/pages/benchmarks/random_walk_1D">Random_walk_1D</a></td>
     <td class="tg-xwyw">1</td>
     <td class="tg-xwyw">No</td>
     <td class="tg-xwyw">Yes</td>
@@ -163,10 +163,10 @@ weight: 4
     <td class="tg-xwyw">No <br>(true)</td>
   </tr>
   <tr>
-    <td class="tg-18eh">Random_walk_2D</td>
+    <td class="tg-18eh"><a href="https://probing-lab.github.io/pages/benchmarks/random_walk_2D">Random_walk_2D</a></td>
     <td class="tg-xwyw">3</td>
     <td class="tg-xwyw">No</td>
-    <td class="tg-xwyw">No</td>
+    <td class="tg-xwyw">Yes</td>
     <td class="tg-xwyw">No</td>
     <td class="tg-xwyw">No</td>
     <td class="tg-xwyw">No</td>
@@ -183,7 +183,7 @@ weight: 4
     <td class="tg-xwyw">No <br>(true)</td>
   </tr>
   <tr>
-    <td class="tg-xwyw"><span style="font-weight:bold">Sum_rnd_series</span></td>
+    <td class="tg-18eh"><a href="https://probing-lab.github.io/pages/benchmarks/sum_rnd_series">Sum_rnd_series</a></td>
     <td class="tg-xwyw">2</td>
     <td class="tg-xwyw">No</td>
     <td class="tg-xwyw">Yes</td>
@@ -193,7 +193,7 @@ weight: 4
     <td class="tg-xwyw">No <br>(true)</td>
   </tr>
   <tr>
-    <td class="tg-18eh">Pi Approximation</td>
+    <td class="tg-18eh"><a href="https://probing-lab.github.io/pages/benchmarks/pi_approximation">Pi Approximation</a></td>
     <td class="tg-xwyw">4</td>
     <td class="tg-xwyw">Yes</td>
     <td class="tg-xwyw">Yes</td>
@@ -203,7 +203,7 @@ weight: 4
     <td class="tg-xwyw">No <br>(true)</td>
   </tr>
   <tr>
-    <td class="tg-xwyw"><span style="font-weight:bold">Product_dep_var</span></td>
+    <td class="tg-18eh"><a href="https://probing-lab.github.io/pages/benchmarks/product_dep_var">Product_dep_var</a></td>
     <td class="tg-xwyw">4</td>
     <td class="tg-xwyw">No</td>
     <td class="tg-xwyw">Yes</td>
@@ -213,7 +213,7 @@ weight: 4
     <td class="tg-xwyw">No <br>(true)</td>
   </tr>
   <tr>
-    <td class="tg-xwyw"><span style="font-weight:bold">Stuttering_A</span></td>
+    <td class="tg-18eh"><a href="https://probing-lab.github.io/pages/benchmarks/stuttering_a">Stuttering_A</a></td>
     <td class="tg-xwyw">6</td>
     <td class="tg-xwyw">No</td>
     <td class="tg-xwyw">Yes</td>
@@ -223,7 +223,7 @@ weight: 4
     <td class="tg-xwyw">No <br>(true)</td>
   </tr>
   <tr>
-    <td class="tg-xwyw"><span style="font-weight:bold">Stuttering_B</span></td>
+    <td class="tg-18eh"><a href="https://probing-lab.github.io/pages/benchmarks/stuttering_b">Stuttering_B</a></td>
     <td class="tg-xwyw">6</td>
     <td class="tg-xwyw">No</td>
     <td class="tg-xwyw">Yes</td>
@@ -233,7 +233,7 @@ weight: 4
     <td class="tg-xwyw">No <br>(true)</td>
   </tr>
   <tr>
-    <td class="tg-xwyw"><span style="font-weight:bold">Stuttering_C</span></td>
+    <td class="tg-18eh"><a href="https://probing-lab.github.io/pages/benchmarks/stuttering_c">Stuttering_C</a></td>
     <td class="tg-xwyw">6</td>
     <td class="tg-xwyw">No</td>
     <td class="tg-xwyw">Yes</td>
@@ -243,7 +243,7 @@ weight: 4
     <td class="tg-xwyw">No <br>(true)</td>
   </tr>
   <tr>
-    <td class="tg-xwyw"><span style="font-weight:bold">Stuttering_D</span></td>
+    <td class="tg-18eh"><a href="https://probing-lab.github.io/pages/benchmarks/stuttering_d">Stuttering_D</a></td>
     <td class="tg-xwyw">6</td>
     <td class="tg-xwyw">No</td>
     <td class="tg-xwyw">Yes</td>
@@ -253,7 +253,7 @@ weight: 4
     <td class="tg-xwyw">No <br>(true)</td>
   </tr>
   <tr>
-    <td class="tg-xwyw"><span style="font-weight:bold">Stuttering_P</span></td>
+    <td class="tg-18eh"><a href="https://probing-lab.github.io/pages/benchmarks/stuttering_p">Stuttering_P</a></td>
     <td class="tg-xwyw">4</td>
     <td class="tg-xwyw">No</td>
     <td class="tg-xwyw">Yes</td>
@@ -263,7 +263,7 @@ weight: 4
     <td class="tg-xwyw">No <br>(true)</td>
   </tr>
   <tr>
-    <td class="tg-xwyw"><span style="font-weight:bold">Square</span></td>
+    <td class="tg-18eh"><a href="https://probing-lab.github.io/pages/benchmarks/square">Square</a></td>
     <td class="tg-xwyw">2</td>
     <td class="tg-xwyw">No</td>
     <td class="tg-xwyw">Yes</td>
@@ -273,7 +273,7 @@ weight: 4
     <td class="tg-xwyw">No <br>(true)</td>
   </tr>
   <tr>
-    <td class="tg-18eh">Variable Swap</td>
+    <td class="tg-18eh"><a href="https://probing-lab.github.io/pages/benchmarks/variable_swap">Variable Swap</a></td>
     <td class="tg-xwyw">4</td>
     <td class="tg-xwyw">No</td>
     <td class="tg-xwyw">Yes</td>
