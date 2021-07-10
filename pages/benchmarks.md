@@ -63,7 +63,7 @@ weight: 4
     <td class="tg-xwyw">No <br>(true)</td>
   </tr>
   <tr>
-    <td class="tg-18eh">DBN-Component-Health</td>
+    <td class="tg-18eh"><a href="https://probing-lab.github.io/pages/benchmarks/dbn_component_health">DBN-Component-Health</a></td>
     <td class="tg-xwyw">3</td>
     <td class="tg-xwyw">Yes</td>
     <td class="tg-xwyw">No</td>
@@ -73,7 +73,7 @@ weight: 4
     <td class="tg-xwyw">No <br>(true)</td>
   </tr>
   <tr>
-    <td class="tg-18eh">DBN-Umbrella</td>
+    <td class="tg-18eh"><a href="https://probing-lab.github.io/pages/benchmarks/dbn_umbrella">DBN-Umbrella</a></td>
     <td class="tg-xwyw">2</td>
     <td class="tg-xwyw">Yes</td>
     <td class="tg-xwyw">No</td>
