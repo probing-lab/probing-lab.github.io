@@ -12,15 +12,14 @@ loopguard:      "(true)"
 Martingale-Bet
 
 ```python
-x, y = 1, 0
-while y <= 0:
-    x = 2*x
-    r = Bernoulli(1/2)
+bet, capital = 1, c0
+while true:
+    bet = 2*bet
+    r = Bernoulli(p)
     if r == 1:
-        y = y - x
+        capital = capital - bet
     else:
-        y = y + x
+        capital = capital + bet
     end
 end
-
 ```
