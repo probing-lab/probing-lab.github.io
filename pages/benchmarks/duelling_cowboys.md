@@ -12,11 +12,25 @@ loopguard:      "(true)"
 Duelling Cowboys
 
 ```python
+turn = 0
+continue = 1
 ahit = 0
 bhit = 0
 while true:
-    ahit = 1 {a} 0
-    bhit = 1 - ahit {b} 0
-    over = ahit + bhit
+    if turn == 0:
+        ahit = Bernoulli(a)
+        if ahit == 1:
+            continue = 0
+        else:
+            turn = 1
+        end
+    else:
+        bhit = Bernoulli(b)
+        if bhit == 1:
+            continue = 0
+        else:
+            turn = 0
+        end
+    end
 end
 ```
