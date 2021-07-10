@@ -113,7 +113,7 @@ weight: 4
     <td class="tg-xwyw">No <br>(true)</td>
   </tr>
   <tr>
-    <td class="tg-xwyw"><span style="font-weight:bold">Hermann-5</span></td>
+    <td class="tg-xwyw"><span style="font-weight:bold"><a href="https://probing-lab.github.io/pages/benchmarks/hermann5">Hermann-5</a></span></td>
     <td class="tg-xwyw">16</td>
     <td class="tg-xwyw">Yes</td>
     <td class="tg-xwyw">No</td>
@@ -123,7 +123,7 @@ weight: 4
     <td class="tg-xwyw">No <br>(true)</td>
   </tr>
   <tr>
-    <td class="tg-18eh">Las Vegas Search</td>
+    <td class="tg-18eh"><a href="https://probing-lab.github.io/pages/benchmarks/las_vegas_search">Las Vegas Search</a></td>
     <td class="tg-xwyw">3</td>
     <td class="tg-xwyw">Yes</td>
     <td class="tg-xwyw">Yes</td>
@@ -133,7 +133,7 @@ weight: 4
     <td class="tg-xwyw">No <br>(true)</td>
   </tr>
   <tr>
-    <td class="tg-18eh">Gambler Ruin Momentum</td>
+    <td class="tg-18eh"><a href="https://probing-lab.github.io/pages/benchmarks/gambler_ruin_momentum">Gambler Ruin Momentum</a></td>
     <td class="tg-xwyw">4</td>
     <td class="tg-xwyw">No</td>
     <td class="tg-xwyw">Yes</td>
@@ -143,7 +143,7 @@ weight: 4
     <td class="tg-xwyw">No <br>(true)</td>
   </tr>
   <tr>
-    <td class="tg-18eh">Martingale-Bet</td>
+    <td class="tg-18eh"><a href="https://probing-lab.github.io/pages/benchmarks/martingale_bet">Martingale-Bet</a></td>
     <td class="tg-xwyw">4</td>
     <td class="tg-xwyw">No</td>
     <td class="tg-xwyw">Yes</td>
@@ -173,7 +173,7 @@ weight: 4
     <td class="tg-xwyw">No <br>(true)</td>
   </tr>
   <tr>
-    <td class="tg-18eh">Retransmission Protocol</td>
+    <td class="tg-18eh"><a href="https://probing-lab.github.io/pages/benchmarks/rentransmission_protocol">Retransmission Protocol</a></td>
     <td class="tg-xwyw">4</td>
     <td class="tg-xwyw">Yes</td>
     <td class="tg-xwyw">Yes</td>
