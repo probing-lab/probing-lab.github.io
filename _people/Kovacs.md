@@ -7,7 +7,7 @@ description: I am a full professor at the Faculty of Informatics of the Vienna U
 
 # Laura Kovács
 
-<img class="main-image" src="https://informatics.tuwien.ac.at/people/laura-kovacs/picture/head-1x.webp"/>
+<img class="main-image" src="../assets/lkovacs.jpg"/>
 
 I am a full professor in computer science at the TU Wien, leading the automated program reasoning (APRe) group of the
 Formal Methods in Systems Engineering Division. I also hold a part-time professorship at the Department of
