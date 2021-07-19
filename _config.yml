@@ -38,6 +38,9 @@ collections:
   publications:
     output: true
     permalink: /publications/:name
+  benchmarks:
+    output: true
+    permalink: /benchmarks/:name
   tools:
     output: true
     permalink: /tools/:name
@@ -65,6 +68,11 @@ defaults:
   - scope:
       path: ""
       type: "tools"
+    values:
+      layout: "page"
+  - scope:
+      path: ""
+      type: "benchmarks"
     values:
       layout: "page"
   - scope:

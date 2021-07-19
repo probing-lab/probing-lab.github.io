@@ -1,8 +1,8 @@
 ---
 name:           "Binomial(p)"
 numvars:        "2"
-ifthenelse:     "no"
-infinitesp:     "yes"
+ifthenelse:     "No"
+infinitesp:     "Yes"
 circdependency: "No"
 symbolicconst:  "Yes"
 contstatesp:    "No"
