@@ -2,7 +2,7 @@
 name:           "Randomized Response"
 numvars:        "7"
 ifthenelse:     "Yes"
-infinitesp:     "Yes"
+infinitesp:     "No"
 circdependency: "No"
 symbolicconst:  "Yes"
 contstatesp:    "No"
