@@ -1,5 +1,5 @@
 ---
-name:           "Binomial(p)"
+name:           "Binomial (Parametric)"
 numvars:        "2"
 ifthenelse:     "No"
 infinitesp:     "Yes"
@@ -10,7 +10,7 @@ loopguard:      "(true)"
 defective:      "No"
 ---
 
-Binomial(p)
+Parametric Binomial 
 
 ```python
 x = 0
@@ -19,10 +19,11 @@ while true:
 end
 ```
 
+Computing Moments using POLAR/Mora
+
 <p>
-  When \(a \ne 0\), there are two solutions to \(ax^2 + bx + c = 0\) and they are
-  \[x = {-b \pm \sqrt{b^2-4ac} \over 2a}.\]
-  </p>
+  \[\mathbb{E} (x) = \]
+</p>
 
 <div id="myDiv"><!-- Plotly chart will be drawn inside this DIV --></div>
   <script>
