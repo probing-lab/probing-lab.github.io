@@ -7,7 +7,7 @@ circdependency: "No"
 symbolicconst:  "Yes"
 contstatesp:    "No"
 loopguard:      "(true)"
-defective:      "Yes"
+defective:      "No"
 ---
 
 Binomial(p)
@@ -18,6 +18,11 @@ while true:
     x = x + 1 {p} x
 end
 ```
+
+<p>
+  When \(a \ne 0\), there are two solutions to \(ax^2 + bx + c = 0\) and they are
+  \[x = {-b \pm \sqrt{b^2-4ac} \over 2a}.\]
+  </p>
 
 <div id="myDiv"><!-- Plotly chart will be drawn inside this DIV --></div>
   <script>
