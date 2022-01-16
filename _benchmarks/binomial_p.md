@@ -10,7 +10,7 @@ loopguard:      "(true)"
 defective:      "No"
 ---
 
-Parametric Binomial 
+Parametric Binomial Code
 
 ```python
 x = 0
