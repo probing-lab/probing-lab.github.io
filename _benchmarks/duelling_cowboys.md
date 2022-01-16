@@ -7,6 +7,7 @@ circdependency: "Yes"
 symbolicconst:  "Yes"
 contstatesp:    "No"
 loopguard:      "(true)"
+defective:      "No"
 ---
 
 Duelling Cowboys
