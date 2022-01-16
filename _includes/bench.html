@@ -9,18 +9,25 @@
 .tg .tg-18eh{border-color:#000000;font-weight:bold;text-align:center;vertical-align:middle}
 .tg .tg-5924{background-color:#3166ff;border-color:#000000;color:#ffffff;font-weight:bold;text-align:left;vertical-align:middle}
 .tg .tg-xwyw{border-color:#000000;text-align:center;vertical-align:middle}
+th      { background-color: NavajoWhite; 
+          color: SaddleBrown; 
+          width:50px;  
+          vertical-align: bottom; }
+th span { writing-mode: sideways-lr; /* +90°: use 'tb-rl' */
+          text-align: left;          /* +90°: use 'right' */
+          padding:10px 5px 0; }
 </style>
 <table class="tg">
 <thead>
   <tr>
-    <th class="tg-7ilu">Benchmark Name</th>
-    <th class="tg-7iluv">Num <br>Vars</th>
-    <th class="tg-7iluv">If-then-else<br>Statements<br></th>
-    <th class="tg-7iluv">Infinite <br>state-space</th>
-    <th class="tg-7iluv">Circular<br>Dependency</th>
-    <th class="tg-7iluv">Symbolic <br>Constants</th>
-    <th class="tg-7iluv">Continuous <br>State-Space</th>
-    <th class="tg-7iluv">Loop <br>Guard</th>
+    <th>Benchmark Name</th>
+    <th><span>Num <br>Vars</span></th>
+    <th><span>If-then-else<br>Statements<br></span></th>
+    <th><span>Infinite <br>state-space</span></th>
+    <th><span>Circular<br>Dependency</span></th>
+    <th><span>Symbolic <br>Constants</span></th>
+    <th><span>Continuous <br>State-Space</span></th>
+    <th><span>Loop <br>Guard</span></th>
   </tr>
 </thead>
 <tbody>
