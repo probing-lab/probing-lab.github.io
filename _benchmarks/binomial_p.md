@@ -28,6 +28,7 @@ Computing Moments using POLAR/Mora
   \[\mathbb{E} (x_n^4) = \]
 </p>
 
+Simulation 
 <div id="myDiv"><!-- Plotly chart will be drawn inside this DIV --></div>
   <script>
     var x = [];
