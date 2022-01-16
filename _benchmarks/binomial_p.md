@@ -22,7 +22,10 @@ end
 Computing Moments using POLAR/Mora
 
 <p>
-  \[\mathbb{E} (x) = \]
+  \[\mathbb{E} (x_n)   = \]
+  \[\mathbb{E} (x_n^2) = \]
+  \[\mathbb{E} (x_n^3) = \]
+  \[\mathbb{E} (x_n^4) = \]
 </p>
 
 <div id="myDiv"><!-- Plotly chart will be drawn inside this DIV --></div>
