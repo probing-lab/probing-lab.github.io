@@ -7,6 +7,7 @@ circdependency: "No"
 symbolicconst:  "No"
 contstatesp:    "No"
 loopguard:      "(true)"
+defective:      "No"
 ---
 
 Coupon Collector 4 
