@@ -1,6 +1,6 @@
 ---
-name:           "Hermann-5"
-numvars:        "10"
+name:           "Hermann-7"
+numvars:        "16"
 ifthenelse:     "Yes"
 infinitesp:     "No"
 circdependency: "Yes"
@@ -9,9 +9,10 @@ contstatesp:    "No"
 loopguard:      "(true)"
 ---
 
-Hermann-5
+Hermann-7
 
 ```python
+p = 1/3
 x1 = 1
 token1 = 1
 x2 = 1
@@ -22,40 +23,56 @@ x4 = 1
 token4 = 1
 x5 = 1
 token5 = 1
+x6 = 1
+token6 = 1
+x7 = 1
+token7 = 1
 while true:
-    x1o, x2o, x3o, x4o, x5o = x1, x2, x3, x4, x5
+    x1o, x2o, x3o, x4o, x5o, x6o, x7o = x1, x2, x3, x4, x5, x6, x7
 
-    if x1o == x5o:
-        x1 = Bernoulli(1/3)
+    if x1o == x7o:
+        x1 = Bernoulli(p)
     else:
-        x1 = x5o
+        x1 = x7o
     end
 
     if x2o == x1o:
-        x2 = Bernoulli(1/3)
+        x2 = Bernoulli(p)
     else:
         x2 = x1o
     end
 
     if x3o == x2o:
-        x3 = Bernoulli(1/3)
+        x3 = Bernoulli(p)
     else:
         x3 = x2o
     end
 
     if x4o == x3o:
-        x4 = Bernoulli(1/3)
+        x4 = Bernoulli(p)
     else:
         x4 = x3o
     end
 
     if x5o == x4o:
-        x5 = Bernoulli(1/3)
+        x5 = Bernoulli(p)
     else:
         x5 = x4o
     end
 
-    if x1 == x5:
+    if x6o == x5o:
+        x6 = Bernoulli(p)
+    else:
+        x6 = x5o
+    end
+
+    if x7o == x6o:
+        x7 = Bernoulli(p)
+    else:
+        x7 = x6o
+    end
+
+    if x1 == x7:
         token1 = 1
     else:
         token1 = 0
@@ -85,6 +102,18 @@ while true:
         token5 = 0
     end
 
-    numtokens = token1 + token2 + token3 + token4 + token5
+    if x6 == x5:
+        token6 = 1
+    else:
+        token6 = 0
+    end
+
+    if x7 == x6:
+        token7 = 1
+    else:
+        token7 = 0
+    end
+
+    numtokens = token1 + token2 + token3 + token4 + token5 + token6 + token7
 end
 ```

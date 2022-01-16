@@ -1,6 +1,6 @@
 ---
 name:           "Hermann-3"
-numvars:        "10"
+numvars:        "7"
 ifthenelse:     "Yes"
 infinitesp:     "No"
 circdependency: "Yes"
