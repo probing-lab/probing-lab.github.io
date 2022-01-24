@@ -7,6 +7,7 @@ circdependency: "Yes"
 symbolicconst:  "No"
 contstatesp:    "Yes"
 loopguard:      "(true)"
+defective:      "No"
 ---
 
 Variable Swap

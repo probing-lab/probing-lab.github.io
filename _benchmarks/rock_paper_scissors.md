@@ -7,6 +7,7 @@ circdependency: "No"
 symbolicconst:  "Yes"
 contstatesp:    "No"
 loopguard:      "(true)"
+defective:      "No"
 ---
 
 Rock Paper Scissors

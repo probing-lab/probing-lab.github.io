@@ -7,6 +7,7 @@ circdependency: "No"
 symbolicconst:  "No"
 contstatesp:    "Yes"
 loopguard:      "(true)"
+defective:      "No"
 ---
 
 Stuttering D

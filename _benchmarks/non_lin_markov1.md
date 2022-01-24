@@ -8,6 +8,7 @@ symbolicconst:  "Yes"
 contstatesp:    "Yes"
 loopguard:      "(true)"
 defective:      "Yes"
+defective:      "No"
 ---
 
 Nonlinear Markov Model 1
