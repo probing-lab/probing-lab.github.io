@@ -174,21 +174,23 @@ Program simulation:
     	if (Math.random() < val_p) return 1;
         return 0;
     }
+    function sampleProbProgram (val_p, nit, nsim){
+        var x = [];
+    	for (var i = 0; i < nsim; i++) {
+             x[i] = 0;  
+             for (var j = 0; j < nit; j++)
+            	x[i] += sampleBernoulli(val_p);
+             x[i] = f;
+    	} 
+    	return x;
+    }
+    
     var prob_elem = document.getElementById("probability_value");
     var iter_elem = document.getElementById("num_iteration_value");
     var exp_elem  = document.getElementById("num_experiment_value");
     
-    var x = [];
-    sim = exp_elem.value;
-    n   = iter_elem.value;
-    f   = 0;
-    for (var i = 0; i < sim; i++) {
-       f = 0;  
-       for (var j = 0; j < n; j++){
-            f += sampleBernoulli(prob_elem.value);
-       }
-       x[i] = f;
-    } 
+    var x [] = sampleProbProgram (prob_elem.value, iter_elem.value, exp_elem.value);
+    
     var trace = {
       x: x,
        type: 'histogram',
