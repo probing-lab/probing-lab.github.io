@@ -169,24 +169,6 @@ Program simulation:
 
 <div id="myDiv"><!-- Plotly chart will be drawn inside this DIV --></div>
 <script>
-	function updateProbability(val) {
-  		var elem1 = document.getElementById("probability_value");
-        elem1.value = val;
-        var elem2 = document.getElementById("probability");
-        elem2.value = val;
-	}
-	function updateNumIter(val) {
-  		var elem1 = document.getElementById("num_iteration_value");
-        elem1.value = val;
-        var elem2 = document.getElementById("num_iteration");
-        elem2.value = val;
-	}
-	function updateNumExp(val) {
-  		var elem1 = document.getElementById("num_experiment_value");
-        elem1.value = val;
-        var elem2 = document.getElementById("num_experiment");
-        elem2.value = val;
-	}
     var x = [];
     sim = 10000;
     n   = 10;
@@ -226,5 +208,25 @@ Program simulation:
       yaxis: {title: "Probability"}
     }
     Plotly.newPlot('myDiv', data, layout);
+    
+    function updateProbability(val) {
+  		var elem1 = document.getElementById("probability_value");
+        elem1.value = val;
+        var elem2 = document.getElementById("probability");
+        elem2.value = val;
+        Plotly.newPlot('myDiv', data, layout);
+	}
+	function updateNumIter(val) {
+  		var elem1 = document.getElementById("num_iteration_value");
+        elem1.value = val;
+        var elem2 = document.getElementById("num_iteration");
+        elem2.value = val;
+	}
+	function updateNumExp(val) {
+  		var elem1 = document.getElementById("num_experiment_value");
+        elem1.value = val;
+        var elem2 = document.getElementById("num_experiment");
+        elem2.value = val;
+	}
      
   </script>
