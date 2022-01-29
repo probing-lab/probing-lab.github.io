@@ -159,10 +159,11 @@ Elapsed time: 0.7818460464477539 s
 
 Program simulation:
 
-| Parameter | Current Value |
-| --- | ----------- |
-| Number of program executions: | Title |
-| Number of loop iterations: | Text |
+| Parameter | Current Value |  |
+| --- | ----------- | ----------- |
+| Number of program executions: | Title | |
+| Number of loop iterations (n): | Text | |
+| Probability (p): | Title | <input type="range" id="probability" name="probability" min="0" max="1" step="0.1"> |
 
 <div>
 
