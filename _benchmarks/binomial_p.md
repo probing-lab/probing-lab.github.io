@@ -169,6 +169,11 @@ Program simulation:
 
 <div id="myDiv"><!-- Plotly chart will be drawn inside this DIV --></div>
 <script>
+
+    function sampleBernoulli(val_p){
+    	if (Math.random() < val_p) return 1;
+        return 0;
+    }
     var prob_elem = document.getElementById("probability_value");
     var iter_elem = document.getElementById("num_iteration_value");
     var exp_elem  = document.getElementById("num_experiment_value");
@@ -180,9 +185,7 @@ Program simulation:
     for (var i = 0; i < sim; i++) {
        f = 0;  
        for (var j = 0; j < n; j++){
-          if (Math.random() < prob_elem.value){
-             f += 1;
-          }
+            f += sampleBernoulli(prob_elem.value);
        }
        x[i] = f;
     } 
