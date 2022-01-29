@@ -207,7 +207,7 @@ Program simulation:
       bargap: 0.05, 
       bargroupgap: 0.2, 
       barmode: "overlay", 
-      title: "Sampled Results (p=0.5, loop iteration=10, num. simulations = 10000)", 
+      title: "Sampled Results (p=" + prob_elem.value.toString() + ", loop iteration=10, num. simulations = 10000)", 
       xaxis: {title: "X Value"}, 
       yaxis: {title: "Probability"}
     }
