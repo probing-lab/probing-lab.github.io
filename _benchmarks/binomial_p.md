@@ -18,6 +18,7 @@ while true:
     x = x + 1 {p} x
 end
 ```
+<br>
 
 Computing the first moment of variable x using POLAR/Mora:
 
