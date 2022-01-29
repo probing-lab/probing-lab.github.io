@@ -22,6 +22,10 @@ end
 Computing Moments using POLAR/Mora
 
 <p>
+```
+python polar.py benchmarks/old/binomial --goals "E(x)"
+```
+
   \[\mathbb{E} (x_n)   = n p\]
   \[\mathbb{E} (x_n^2) = n p (p (n - 1) + 1)\]
   \[\mathbb{E} (x_n^3) = n p (n^2 p^2 - 3 n p^2 + 3 n p + 2p^2 - 3p + 1)\]
