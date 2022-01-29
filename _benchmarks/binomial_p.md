@@ -216,6 +216,7 @@ Program simulation:
     var iter_elem = document.getElementById("num_iteration_value");
     var exp_elem  = document.getElementById("num_experiment_value");
     
+    alert("Prob. " + prob_elem.value.toString() + " Num. Iter." + iter_elem.value.toString() + " Exp. Elem." + exp_elem.value.toString()); 
     plotProbProgram (prob_elem.value, iter_elem.value, exp_elem.value);
     
 
