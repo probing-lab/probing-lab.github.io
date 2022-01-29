@@ -46,8 +46,10 @@ Solution is exact
 
 Elapsed time: 0.3568592071533203 s
 ```
+<p>
+Solution: \[mathbb{E} (x_n)   = n p\]
+</p>
 
-Solution \[mathbb{E} (x_n)   = n p\]
 <p>
   $\mathbb{E} (x_n)   = n p$
   \[\mathbb{E} (x_n)   = n p\]
