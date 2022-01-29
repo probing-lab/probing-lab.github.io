@@ -10,7 +10,7 @@ loopguard:      "(true)"
 defective:      "No"
 ---
 
-Parametric Binomial Code
+Parametric Binomial Source Code:
 
 ```python
 x = 0
@@ -147,6 +147,18 @@ Elapsed time: 0.7818460464477539 s
 </p>
 
 Simulation 
+
+<div>
+  <input type="range" id="num_experiment" name="num_experiment" min="100" max="10000" step="100">
+  <label for="num_experiment">Number of program executions: </label>
+  
+  <input type="range" id="num_iteration" name="num_iteration" min="10" max="100" step="10">
+  <label for="num_iteration">Number of loop iterations: </label>
+  
+  <input type="range" id="probability" name="probability" min="0" max="1" step="0.1">
+  <label for="probability">Probability p: </label>
+</div>
+
 <div id="myDiv"><!-- Plotly chart will be drawn inside this DIV --></div>
   <script>
     var x = [];
