@@ -170,10 +170,10 @@ Program simulation:
 <div id="myDiv"><!-- Plotly chart will be drawn inside this DIV --></div>
 <script>
 	function updateProbability(val) {
-  		var elem = document.getElementById("probability_value");
-         elem.value = val;
-        var elem = document.getElementById("probability");
-         elem.value = val;
+  		var elem1 = document.getElementById("probability_value");
+        elem1.value = val;
+        var elem2 = document.getElementById("probability");
+        elem2.value = val;
 	}
     var x = [];
     sim = 10000;
