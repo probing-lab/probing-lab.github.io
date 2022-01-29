@@ -175,7 +175,7 @@ Program simulation:
         return 0;
     }
     function plotProbProgram (val_p, nit, nsim){
-        alert("Prob. " + val_p.toString() + " Num. Iter." + nit.toString() + " Num. Exp." + nsim.toString()); 
+        //alert("Prob. " + val_p.toString() + " Num. Iter." + nit.toString() + " Num. Exp." + nsim.toString()); 
    
         var x = [];
     	for (var i = 0; i < nsim; i++) {
