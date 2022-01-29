@@ -165,7 +165,9 @@ Program simulation:
 | Number of loop iterations (n): | <input type="number" id="num_iteration_value" name="num_iteration_value" min="10" max="100" step="10" value="10" onchange="updateNumIter(this.value)">  | <input type="range" id="num_iteration" name="num_iteration" min="10" max="100" step="10" value="10" onchange="updateNumIter(this.value)"> |
 | Probability (p): | <input type="number" id="probability_value" name="probability_value" min="0" max="1" step="0.1" value="0.5" onchange="updateProbability(this.value)"> | <input type="range" id="probability" name="probability" min="0" max="1" step="0.1" value="0.5" onchange="updateProbability(this.value)"> |
 
-
+| Exact First Moment | Approximate First Moment | 
+| --- | --- |
+| <div id="exact_first_moment"></div> | <div id="approximate_first_moment"></div> |
 
 <div id="myDiv"><!-- Plotly chart will be drawn inside this DIV --></div>
 <script>
