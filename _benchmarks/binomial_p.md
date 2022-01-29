@@ -169,12 +169,9 @@ Program simulation:
 
 <div id="myDiv"><!-- Plotly chart will be drawn inside this DIV --></div>
 <script>
-function updateProbability(val) {
-  alert("The input value has changed. The new value is: " + val);
-}
-</script>
-
-  <script>
+	function updateProbability(val) {
+  		alert("The input value has changed. The new value is: " + val);
+	}
     var x = [];
     sim = 10000;
     n   = 10;
