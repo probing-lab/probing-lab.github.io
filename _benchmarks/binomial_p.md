@@ -178,11 +178,14 @@ Program simulation:
     }
     function plotProbProgram (val_p, nit, nsim){
         var x = [];
+        var tot = 0;
     	for (var i = 0; i < nsim; i++) {
              x[i] = 0;  
              for (var j = 0; j < nit; j++)
             	x[i] += sampleBernoulli(val_p);
+             tot += x[i];
     	} 
+    	
     	
     	var trace = {
       		x: x,
@@ -213,6 +216,9 @@ Program simulation:
     	
     	var exact_e_x_elem   = document.getElementById("exact_e_x");
     	exact_e_x_elem.value = val_p * nit;
+    	
+    	var approx_e_x_elem   = document.getElementById("approx_e_x");
+    	approx_e_x_elem.value = tot/nsim;
     	
     	var exact_e_x2_elem   = document.getElementById("exact_e_x2");
     	exact_e_x2_elem.value = val_p * nit * (val_p * (nit - 1) + 1);
