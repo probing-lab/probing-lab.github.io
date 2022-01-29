@@ -159,10 +159,10 @@ Elapsed time: 0.7818460464477539 s
 
 Program simulation:
 
-| Syntax | Description |
+| Parameter | Current Value |
 | --- | ----------- |
-| Header | Title |
-| Paragraph | Text |
+| Number of program executions: | Title |
+| Number of loop iterations: | Text |
 
 <div>
 
