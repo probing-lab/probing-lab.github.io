@@ -21,11 +21,6 @@ end
 
 Computing Moments using POLAR/Mora:
 
-
-```
-python polar.py benchmarks/old/binomial --goals "E(x)"
-```
-
 ```
 python polar.py benchmarks/old/binomial --goals "E(x)"
 
@@ -52,8 +47,9 @@ Solution is exact
 Elapsed time: 0.3568592071533203 s
 ```
 
-Solution $\mathbb{E} (x_n)   = n p$
+Solution \[mathbb{E} (x_n)   = n p\]
 <p>
+  $\mathbb{E} (x_n)   = n p$
   \[\mathbb{E} (x_n)   = n p\]
   \[\mathbb{E} (x_n^2) = n p (p (n - 1) + 1)\]
   \[\mathbb{E} (x_n^3) = n p (n^2 p^2 - 3 n p^2 + 3 n p + 2p^2 - 3p + 1)\]
