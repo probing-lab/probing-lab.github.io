@@ -167,7 +167,7 @@ Program simulation:
 
 | Exact E(x) | Approx. E(x) | Exact E(x<sup>2</sup>)| Approx. E(x<sup>2</sup>) | Exact E(x<sup>3</sup>)| Approx. E(x<sup>3</sup>) | Exact E(x<sup>4</sup>)| Approx. E(x<sup>4</sup>) |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| <input type="text" id="exact_e_x" name="exact_e_x"> |     | <input type="text" id="exact_e_x2" name="exact_e_x2"> |     |     |     |     |     |
+| <input type="text" width="4" id="exact_e_x" name="exact_e_x"> |     | <input type="text" width="4" id="exact_e_x2" name="exact_e_x2"> |     |  <input type="text" width="4" id="exact_e_x3" name="exact_e_x3">   |     |  <input type="text" width="4" id="exact_e_x4" name="exact_e_x4">    |     |
 
 <div id="myDiv"><!-- Plotly chart will be drawn inside this DIV --></div>
 <script>
