@@ -20,7 +20,7 @@ end
 ```
 <br>
 
-Computing the first moment of variable x using POLAR:
+Computing the first moment for the random variable x using POLAR:
 
 ```
 python polar.py benchmarks/old/binomial --goals "E(x)"
@@ -53,7 +53,7 @@ First moment solution: \[\mathbb{E} (x_n)   = n p\]
 
 <br>
 
-Computing the second moment of variable x using POLAR:
+Computing the second moment for the random variable x using POLAR:
 
 ```
 python polar.py benchmarks/old/binomial --goals "E(x^2)"
@@ -88,7 +88,7 @@ Second moment solution: \[\mathbb{E} (x_n^2) = n p (p (n - 1) + 1)\]
 <br>
 
 
-Computing the third moment of variable x using POLAR:
+Computing the third moment for the random variable x using POLAR:
 
 ```
 python polar.py benchmarks/old/binomial --goals "E(x^3)"
@@ -122,7 +122,7 @@ Third moment solution: \[\mathbb{E} (x_n^3) = n p (n^2 p^2 - 3 n p^2 + 3 n p + 2
 
 <br>
 
-Computing the fourth moment of variable x using POLAR:
+Computing the fourth moment for the random variable x
 
 ```
 python polar.py benchmarks/old/binomial --goals "E(x^4)"
