@@ -174,7 +174,7 @@ Program simulation:
     	if (Math.random() < val_p) return 1;
         return 0;
     }
-    function sampleProbProgram (val_p, nit, nsim){
+    function plotProbProgram (val_p, nit, nsim){
         var x = [];
     	for (var i = 0; i < nsim; i++) {
              x[i] = 0;  
@@ -182,41 +182,42 @@ Program simulation:
             	x[i] += sampleBernoulli(val_p);
              x[i] = f;
     	} 
-    	return x;
+    	
+    	var trace = {
+      		x: x,
+       		type: 'histogram',
+			histnorm: 'probability',
+			marker: { 
+			     color: "rgba(255, 100, 102, 0.7)", 
+                 line: { color:  "rgba(255, 100, 102, 1)", 
+                         width: 1
+                 }
+              },
+              autobinx: false, 
+              xbins: { 
+                 size: 1 
+              }
+    	};
+    
+    	var data = [trace];
+    	var layout = {
+      		bargap: 0.05, 
+      		bargroupgap: 0.2, 
+      		barmode: "overlay", 
+      		title: "Sampled Results (p=" + val_p.toString + ", loop iteration=" + nit.toString()  + ", num. simulations = " + nsim.toString()  + ")", 
+      		xaxis: {title: "X Value"}, 
+      		yaxis: {title: "Probability"}
+    	}
+    	Plotly.newPlot('myDiv', data, layout);
     }
     
     var prob_elem = document.getElementById("probability_value");
     var iter_elem = document.getElementById("num_iteration_value");
     var exp_elem  = document.getElementById("num_experiment_value");
     
-    var x [] = sampleProbProgram (prob_elem.value, iter_elem.value, exp_elem.value);
+    plotProbProgram (prob_elem.value, iter_elem.value, exp_elem.value);
     
-    var trace = {
-      x: x,
-       type: 'histogram',
-			histnorm: 'probability',
-			  marker: { 
-			     color: "rgba(255, 100, 102, 0.7)", 
-                 line: { color:  "rgba(255, 100, 102, 1)", 
-                         width: 1
-                 }
-              
-              },
-              autobinx: false, 
-              xbins: { 
-                 size: 1 
-              }
-    };
-    var data = [trace];
-    var layout = {
-      bargap: 0.05, 
-      bargroupgap: 0.2, 
-      barmode: "overlay", 
-      title: "Sampled Results (p=" + prob_elem.value.toString() + ", loop iteration=" + iter_elem.value.toString()  + ", num. simulations = " + exp_elem.value.toString()  + ")", 
-      xaxis: {title: "X Value"}, 
-      yaxis: {title: "Probability"}
-    }
-    Plotly.newPlot('myDiv', data, layout);
+
     
     function updateProbability(val_p) {
   		var elem1 = document.getElementById("probability_value");
