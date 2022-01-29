@@ -165,13 +165,15 @@ Program simulation:
 | Number of loop iterations (n): | <input type="number" id="num_iteration_value" name="num_iteration_value" min="10" max="100" step="10" value="20" onchange="updateNumIter(this.value)">  | <input type="range" id="num_iteration" name="num_iteration" min="10" max="100" step="10" value="20" onchange="updateNumIter(this.value)"> |
 | Probability (p): | <input type="number" id="probability_value" name="probability_value" min="0" max="1" step="0.1" value="0.5" onchange="updateProbability(this.value)"> | <input type="range" id="probability" name="probability" min="0" max="1" step="0.1" value="0.5" onchange="updateProbability(this.value)"> |
 
+
+
+<div id="myDiv"><!-- Plotly chart will be drawn inside this DIV --></div>
 <script>
 function updateProbability(val) {
   alert("The input value has changed. The new value is: " + val);
 }
 </script>
 
-<div id="myDiv"><!-- Plotly chart will be drawn inside this DIV --></div>
   <script>
     var x = [];
     sim = 10000;
