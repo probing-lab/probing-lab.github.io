@@ -203,17 +203,17 @@ Program simulation:
       bargap: 0.05, 
       bargroupgap: 0.2, 
       barmode: "overlay", 
-      title: "Sampled Results (p=" + ", loop iteration=10, num. simulations = 10000)", 
+      title: "Sampled Results (p=0.5, loop iteration=10, num. simulations = 10000)", 
       xaxis: {title: "X Value"}, 
       yaxis: {title: "Probability"}
     }
     Plotly.newPlot('myDiv', data, layout);
     
-    function updateProbability(val) {
+    function updateProbability(val_p) {
   		var elem1 = document.getElementById("probability_value");
-        elem1.value = val;
+        elem1.value = val_p;
         var elem2 = document.getElementById("probability");
-        elem2.value = val;
+        elem2.value = val_p;
         var x = [];
     	sim = 10000;
     	n   = 10;
@@ -222,7 +222,7 @@ Program simulation:
     	for (var i = 0; i < sim; i++) {
        		 f = 0;  
        		 for (var j = 0; j < n; j++){
-          	      if (Math.random() < val){
+          	      if (Math.random() < val_p){
             	        f += 1;
           	      }
           	 }
@@ -244,6 +244,14 @@ Program simulation:
               }
 	    };
     	var data = [trace];
+    	var layout = {
+      		bargap: 0.05, 
+      		bargroupgap: 0.2, 
+      		barmode: "overlay", 
+      		title: "Sampled Results (p=" + val_p.toString() + ", loop iteration=10, num. simulations = 10000)", 
+      		xaxis: {title: "X Value"}, 
+      		yaxis: {title: "Probability"}
+    	}
         Plotly.newPlot('myDiv', data, layout);
 	}
 	function updateNumIter(val) {
