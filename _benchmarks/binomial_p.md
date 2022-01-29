@@ -165,23 +165,6 @@ Program simulation:
 | Paragraph | Text |
 
 <div>
- <table>
-  <tr>
-    <th>Number of program executions:</th>
-    <th>Number of loop iterations (n):</th>
-    <th>Probability (p): </th>
-  </tr>
-  <tr>
-    <td>Number of program executions:</td>
-    <td>Maria Anders</td>
-    <td>Germany</td>
-  </tr>
-  <tr>
-    <td>Centro comercial Moctezuma</td>
-    <td>Francisco Chang</td>
-    <td>Mexico</td>
-  </tr>
-</table> 
 
   <label for="num_experiment">Number of program executions: </label>
   <input type="range" id="num_experiment" name="num_experiment" min="100" max="10000" step="100">
