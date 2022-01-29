@@ -178,8 +178,9 @@ Program simulation:
         var x = [];
     	for (var i = 0; i < nsim; i++) {
              x[i] = 0;  
-             for (var j = 0; j < nit; j++)
+             for (var j = 0; j < nit; j++){
             	x[i] += sampleBernoulli(val_p);
+             }
              x[i] = f;
     	} 
     	
