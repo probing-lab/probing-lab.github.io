@@ -22,10 +22,10 @@ end
 Computing Moments using POLAR/Mora
 
 <p>
-  \[\mathbb{E} (x_n)   = \]
-  \[\mathbb{E} (x_n^2) = \]
-  \[\mathbb{E} (x_n^3) = \]
-  \[\mathbb{E} (x_n^4) = \]
+  \[\mathbb{E} (x_n)   = n p\]
+  \[\mathbb{E} (x_n^2) = n p (p (n - 1) + 1)\]
+  \[\mathbb{E} (x_n^3) = n p (n^2 p^2 - 3 n p^2 + 3 n p + 2p^2 - 3p + 1)\]
+  \[\mathbb{E} (x_n^4) = n p (n^3 p^3 - 6 n^2 p^3 + 6 n^2 p^2 + 11 n p^3 - 18 n p^2 + 7 n p - 6 p^3 + 12 p^2 - 7 p + 1)\]
 </p>
 
 Simulation 
