@@ -167,7 +167,7 @@ Program simulation:
 
 | Exact 1st Moment | Approx. 1st Moment | Exact 2nd Moment | Approx. 2nd Moment |
 | --- | --- |  --- | --- |
-| <div id="exact_first_moment"></div> | <div id="approximate_first_moment"></div> | <div id="exact_second_moment"></div> | <div id="approximate_second_moment"></div> |
+| <p id="exact_first_moment"></p> | <p id="approximate_first_moment"></p> | <p id="exact_second_moment"></p> | <p id="approximate_second_moment"></p> |
 
 <div id="myDiv"><!-- Plotly chart will be drawn inside this DIV --></div>
 <script>
