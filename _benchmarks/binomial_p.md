@@ -48,7 +48,7 @@ Solution is exact
 Elapsed time: 0.3568592071533203 s
 ```
 <p>
-First moment solution: \[\mathbb{E} (x_n)   = n p\]
+Solution for first moment: \[\mathbb{E} (x_n)   = n p\]
 </p>
 
 <br>
@@ -82,7 +82,7 @@ Elapsed time: 0.4016072750091553 s
 ```
 
 <p>
-Second moment solution: \[\mathbb{E} (x_n^2) = n p (p (n - 1) + 1)\]
+Solution for the second moment: \[\mathbb{E} (x_n^2) = n p (p (n - 1) + 1)\]
 </p>
 
 <br>
@@ -117,7 +117,7 @@ Elapsed time: 0.5916872024536133 s
 ```
 
 <p>
-Third moment solution: \[\mathbb{E} (x_n^3) = n p (n^2 p^2 - 3 n p^2 + 3 n p + 2p^2 - 3p + 1)\]
+Solution for the third moment: \[\mathbb{E} (x_n^3) = n p (n^2 p^2 - 3 n p^2 + 3 n p + 2p^2 - 3p + 1)\]
 </p>
 
 <br>
@@ -151,7 +151,7 @@ Elapsed time: 0.7818460464477539 s
 ```
 
 <p>
-  Fourth moment solution: \[\mathbb{E} (x_n^4) = n p (n^3 p^3 - 6 n^2 p^3 + 6 n^2 p^2 + 11 n p^3 - 18 n p^2 + 7 n p - 6 p^3 + 12 p^2 - 7 p + 1)\]
+  Solution for the fourth moment: \[\mathbb{E} (x_n^4) = n p (n^3 p^3 - 6 n^2 p^3 + 6 n^2 p^2 + 11 n p^3 - 18 n p^2 + 7 n p - 6 p^3 + 12 p^2 - 7 p + 1)\]
 </p>
 
 <br>
