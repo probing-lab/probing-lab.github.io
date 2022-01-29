@@ -122,7 +122,7 @@ Third moment solution: \[\mathbb{E} (x_n^3) = n p (n^2 p^2 - 3 n p^2 + 3 n p + 2
 
 <br>
 
-Computing the fourth moment for the random variable x
+Computing the fourth moment for the random variable x using POLAR:
 
 ```
 python polar.py benchmarks/old/binomial --goals "E(x^4)"
