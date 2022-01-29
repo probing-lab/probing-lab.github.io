@@ -157,9 +157,27 @@ Elapsed time: 0.7818460464477539 s
 <br>
 
 
-Simulation 
+Program simulation:
 
 <div>
+ <table>
+  <tr>
+    <th>Company</th>
+    <th>Contact</th>
+    <th>Country</th>
+  </tr>
+  <tr>
+    <td>Alfreds Futterkiste</td>
+    <td>Maria Anders</td>
+    <td>Germany</td>
+  </tr>
+  <tr>
+    <td>Centro comercial Moctezuma</td>
+    <td>Francisco Chang</td>
+    <td>Mexico</td>
+  </tr>
+</table> 
+
   <label for="num_experiment">Number of program executions: </label>
   <input type="range" id="num_experiment" name="num_experiment" min="100" max="10000" step="100">
   <br>
