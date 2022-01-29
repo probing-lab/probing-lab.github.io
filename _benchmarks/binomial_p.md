@@ -20,7 +20,7 @@ end
 ```
 <br>
 
-Computing the first moment of variable x using POLAR/Mora:
+Computing the first moment of variable x using POLAR:
 
 ```
 python polar.py benchmarks/old/binomial --goals "E(x)"
@@ -51,7 +51,9 @@ Elapsed time: 0.3568592071533203 s
 First moment solution: \[\mathbb{E} (x_n)   = n p\]
 </p>
 
-Computing the second moment of variable x using POLAR/Mora:
+<br>
+
+Computing the second moment of variable x using POLAR:
 
 ```
 python polar.py benchmarks/old/binomial --goals "E(x^2)"
@@ -83,7 +85,10 @@ Elapsed time: 0.4016072750091553 s
 Second moment solution: \[\mathbb{E} (x_n^2) = n p (p (n - 1) + 1)\]
 </p>
 
-Computing the third moment of variable x using POLAR/Mora:
+<br>
+
+
+Computing the third moment of variable x using POLAR:
 
 ```
 python polar.py benchmarks/old/binomial --goals "E(x^3)"
@@ -115,7 +120,9 @@ Elapsed time: 0.5916872024536133 s
 Third moment solution: \[\mathbb{E} (x_n^3) = n p (n^2 p^2 - 3 n p^2 + 3 n p + 2p^2 - 3p + 1)\]
 </p>
 
-Computing the fourth moment of variable x using POLAR/Mora:
+<br>
+
+Computing the fourth moment of variable x using POLAR:
 
 ```
 python polar.py benchmarks/old/binomial --goals "E(x^4)"
@@ -146,6 +153,9 @@ Elapsed time: 0.7818460464477539 s
 <p>
   Fourth moment solution: \[\mathbb{E} (x_n^4) = n p (n^3 p^3 - 6 n^2 p^3 + 6 n^2 p^2 + 11 n p^3 - 18 n p^2 + 7 n p - 6 p^3 + 12 p^2 - 7 p + 1)\]
 </p>
+
+<br>
+
 
 Simulation 
 
