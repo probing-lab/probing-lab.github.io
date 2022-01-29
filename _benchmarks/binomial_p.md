@@ -175,6 +175,8 @@ Program simulation:
         return 0;
     }
     function plotProbProgram (val_p, nit, nsim){
+        alert("Prob. " + val_p.toString() + " Num. Iter." + nit.toString() + " Exp. Elem." + nsim.toString()); 
+   
         var x = [];
     	for (var i = 0; i < nsim; i++) {
              x[i] = 0;  
@@ -216,7 +218,6 @@ Program simulation:
     var iter_elem = document.getElementById("num_iteration_value");
     var exp_elem  = document.getElementById("num_experiment_value");
     
-    alert("Prob. " + prob_elem.value.toString() + " Num. Iter." + iter_elem.value.toString() + " Exp. Elem." + exp_elem.value.toString()); 
     plotProbProgram (prob_elem.value, iter_elem.value, exp_elem.value);
     
 
