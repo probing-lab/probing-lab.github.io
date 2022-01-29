@@ -178,12 +178,18 @@ Program simulation:
     }
     function plotProbProgram (val_p, nit, nsim){
         var x = [];
-        var tot = 0;
+        var tot1 = 0;
+        var tot2 = 0;
+        var tot3 = 0;
+        var tot4 = 0;
     	for (var i = 0; i < nsim; i++) {
              x[i] = 0;  
              for (var j = 0; j < nit; j++)
             	x[i] += sampleBernoulli(val_p);
-             tot += x[i];
+             tot1 += x[i];
+             tot2 += x[i]**2;
+             tot3 += x[i]**3;
+             tot4 += x[i]**4;
     	} 
     	
     	
@@ -218,11 +224,19 @@ Program simulation:
     	exact_e_x_elem.value = val_p * nit;
     	
     	var approx_e_x_elem   = document.getElementById("approx_e_x");
-    	approx_e_x_elem.value = tot/nsim;
+    	approx_e_x_elem.value = tot1/nsim;
     	
     	var exact_e_x2_elem   = document.getElementById("exact_e_x2");
     	exact_e_x2_elem.value = val_p * nit * (val_p * (nit - 1) + 1);
     	
+    	var approx_e_x2_elem   = document.getElementById("approx_e_x2");
+    	approx_e_x2_elem.value = tot2/nsim;
+    	
+    	var exact_e_x3_elem   = document.getElementById("exact_e_x3");
+    	exact_e_x3_elem.value = val_p * nit * (val_p * val_p * nit * nit - 3 * nit * val_p * val_p + 3 * nit * val_p + 2 * val_p * val_p - 3 * val_p + 1);
+    	
+    	var approx_e_x3_elem   = document.getElementById("approx_e_x3");
+    	approx_e_x3_elem.value = tot3/nsim;
     }
     
     var prob_elem = document.getElementById("probability_value");
