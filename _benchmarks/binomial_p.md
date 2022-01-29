@@ -19,7 +19,7 @@ while true:
 end
 ```
 
-Computing Moments using POLAR/Mora
+Computing Moments using POLAR/Mora:
 
 <p>
 ```
