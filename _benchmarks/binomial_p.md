@@ -159,15 +159,20 @@ Elapsed time: 0.7818460464477539 s
 
 Program simulation:
 
+| Syntax | Description |
+| --- | ----------- |
+| Header | Title |
+| Paragraph | Text |
+
 <div>
  <table>
   <tr>
-    <th>Company</th>
-    <th>Contact</th>
-    <th>Country</th>
+    <th>Number of program executions:</th>
+    <th>Number of loop iterations (n):</th>
+    <th>Probability (p): </th>
   </tr>
   <tr>
-    <td>Alfreds Futterkiste</td>
+    <td>Number of program executions:</td>
     <td>Maria Anders</td>
     <td>Germany</td>
   </tr>
