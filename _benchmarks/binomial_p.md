@@ -215,36 +215,35 @@ Program simulation:
         var elem2 = document.getElementById("probability");
         elem2.value = val;
         var x = [];
-    		sim = 10000;
-    		n   = 10;
-    		f   = 0;
+    	sim = 10000;
+    	n   = 10;
+    	f   = 0;
     	
     	for (var i = 0; i < sim; i++) {
        		 f = 0;  
        		 for (var j = 0; j < n; j++){
-          	      if (Math.random() < 0.5){
+          	      if (Math.random() < val){
             	        f += 1;
           	      }
           	 }
        	     x[i] = f;
        	}
        	var trace = {
-      x: x,
-       type: 'histogram',
+           x: x,
+       		type: 'histogram',
 			histnorm: 'probability',
 			  marker: { 
 			     color: "rgba(255, 100, 102, 0.7)", 
                  line: { color:  "rgba(255, 100, 102, 1)", 
                          width: 1
                  }
-              
               },
               autobinx: false, 
               xbins: { 
                  size: 1 
               }
-    };
-    var data = [trace];
+	    };
+    	var data = [trace];
         Plotly.newPlot('myDiv', data, layout);
 	}
 	function updateNumIter(val) {
