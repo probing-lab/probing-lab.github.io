@@ -167,7 +167,7 @@ Program simulation:
 
 | Exact E(x) | Approx. E(x) | Exact E(x<sup>2</sup>)| Approx. E(x<sup>2</sup>) | Exact E(x<sup>3</sup>)| Approx. E(x<sup>3</sup>) | Exact E(x<sup>4</sup>)| Approx. E(x<sup>4</sup>) |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-|     |     |     |     |     |     |     |     |
+| <input type="text" id="exact_e_x" name="exact_e_x"> |     | <input type="text" id="exact_e_x2" name="exact_e_x2"> |     |     |     |     |     |
 
 <div id="myDiv"><!-- Plotly chart will be drawn inside this DIV --></div>
 <script>
@@ -210,6 +210,13 @@ Program simulation:
       		yaxis: {title: "Probability"}
     	}
     	Plotly.newPlot('myDiv', data, layout);
+    	
+    	var exact_e_x_elem   = document.getElementById("exact_e_x");
+    	exact_e_x_elem.value = val_p * nit;
+    	
+    	var exact_e_x2_elem   = document.getElementById("exact_e_x2");
+    	exact_e_x2_elem.value = val_p * nit * (val_p * (nit - 1) + 1);
+    	
     }
     
     var prob_elem = document.getElementById("probability_value");
