@@ -205,7 +205,7 @@ Program simulation:
       		bargap: 0.05, 
       		bargroupgap: 0.2, 
       		barmode: "overlay", 
-      		title: "Sampled Results (p=" + val_p.toString + ", loop iteration=" + nit.toString()  + ", num. simulations = " + nsim.toString()  + ")", 
+      		title: "Sampled Results (p=" + val_p.toString() + ", loop iteration=" + nit.toString()  + ", num. simulations = " + nsim.toString()  + ")", 
       		xaxis: {title: "X Value"}, 
       		yaxis: {title: "Probability"}
     	}
