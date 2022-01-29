@@ -25,6 +25,34 @@ Computing Moments using POLAR/Mora:
 ```
 python polar.py benchmarks/old/binomial --goals "E(x)"
 ```
+
+```
+python polar.py benchmarks/old/binomial --goals "E(x)"
+
+8888888b.   .d88888b.  888             d8888 8888888b.
+888   Y88b d88P" "Y88b 888            d88888 888   Y88b
+888    888 888     888 888           d88P888 888    888
+888   d88P 888     888 888          d88P 888 888   d88P
+8888888P"  888     888 888         d88P  888 8888888P"
+888        888     888 888        d88P   888 888 T88b
+888        Y88b. .d88P 888       d8888888888 888  T88b
+888         "Y88888P"  88888888 d88P     888 888   T88b
+
+By the ProbInG group
+
+
+
+-------------------
+- Analysis Result -
+-------------------
+
+E(x) = 0; n*p
+Solution is exact
+
+Elapsed time: 0.3568592071533203 s
+```
+
+Solution $\mathbb{E} (x_n)   = n p$
 <p>
   \[\mathbb{E} (x_n)   = n p\]
   \[\mathbb{E} (x_n^2) = n p (p (n - 1) + 1)\]
