@@ -136,9 +136,11 @@ th span { writing-mode: sideways-lr;   /* +90°: use 'tb-rl' */
           for (i = 2; i < tr.length; i++) {
               td = tr[i].getElementsByTagName("td");
               if (i==2) {
+                  alert(td)
+                  alert(td.length)
                   children = td[2].children;
                   for(var j = 0; j < children.length; j++){
-                      alert(children[i].tagName)
+                      alert(children[j].tagName)
 				   }
               }
               img = td[2].getElementsByTagName("img");
