@@ -8,7 +8,7 @@
    version="1.1"
    id="svg5"
    inkscape:version="1.1.1 (c3084ef, 2021-09-22)"
-   sodipodi:docname="binomial.svg"
+   sodipodi:docname="binomial-p.svg"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
@@ -29,12 +29,54 @@
      inkscape:cy="98.5"
      inkscape:window-width="1664"
      inkscape:window-height="991"
-     inkscape:window-x="0"
-     inkscape:window-y="25"
+     inkscape:window-x="12"
+     inkscape:window-y="341"
      inkscape:window-maximized="0"
      inkscape:current-layer="layer1" />
   <defs
      id="defs2">
+    <marker
+       style="overflow:visible"
+       id="Arrow2Mstart"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="Arrow2Mstart"
+       inkscape:isstock="true">
+      <path
+         transform="scale(0.6) translate(0,0)"
+         d="M 8.7185878,4.0337352 L -2.2072895,0.016013256 L 8.7185884,-4.0017078 C 6.9730900,-1.6296469 6.9831476,1.6157441 8.7185878,4.0337352 z "
+         style="stroke:context-stroke;fill-rule:evenodd;fill:context-stroke;stroke-width:0.62500000;stroke-linejoin:round"
+         id="path10630" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker13832"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="Arrow2Lstart"
+       inkscape:isstock="true">
+      <path
+         transform="scale(1.1) translate(1,0)"
+         d="M 8.7185878,4.0337352 L -2.2072895,0.016013256 L 8.7185884,-4.0017078 C 6.9730900,-1.6296469 6.9831476,1.6157441 8.7185878,4.0337352 z "
+         style="stroke:context-stroke;fill-rule:evenodd;fill:context-stroke;stroke-width:0.62500000;stroke-linejoin:round"
+         id="path13830" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="Arrow2Lstart"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="Arrow2Lstart"
+       inkscape:isstock="true">
+      <path
+         transform="scale(1.1) translate(1,0)"
+         d="M 8.7185878,4.0337352 L -2.2072895,0.016013256 L 8.7185884,-4.0017078 C 6.9730900,-1.6296469 6.9831476,1.6157441 8.7185878,4.0337352 z "
+         style="stroke:context-stroke;fill-rule:evenodd;fill:context-stroke;stroke-width:0.62500000;stroke-linejoin:round"
+         id="path10624" />
+    </marker>
     <marker
        style="overflow:visible"
        id="Arrow1Mstart"
@@ -135,7 +177,7 @@
          x="27.837927"
          y="26.717466">x</tspan></text>
     <path
-       style="opacity:1;fill:none;stroke:#000080;stroke-width:0.914665;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#Arrow1Mstart)"
+       style="opacity:1;fill:none;stroke:#000080;stroke-width:0.91466458;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#Arrow2Mstart)"
        d="M 15.875167,21.979719 C 14.250351,21.22516 12.625885,20.470763 11.448283,19.509372 10.270681,18.54798 9.5404777,17.379655 8.8954594,16.418187 8.2504411,15.45672 7.6906307,14.702193 7.5809672,13.302537 7.4713038,11.902882 7.8120651,9.8583129 9.1265704,8.5681324 10.441076,7.2779519 12.729095,6.7424584 14.591227,6.6938525 c 1.862132,-0.048606 3.298199,0.3895157 4.417839,1.0711544 1.119641,0.6816387 1.922864,1.6065618 2.458303,2.3976571 0.535439,0.791095 0.80318,1.448278 1.070797,2.105154"
        id="path10602"
        inkscape:path-effect="#path-effect10604"

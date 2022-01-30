@@ -23,7 +23,7 @@ end
 Dependency Graph of Program Variables:
 (L) Linear dependency, (N) nonlinear dependency
 
-<img src="/assets/dep_graphs/binomial-p.svg" alt="Dependency Graph" style="height: 100px; width:100px;"/>
+<img src="/assets/dep_graphs/binomial-p.png" alt="Dependency Graph" style="height: 100px; width:100px;"/>
 
 <br>
 
