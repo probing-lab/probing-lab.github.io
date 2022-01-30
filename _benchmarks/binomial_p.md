@@ -20,8 +20,12 @@ end
 ```
 <br>
 
+Dependency Graph of Program Variable:
+(L) Linear dependency, (N) nonlinear dependency
+
 <img src="/assets/dep_graphs/binomial-p.svg" alt="Dependency Graph" style="height: 100px; width:100px;"/>
 
+<br>
 Computing the first moment for the random variable x using POLAR:
 
 ```
