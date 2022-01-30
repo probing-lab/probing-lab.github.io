@@ -43,26 +43,53 @@ th span { writing-mode: sideways-lr;   /* +90°: use 'tb-rl' */
   <tr>
     <td class="tg-18eh"><a href="{{ benchmark_url }}">{{ benchmark.name }}</a></td>
     <td class="tg-xwyw">{{ benchmark.numvars }}</td>
-    <td class="tg-xwyw">{{ benchmark.ifthenelse }}</td>
-    <td class="tg-xwyw">{{ benchmark.infinitesp }}</td>
+    <td class="tg-xwyw">
+    {% if benchmark.ifthenelse == "Yes" %}  
+    <img src="/assets/benchmark/yes_enable.svg" style="width:50px;"/>  
+    {% elsif benchmark.ifthenelse == "No" %}
+    <img src="/assets/benchmark/no_enable.svg" style="width:50px;"/> 
+    {%- else -%}
+    {% endif %}
+    </td>
+    <td class="tg-xwyw">
+    {% if  benchmark.infinitesp == "Yes" %}  
+    <img src="/assets/benchmark/yes_enable.svg" style="width:50px;"/>  
+    {% elsif  benchmark.infinitesp == "No" %}
+    <img src="/assets/benchmark/no_enable.svg" style="width:50px;"/> 
+    {%- else -%}
+    {% endif %}
+    </td>
     <td class="tg-xwyw">
     {% if benchmark.circdependency == "Yes" %}  
-    <img src="/assets/benchmark/yes_enable.svg" style="width:70px;"/>  
+    <img src="/assets/benchmark/yes_enable.svg" style="width:50px;"/>  
     {% elsif benchmark.circdependency == "No" %}
-    <img src="/assets/benchmark/no_enable.svg" style="width:70px;"/> 
+    <img src="/assets/benchmark/no_enable.svg" style="width:50px;"/> 
     {%- else -%}
     {% endif %}
     </td>
     <td class="tg-xwyw">
     {% if benchmark.symbolicconst == "Yes" %}  
-    <img src="/assets/benchmark/yes_enable.svg" style="width:70px;"/>  
+    <img src="/assets/benchmark/yes_enable.svg" style="width:50px;"/>  
     {% elsif benchmark.symbolicconst == "No" %}
-    <img src="/assets/benchmark/no_enable.svg" style="width:70px;"/> 
+    <img src="/assets/benchmark/no_enable.svg" style="width:50px;"/> 
     {%- else -%}
     {% endif %}
     </td>
-    <td class="tg-xwyw">{{ benchmark.contstatesp }}</td>
+    <td class="tg-xwyw">
+    {% if benchmark.contstatesp == "Yes" %}  
+    <img src="/assets/benchmark/yes_enable.svg" style="width:50px;"/>  
+    {% elsif benchmark.contstatesp == "No" %}
+    <img src="/assets/benchmark/no_enable.svg" style="width:50px;"/> 
+    {%- else -%}
+    {% endif %}
+    </td>
     <td class="tg-xwyw">{{ benchmark.defective }}</td>
+    {% if benchmark.defective == "Yes" %}  
+    <img src="/assets/benchmark/yes_enable.svg" style="width:50px;"/>  
+    {% elsif benchmark.defective == "No" %}
+    <img src="/assets/benchmark/no_enable.svg" style="width:50px;"/> 
+    {%- else -%}
+    {% endif %}
     <td class="tg-xwyw">{{ benchmark.loopguard }}</td>
   </tr>
 {% endfor %}
