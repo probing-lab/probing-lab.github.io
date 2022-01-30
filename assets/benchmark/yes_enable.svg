@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="31mm"
+   height="33mm"
+   viewBox="0 0 31 33"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1.1 (c3084ef, 2021-09-22)"
+   sodipodi:docname="yes.svg"
+   inkscape:export-filename="/Users/eziobartocci/Desktop/yes.png"
+   inkscape:export-xdpi="105.24"
+   inkscape:export-ydpi="105.24"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     width="147mm"
+     inkscape:zoom="0.64052329"
+     inkscape:cx="352.0559"
+     inkscape:cy="455.09665"
+     inkscape:window-width="1768"
+     inkscape:window-height="969"
+     inkscape:window-x="0"
+     inkscape:window-y="25"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2">
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect1234"
+       is_visible="true"
+       lpeversion="1"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       style="fill:#008000;stroke:#008000;stroke-width:0.914665;stroke-linejoin:round;paint-order:stroke fill markers"
+       id="path1117"
+       sodipodi:type="arc"
+       sodipodi:cx="16.25161"
+       sodipodi:cy="15.193766"
+       sodipodi:rx="12.048555"
+       sodipodi:ry="12.049024"
+       sodipodi:start="0"
+       sodipodi:end="6.2426957"
+       sodipodi:open="true"
+       sodipodi:arc-type="arc"
+       d="M 28.300165,15.193766 A 12.048555,12.049024 0 0 1 16.373568,27.242172 12.048555,12.049024 0 0 1 4.2055234,15.437679 12.048555,12.049024 0 0 1 15.885785,3.1502972 12.048555,12.049024 0 0 1 28.29029,14.706039" />
+    <path
+       style="fill:none;stroke:#ffffff;stroke-width:1.865;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 9.6977543,13.596306 16.720007,21.85778 21.263818,7.4002005"
+       id="path1381" />
+  </g>
+</svg>
