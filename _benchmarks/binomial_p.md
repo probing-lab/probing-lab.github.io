@@ -238,6 +238,9 @@ Program simulation:
     	var approx_e_x3_elem   = document.getElementById("approx_e_x3");
     	approx_e_x3_elem.value = tot3/nsim;
     	
+    	var exact_e_x4_elem   = document.getElementById("exact_e_x4");
+    	exact_e_x4_elem.value = val_p * nit * (val_p * val_p * val_p * nit * nit * nit - 6 * nit * nit * val_p * val_p * val_p + 6 * nit * nit * val_p * val_p + 11 * nit * val_p * val_p * val_p - 18 * nit * val_p * val_p + 7 * nit * val_p - 6 * val_p * val_p * val_p + 12 * val_p * val_p - 7 * val_p + 1);
+    	
     	var approx_e_x4_elem   = document.getElementById("approx_e_x4");
     	approx_e_x4_elem.value = tot4/nsim;
     }
