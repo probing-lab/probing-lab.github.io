@@ -37,11 +37,11 @@ th span { writing-mode: sideways-lr;   /* +90°: use 'tb-rl' */
     <td class="tg-5924"> <input type="text" id="filter_name" name="filter_name" size="5" value=""></td>
     <td class="tg-5924"></td>
     <td class="tg-5924"><img id="img_filter_if" name="filter_if" src="/assets/benchmark/disable.svg" style="width:50%;" onclick="changeImage()"/> <input type="hidden" id="filter_if" name="filter_if" value="-1"></td>
-    <td class="tg-5924"><img src="/assets/benchmark/disable.svg" style="width:50%;" onclick="changeImage()"/> <input type="hidden" id="filter_infinite" name="filter_infinite" value="-1"></td>
-    <td class="tg-5924"><img src="/assets/benchmark/disable.svg" style="width:50%;" onclick="changeImage()"/> <input type="hidden" id="filter_circular" name="filter_circular" value="-1"></td>
-    <td class="tg-5924"><img src="/assets/benchmark/disable.svg" style="width:50%;" onclick="changeImage()"/> <input type="hidden" id="filter_symbolic" name="filter_symbolic" value="-1"></td>
-    <td class="tg-5924"><img src="/assets/benchmark/disable.svg" style="width:50%;" onclick="changeImage()"/> <input type="hidden" id="filter_continuous" name="filter_continuous" value="-1"></td>
-    <td class="tg-5924"><img src="/assets/benchmark/disable.svg" style="width:50%;" onclick="changeImage()"/> <input type="hidden" id="filter_defective" name="filter_defective" value="-1"></td>
+    <td class="tg-5924"><img id="img_filter_infinite" name="img_filter_infinite" src="/assets/benchmark/disable.svg" style="width:50%;" onclick="changeImage()"/> <input type="hidden" id="filter_infinite" name="filter_infinite" value="-1"></td>
+    <td class="tg-5924"><img id="img_filter_circular" name="img_filter_circular" src="/assets/benchmark/disable.svg" style="width:50%;" onclick="changeImage()"/> <input type="hidden" id="filter_circular" name="filter_circular" value="-1"></td>
+    <td class="tg-5924"><img id="img_filter_symbolic" name="img_filter_symbolic" src="/assets/benchmark/disable.svg" style="width:50%;" onclick="changeImage()"/> <input type="hidden" id="filter_symbolic" name="filter_symbolic" value="-1"></td>
+    <td class="tg-5924"><img id="img_filter_continuous" name="img_filter_continuous" src="/assets/benchmark/disable.svg" style="width:50%;" onclick="changeImage()"/> <input type="hidden" id="filter_continuous" name="filter_continuous" value="-1"></td>
+    <td class="tg-5924"><img id="img_filter_defective" name="img_filter_defective" src="/assets/benchmark/disable.svg" style="width:50%;" onclick="changeImage()"/> <input type="hidden" id="filter_defective" name="filter_defective" value="-1"></td>
     <td class="tg-5924"></td>
 </tr>
 {% for benchmark in site.benchmarks %}
