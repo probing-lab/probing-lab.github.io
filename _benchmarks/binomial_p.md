@@ -39,26 +39,36 @@ Dependency Graph of Program Variables:
 <table>
     <thead>
         <tr>
-            <th>Layer 1</th>
-            <th>Layer 2</th>
-            <th>Layer 3</th>
+            <th>Program features</th>
+            <th>Value</th>
+            <th>Dependency Graph</th>
         </tr>
     </thead>
     <tbody>
         <tr>
-            <td rowspan=4>L1 Name</td>
-            <td rowspan=2>L2 Name A</td>
-            <td>L3 Name A</td>
+            <td>if statements</td>
+            <td>No</td>
+            <td rowspan=6><img src="/assets/dep_graphs/binomial-p.png" alt="Dependency Graph" style="width:100px;"/></td>
         </tr>
         <tr>
-            <td>L3 Name B</td>
+            <td>State space</td>
+            <td>infinite, discrete</td>
         </tr>
         <tr>
-            <td rowspan=2>L2 Name B</td>
-            <td>L3 Name C</td>
+            <td>Circular Dependency</td>
+            <td>No</td>
         </tr>
         <tr>
-            <td>L3 Name D</td>
+            <td>Symbolic Constants</td>
+            <td>Yes (p)</td>
+        </tr>
+        <tr>
+            <td>Effective Variables</td>
+            <td>Yes (x)</td>
+        </tr>
+        <tr>
+            <td>Defective Variables</td>
+            <td>No</td>
         </tr>
     </tbody>
 </table>
