@@ -134,31 +134,32 @@ th span { writing-mode: sideways-lr;   /* +90°: use 'tb-rl' */
           tr = table.getElementsByTagName("tr");
           alert(tr.length);
           for (i = 2; i < tr.length; i++) {
-              td = tr[i].getElementsByTagName("td");
-              if (i==2) {
-                  children = td[2].children;
-                  for(var j = 0; j < children.length; j++){
-                      //alert(children[j].tagName)
-                      //alert(children[j].src)
-				  }
-              }
-              img = td[2].children[0];
-              
+              filter = 0;
+              tr[i].style.display = "";
+              td     = tr[i].getElementsByTagName("td");
+              img    = td[2].children[0];
               
               if (img) {
                  if (document.getElementById("filter_if").value != -1){
-                     alert(document.getElementById("img_filter_if").src);
-                     alert(img.src);
                      if (document.getElementById("img_filter_if").src != img.src){
-                         alert("tr[i].style.display = none");
-                         tr[i].style.display = "none";
-                     }else{
-                         tr[i].style.display = "";
+                         filter = 1;
                      }
-                 }else{
-                    tr[i].style.display = "";
                  }
               }
+              
+              img = td[3].children[0];
+              if (img) {
+                 if (document.getElementById("filter_infinite").value != -1){
+                     if (document.getElementById("img_filter_infinite").src != img.src){
+                         filter = 1;
+                     }
+                 }
+              }
+              
+              if (filter = 1){
+                  tr[i].style.display = "none";
+              }
+              
           }
     }
 
