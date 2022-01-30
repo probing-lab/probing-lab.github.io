@@ -18,7 +18,7 @@ th span { writing-mode: sideways-lr;   /* +90°: use 'tb-rl' */
           text-align: center;          /* +90°: use 'right' */
           padding:0px 0px 0; }
 </style>
-<table class="tg">
+<table class="tg" id="bench_table" name="bench_table">
 <thead>
   <tr>
     <th>Benchmarks</th>
@@ -124,11 +124,29 @@ th span { writing-mode: sideways-lr;   /* +90°: use 'tb-rl' */
             document.getElementById(img_val).src = "https://probing-lab.github.io/assets/benchmark/disable.svg";  
             document.getElementById(input_val).value = -1;
         }
-        
-        
-        
-        
+        filterTable ();
     }
+    
+    function filterTable () {
+          var input, filter, rows, table, tr, td, i, txtValue;
+          table = document.getElementById("bench_table");
+          tr = table.getElementsByTagName("tr");
+          
+          for (i = 2; i < tr.length; i++) {
+              td = tr[i].getElementsByTagName("td")[0];
+              if (td) {
+                 txtValue = td.textContent || td.innerText;
+                 if (i > 10) {
+                     tr[i].style.display = "";
+                 } else {
+                     tr[i].style.display = "none";
+                 }
+              }
+          }
+    }
+
+    
+
 </script>
 
 
