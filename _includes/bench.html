@@ -111,6 +111,7 @@ th span { writing-mode: sideways-lr;   /* +90°: use 'tb-rl' */
 <script language="javascript">
     function changeImage() {
         alert("Hello! I am an alert box!!");
+        alert(document.getElementById("img_filter_if").src);
         if (document.getElementById("img_filter_if").src == "/assets/benchmark/disable.svg") 
         {
             document.getElementById("img_filter_if").src = "/assets/benchmark/no_enable.svg";
