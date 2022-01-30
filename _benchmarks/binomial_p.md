@@ -165,9 +165,15 @@ Program simulation:
 | Number of loop iterations (n): | <input type="number" id="num_iteration_value" name="num_iteration_value" min="10" max="100" step="10" value="10" onchange="updateNumIter(this.value)">  | <input type="range" id="num_iteration" name="num_iteration" min="10" max="100" step="10" value="10" onchange="updateNumIter(this.value)"> |
 | Probability (p): | <input type="number" id="probability_value" name="probability_value" min="0" max="1" step="0.1" value="0.5" onchange="updateProbability(this.value)"> | <input type="range" id="probability" name="probability" min="0" max="1" step="0.1" value="0.5" onchange="updateProbability(this.value)"> |
 
-| Exact E(x) | Approx. E(x) | Exact E(x<sup>2</sup>)| Approx. E(x<sup>2</sup>) | Exact E(x<sup>3</sup>)| Approx. E(x<sup>3</sup>) | Exact E(x<sup>4</sup>)| Approx. E(x<sup>4</sup>) |
+| Exact E(x) | Approx. E(x) | Exact E(x<sup>2</sup>)| Approx. E(x<sup>2</sup>) | 
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| <input type="text" size="5" id="exact_e_x" name="exact_e_x"> | <input type="text" size="5" id="approx_e_x" name="approx_e_x"> | <input type="text" size="5" id="exact_e_x2" name="exact_e_x2"> |  <input type="text" size="5" id="approx_e_x2" name="approx_e_x2"> |  <input type="text" size="5" id="exact_e_x3" name="exact_e_x3">   |  <input type="text" size="5" id="approx_e_x3" name="approx_e_x3">     |  <input type="text" size="5" id="exact_e_x4" name="exact_e_x4">    | <input type="text" size="5" id="approx_e_x4" name="approx_e_x4">     |
+| <input type="text" size="5" id="exact_e_x" name="exact_e_x"> | <input type="text" size="5" id="approx_e_x" name="approx_e_x"> | <input type="text" size="5" id="exact_e_x2" name="exact_e_x2"> |  <input type="text" size="5" id="approx_e_x2" name="approx_e_x2"> |  
+
+| Exact E(x<sup>3</sup>)| Approx. E(x<sup>3</sup>) | Exact E(x<sup>4</sup>)| Approx. E(x<sup>4</sup>) |
+| --- | --- | --- | --- |
+|  <input type="text" size="5" id="exact_e_x3" name="exact_e_x3">   |  <input type="text" size="5" id="approx_e_x3" name="approx_e_x3">     |  <input type="text" size="5" id="exact_e_x4" name="exact_e_x4">    | <input type="text" size="5" id="approx_e_x4" name="approx_e_x4">     |
+
+
 
 <div id="myDiv"><!-- Plotly chart will be drawn inside this DIV --></div>
 <script>
