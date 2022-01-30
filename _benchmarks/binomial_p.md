@@ -27,15 +27,6 @@ Dependency Graph of Program Variables:
 
 <br>
 
-| Program features | Value |
-| --- | --- |
-| if statements | No |
-| State space | infinite, discrete |
-| Circular dependency | No |
-| Symbolic Constants | Yes (p) |
-| Effective Variables | Yes (x) |
-| Defective Variables | No |
-
 <table>
     <thead>
         <tr>
@@ -48,7 +39,7 @@ Dependency Graph of Program Variables:
         <tr>
             <td>if statements</td>
             <td>No</td>
-            <td rowspan=6><img src="/assets/dep_graphs/binomial-p.png" alt="Dependency Graph" style="width:100px;"/></td>
+            <td rowspan=6>(L) Linear dependency, (N) nonlinear dependency<br><img src="/assets/dep_graphs/binomial-p.png" alt="Dependency Graph" style="width:100px;"/></td>
         </tr>
         <tr>
             <td>State space</td>
