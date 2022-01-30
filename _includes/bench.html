@@ -13,7 +13,8 @@ th      { background-color: NavajoWhite;
           color: SaddleBrown; 
           width:70px;  
           text-align: center;
-          vertical-align: bottom;}
+          vertical-align: bottom; 
+          writing-mode: sideways-lr;}
 th span { writing-mode: sideways-lr;   /* +90°: use 'tb-rl' */
           text-align: center;          /* +90°: use 'right' */
           padding:0px 0px 0; }
@@ -21,7 +22,7 @@ th span { writing-mode: sideways-lr;   /* +90°: use 'tb-rl' */
 <table class="tg" id="bench_table" name="bench_table">
 <thead>
   <tr>
-    <th>Name</th>
+    <th>Benchmarks</th>
     <th><span>Num Vars</span></th>
     <th><span>If-then-else<br>Statements<br></span></th>
     <th><span>Infinite <br>state-space</span></th>
@@ -176,15 +177,6 @@ th span { writing-mode: sideways-lr;   /* +90°: use 'tb-rl' */
               if (img) {
                  if (document.getElementById("filter_continuous").value != -1){
                      if (document.getElementById("img_filter_continuous").src != img.src){
-                         filter = 1;
-                     }
-                 }
-              }
-              
-              img = td[7].children[0];
-              if (img) {
-                 if (document.getElementById("filter_defective").value != -1){
-                     if (document.getElementById("img_filter_defective").src != img.src){
                          filter = 1;
                      }
                  }
