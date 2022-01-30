@@ -138,11 +138,12 @@ th span { writing-mode: sideways-lr;   /* +90°: use 'tb-rl' */
               if (i==2) {
                   children = td[2].children;
                   for(var j = 0; j < children.length; j++){
-                      alert(children[j].tagName)
-                      alert(children[j].src)
+                      //alert(children[j].tagName)
+                      //alert(children[j].src)
 				  }
               }
-              img = td[2].getElementsByTagName("img");
+              img = td[2].children[0];
+              alert(img.src);
               
               if (img) {
                  if (document.getElementById("filter_if").value != -1){
