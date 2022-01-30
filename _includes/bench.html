@@ -110,14 +110,16 @@ th span { writing-mode: sideways-lr;   /* +90°: use 'tb-rl' */
 
 <script language="javascript">
     function changeImage() {
-
-        if (document.getElementById("imgClickAndChange").src == "http://www.userinterfaceicons.com/80x80/minimize.png") 
+        if (document.getElementById("img_filter_if").src == "/assets/benchmark/disable.svg") 
         {
-            document.getElementById("imgClickAndChange").src = "http://www.userinterfaceicons.com/80x80/maximize.png";
+            document.getElementById("img_filter_if").src = "/assets/benchmark/no_enable.svg";
         }
-        else 
+        else if (document.getElementById("img_filter_if").src == "/assets/benchmark/no_enable.svg") 
         {
-            document.getElementById("imgClickAndChange").src = "http://www.userinterfaceicons.com/80x80/minimize.png";
+            document.getElementById("img_filter_if").src = "/assets/benchmark/yes_enable.svg";
+        }else if (document.getElementById("img_filter_if").src == "/assets/benchmark/no_enable.svg") 
+        {
+            document.getElementById("img_filter_if").src = "/assets/benchmark/disable.svg";  
         }
     }
 </script>
