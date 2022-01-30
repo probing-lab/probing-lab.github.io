@@ -155,6 +155,42 @@ th span { writing-mode: sideways-lr;   /* +90°: use 'tb-rl' */
                  }
               }
               
+              img = td[4].children[0];
+              if (img) {
+                 if (document.getElementById("filter_circular").value != -1){
+                     if (document.getElementById("img_filter_circular").src != img.src){
+                         filter = 1;
+                     }
+                 }
+              }
+              
+             img = td[5].children[0];
+              if (img) {
+                 if (document.getElementById("filter_symbolic").value != -1){
+                     if (document.getElementById("img_filter_symbolic").src != img.src){
+                         filter = 1;
+                     }
+                 }
+              }
+              
+              img = td[6].children[0];
+              if (img) {
+                 if (document.getElementById("filter_continuous").value != -1){
+                     if (document.getElementById("img_filter_continuous").src != img.src){
+                         filter = 1;
+                     }
+                 }
+              }
+              
+              img = td[7].children[0];
+              if (img) {
+                 if (document.getElementById("filter_defective").value != -1){
+                     if (document.getElementById("img_filter_defective").src != img.src){
+                         filter = 1;
+                     }
+                 }
+              }
+              
               if (filter == 1){
                   tr[i].style.display = "none";
               }
