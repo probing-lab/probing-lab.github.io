@@ -133,13 +133,17 @@ th span { writing-mode: sideways-lr;   /* +90°: use 'tb-rl' */
           tr = table.getElementsByTagName("tr");
           
           for (i = 2; i < tr.length; i++) {
-              td = tr[i].getElementsByTagName("td")[0];
-              if (td) {
-                 txtValue = td.textContent || td.innerText;
-                 if (i > 10) {
-                     tr[i].style.display = "";
-                 } else {
-                     tr[i].style.display = "none";
+              td = tr[i].getElementsByTagName("td")[2];
+              img = td.getElementsByTagName("img");
+              if (img) {
+                 if (document.getElementById("filter_if").value != -1){
+                     if (document.getElementById("img_filter_if").src != img.src){
+                         tr[i].style.display = "none";
+                     }else{
+                         tr[i].style.display = "";
+                     }
+                 }else{
+                    tr[i].style.display = "";
                  }
               }
           }
