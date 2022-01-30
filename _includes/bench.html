@@ -46,7 +46,13 @@ th span { writing-mode: sideways-lr;   /* +90°: use 'tb-rl' */
     <td class="tg-xwyw">{{ benchmark.ifthenelse }}</td>
     <td class="tg-xwyw">{{ benchmark.infinitesp }}</td>
     <td class="tg-xwyw">{{ benchmark.circdependency }}</td>
-    <td class="tg-xwyw">{{ benchmark.symbolicconst }}</td>
+    <td class="tg-xwyw">{{ benchmark.symbolicconst }}
+    {% if benchmark.symbolicconst == "Yes" %}  
+    <img src="/assets/benchmark/yes_enable.svg" style="width:100px;"/>  
+    {% elsif benchmark.symbolicconst == "No" %}
+    <img src="/assets/benchmark/no_enable.svg" style="width:100px;"/> 
+    {% endif %}
+    </td>
     <td class="tg-xwyw">{{ benchmark.contstatesp }}</td>
     <td class="tg-xwyw">{{ benchmark.defective }}</td>
     <td class="tg-xwyw">{{ benchmark.loopguard }}</td>
