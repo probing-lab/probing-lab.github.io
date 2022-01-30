@@ -143,11 +143,12 @@ th span { writing-mode: sideways-lr;   /* +90°: use 'tb-rl' */
 				  }
               }
               img = td[2].children[0];
-              alert(img.src);
+              
               
               if (img) {
                  if (document.getElementById("filter_if").value != -1){
-                     
+                     alert(document.getElementById("img_filter_if").src);
+                     alert(img.src);
                      if (document.getElementById("img_filter_if").src != img.src){
                          tr[i].style.display = "none";
                      }else{
