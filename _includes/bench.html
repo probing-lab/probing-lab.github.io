@@ -45,12 +45,20 @@ th span { writing-mode: sideways-lr;   /* +90°: use 'tb-rl' */
     <td class="tg-xwyw">{{ benchmark.numvars }}</td>
     <td class="tg-xwyw">{{ benchmark.ifthenelse }}</td>
     <td class="tg-xwyw">{{ benchmark.infinitesp }}</td>
-    <td class="tg-xwyw">{{ benchmark.circdependency }}</td>
-    <td class="tg-xwyw">{{ benchmark.symbolicconst }}
+    <td class="tg-xwyw">
+    {% if benchmark.circdependency == "Yes" %}  
+    <img src="/assets/benchmark/yes_enable.svg" style="width:70px;"/>  
+    {% elsif benchmark.circdependency == "No" %}
+    <img src="/assets/benchmark/no_enable.svg" style="width:70px;"/> 
+    {%- else -%}
+    {% endif %}
+    </td>
+    <td class="tg-xwyw">
     {% if benchmark.symbolicconst == "Yes" %}  
-    <img src="/assets/benchmark/yes_enable.svg" style="width:100px;"/>  
+    <img src="/assets/benchmark/yes_enable.svg" style="width:70px;"/>  
     {% elsif benchmark.symbolicconst == "No" %}
-    <img src="/assets/benchmark/no_enable.svg" style="width:100px;"/> 
+    <img src="/assets/benchmark/no_enable.svg" style="width:70px;"/> 
+    {%- else -%}
     {% endif %}
     </td>
     <td class="tg-xwyw">{{ benchmark.contstatesp }}</td>
