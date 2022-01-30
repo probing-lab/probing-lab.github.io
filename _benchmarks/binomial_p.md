@@ -187,9 +187,9 @@ Program simulation:
              for (var j = 0; j < nit; j++)
             	x[i] += sampleBernoulli(val_p);
              tot1 += x[i];
-             tot2 += x[i]**2;
-             tot3 += x[i]**3;
-             tot4 += x[i]**4;
+             tot2 += x[i]*x[i];
+             tot3 += x[i]*x[i]*x[i];
+             tot4 += x[i]*x[i]*x[i];
     	} 
     	
     	
@@ -237,6 +237,9 @@ Program simulation:
     	
     	var approx_e_x3_elem   = document.getElementById("approx_e_x3");
     	approx_e_x3_elem.value = tot3/nsim;
+    	
+    	var approx_e_x4_elem   = document.getElementById("approx_e_x4");
+    	approx_e_x4_elem.value = tot4/nsim;
     }
     
     var prob_elem = document.getElementById("probability_value");
