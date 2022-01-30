@@ -20,13 +20,6 @@ end
 ```
 <br>
 
-Dependency Graph of Program Variables:
-(L) Linear dependency, (N) nonlinear dependency
-
-<img src="/assets/dep_graphs/binomial-p.png" alt="Dependency Graph" style="width:100px;"/>
-
-<br>
-
 <table>
     <thead>
         <tr>
