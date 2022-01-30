@@ -13,16 +13,14 @@ th      { background-color: NavajoWhite;
           color: SaddleBrown; 
           width:70px;  
           text-align: center;
-          vertical-align: bottom; }
-th span { writing-mode: sideways-lr;   /* +90°: use 'tb-rl' */
-          text-align: center;          /* +90°: use 'right' */
-          padding:0px 0px 0; }
+          vertical-align: bottom; 
+          writing-mode: sideways-lr;}
 </style>
 <table class="tg" id="bench_table" name="bench_table">
 <thead>
   <tr>
     <th>Benchmarks</th>
-    <th><span>Num Vars</span></th>
+    <th>Num Vars</th>
     <th><span>If-then-else<br>Statements<br></span></th>
     <th><span>Infinite <br>state-space</span></th>
     <th><span>Circular<br>Dependency</span></th>
@@ -134,7 +132,7 @@ th span { writing-mode: sideways-lr;   /* +90°: use 'tb-rl' */
           alert(tr.length);
           for (i = 2; i < tr.length; i++) {
               td = tr[i].getElementsByTagName("td");
-              if (i==2) alert(td);
+              if (i==2) alert(td[2]);
               img = td[2].getElementsByTagName("img");
               if (i==2) alert(img.src);
               if (img) {
