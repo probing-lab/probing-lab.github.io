@@ -20,6 +20,8 @@ end
 ```
 <br>
 
+<img src="/assets/dep_graphs/binomial-p.svg" alt="Dependency Graph" style="height: 100px; width:100px;"/>
+
 Computing the first moment for the random variable x using POLAR:
 
 ```
