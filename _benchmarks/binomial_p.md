@@ -1,6 +1,6 @@
 ---
 name:           "Binomial (Parametric)"
-numvars:        "2"
+numvars:        "1"
 ifthenelse:     "No"
 infinitesp:     "Yes"
 circdependency: "No"
@@ -20,10 +20,22 @@ end
 ```
 <br>
 
-Dependency Graph of Program Variable:
+Dependency Graph of Program Variables:
 (L) Linear dependency, (N) nonlinear dependency
 
 <img src="/assets/dep_graphs/binomial-p.svg" alt="Dependency Graph" style="height: 100px; width:100px;"/>
+
+<br>
+
+| Program features | Value |
+| --- | --- |
+| if statements | No |
+| State space | infinite, discrete |
+| Circular dependency | No |
+| Symbolic Constants | Yes (p) |
+| Effective Variables | Yes (x) |
+| Defective Variables | No |
+
 
 <br>
 Computing the first moment for the random variable x using POLAR:
