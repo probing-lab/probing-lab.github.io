@@ -135,7 +135,7 @@ th span { writing-mode: sideways-lr;   /* +90°: use 'tb-rl' */
           for (i = 2; i < tr.length; i++) {
               td = tr[i].getElementsByTagName("td");
               img = td[2].getElementsByTagName("img");
-              
+              if (i==2) alert(img.src);
               if (img) {
                  if (document.getElementById("filter_if").value != -1){
                      
