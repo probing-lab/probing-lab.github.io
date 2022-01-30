@@ -150,6 +150,7 @@ th span { writing-mode: sideways-lr;   /* +90°: use 'tb-rl' */
                      alert(document.getElementById("img_filter_if").src);
                      alert(img.src);
                      if (document.getElementById("img_filter_if").src != img.src){
+                         alert("tr[i].style.display = none");
                          tr[i].style.display = "none";
                      }else{
                          tr[i].style.display = "";
