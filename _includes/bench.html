@@ -131,11 +131,11 @@ th span { writing-mode: sideways-lr;   /* +90°: use 'tb-rl' */
           var input, filter, rows, table, tr, td, i, img;
           table = document.getElementById("bench_table");
           tr = table.getElementsByTagName("tr");
-          
+          alert(tr.length);
           for (i = 2; i < tr.length; i++) {
               td = tr[i].getElementsByTagName("td")[2];
               img = td.getElementsByTagName("img");
-              alert(img.src);
+              
               if (img) {
                  if (document.getElementById("filter_if").value != -1){
                      
