@@ -123,7 +123,7 @@ th span { writing-mode: sideways-lr;   /* +90°: use 'tb-rl' */
     }
     
     function filterTable () {
-          var input, filter, benchmark_name, num_vars, filter_bench_name, filter_bench_vars, rows, fullUrl, table, tr, td, i, img;
+          var input, filter, benchmark_name, bench_vars, filter_bench_name, filter_bench_vars, rows, fullUrl, table, tr, td, i, img;
           
           fullUrl = window.location.protocol + "//" + window.location.hostname + "/assets/benchmark/";
           //Reading the field filter
@@ -141,6 +141,13 @@ th span { writing-mode: sideways-lr;   /* +90°: use 'tb-rl' */
               benchmark_name = td[0].textContent || td[0].innerText;
               if (filter_bench_name != ""){
               	  if (!benchmark_name.includes(filter_bench_name)){
+                      filter = 1;
+                   }
+              }
+              
+              bench_vars = td[1].textContent || td[1].innerText;
+              if (filter_bench_vars != ""){
+              	  if (!bench_vars.includes(filter_bench_vars)){
                       filter = 1;
                    }
               }
