@@ -125,7 +125,7 @@ th span { writing-mode: sideways-lr;   /* +90°: use 'tb-rl' */
     function filterTable () {
           var input, filter, rows, fullUrl, table, tr, td, i, img;
           
-          var fullUrl = window.location.protocol + "//" + window.location.hostname;
+          fullUrl = window.location.protocol + "//" + window.location.hostname;
           table = document.getElementById("bench_table");
           tr = table.getElementsByTagName("tr");
           for (i = 3; i < tr.length; i++) {
