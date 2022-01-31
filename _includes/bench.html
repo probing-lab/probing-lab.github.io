@@ -123,14 +123,12 @@ th span { writing-mode: sideways-lr;   /* +90°: use 'tb-rl' */
     }
     
     function filterTable () {
-          var input, filter, benchmark_name, filter_bench_name, filter_bench_vars, rows, fullUrl, table, tr, td, i, img;
+          var input, filter, benchmark_name, num_vars, filter_bench_name, filter_bench_vars, rows, fullUrl, table, tr, td, i, img;
           
           fullUrl = window.location.protocol + "//" + window.location.hostname + "/assets/benchmark/";
           //Reading the field filter
           filter_bench_name    = document.getElementById("filter_name").value.trim();
           filter_bench_vars    = document.getElementById("filter_vars").value.trim();
-          alert(filter_bench_name);
-          alert(filter_bench_vars);
               
           table = document.getElementById("bench_table");
           tr = table.getElementsByTagName("tr");
@@ -141,8 +139,10 @@ th span { writing-mode: sideways-lr;   /* +90°: use 'tb-rl' */
               td     = tr[i].getElementsByTagName("td");
         
               benchmark_name = td[0].textContent || td[0].innerText;
-              if (!benchmark_name.includes(filter_bench_name)){
-                  filter = 1;
+              if (filter_bench_name != ""){
+              	  if (!benchmark_name.includes(filter_bench_name)){
+                      filter = 1;
+                   }
               }
               
               img    = td[2].children[0];
