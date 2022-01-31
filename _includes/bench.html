@@ -106,18 +106,18 @@ th span { writing-mode: sideways-lr;   /* +90°: use 'tb-rl' */
 <script language="javascript">
     function changeImage(img_val) {
         
-        var fullUrl = window.location.protocol + "//" + window.location.hostname;
+        var fullUrl = window.location.protocol + "//" + window.location.hostname + "/assets/benchmark/";
        
-        if (document.getElementById(img_val).src == fullUrl + "/assets/benchmark/disable.png") 
+        if (document.getElementById(img_val).src == fullUrl + "disable.png") 
         {
-            document.getElementById(img_val).src = fullUrl + "/assets/benchmark/no_enable.png";
+            document.getElementById(img_val).src = fullUrl + "no_enable.png";
         }
-        else if (document.getElementById(img_val).src == fullUrl + "/assets/benchmark/no_enable.png") 
+        else if (document.getElementById(img_val).src == fullUrl + "no_enable.png") 
         {
-            document.getElementById(img_val).src = fullUrl + "/assets/benchmark/yes_enable.png";
-        }else if (document.getElementById(img_val).src == fullUrl + "/assets/benchmark/yes_enable.png") 
+            document.getElementById(img_val).src = fullUrl + "yes_enable.png";
+        }else if (document.getElementById(img_val).src == fullUrl + "yes_enable.png") 
         {
-            document.getElementById(img_val).src = fullUrl + "/assets/benchmark/disable.png";  
+            document.getElementById(img_val).src = fullUrl + "disable.png";  
         }
         filterTable ();
     }
