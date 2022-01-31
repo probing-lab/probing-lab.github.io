@@ -16,7 +16,7 @@ th span { writing-mode: sideways-lr;   /* +90°: use 'tb-rl' */
 <table class="tg" id="bench_table" name="bench_table">
 <thead>
   <tr>
-    <th>Benchmarks</th>
+    <th>Benchmark Name</th>
     <th><span>Num Vars</span></th>
     <th><span>If-then-else<br>Statements<br></span></th>
     <th><span>Infinite <br>state-space</span></th>
@@ -27,6 +27,9 @@ th span { writing-mode: sideways-lr;   /* +90°: use 'tb-rl' */
   </tr>
 </thead>
 <tbody>
+<tr>
+     <td colspan="9" class="tg-5924">Total Number of Benchmarks</td>
+</tr>
 <tr>
     <td class="tg-5924"> <input type="text" id="filter_name" name="filter_name" size="10" value=""></td>
     <td class="tg-5924"> <input type="text" id="filter_vars" name="filter_vars" size="4" value=""></td>
@@ -120,7 +123,7 @@ th span { writing-mode: sideways-lr;   /* +90°: use 'tb-rl' */
           var input, filter, rows, table, tr, td, i, img;
           table = document.getElementById("bench_table");
           tr = table.getElementsByTagName("tr");
-          for (i = 2; i < tr.length; i++) {
+          for (i = 3; i < tr.length; i++) {
               filter = 0;
               tr[i].style.display = "";
               td     = tr[i].getElementsByTagName("td");
