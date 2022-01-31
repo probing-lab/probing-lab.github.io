@@ -123,19 +123,29 @@ th span { writing-mode: sideways-lr;   /* +90°: use 'tb-rl' */
     }
     
     function filterTable () {
-          var input, filter, rows, fullUrl, table, tr, td, i, img;
+          var input, filter, filter_bench_name, filter_bench_vars, rows, fullUrl, table, tr, td, i, img;
           
-          fullUrl = window.location.protocol + "//" + window.location.hostname;
+          fullUrl = window.location.protocol + "//" + window.location.hostname + "/assets/benchmark/";
+          //Reading the field filter
+          filter_bench_name    = document.getElementById("filter_name").value.trim();
+          filter_bench_vars    = document.getElementById("filter_vars").value.trim();
+          alert(filter_bench_name);
+          alert(filter_bench_vars);
+              
           table = document.getElementById("bench_table");
           tr = table.getElementsByTagName("tr");
           for (i = 3; i < tr.length; i++) {
               filter = 0;
               tr[i].style.display = "";
+              
+              
+              
+              
               td     = tr[i].getElementsByTagName("td");
               img    = td[2].children[0];
               
               if (img) {
-                 if (document.getElementById("img_filter_if").src != fullUrl + "/assets/benchmark/disable.png"){
+                 if (document.getElementById("img_filter_if").src != fullUrl + "disable.png"){
                      if (document.getElementById("img_filter_if").src != img.src){
                          filter = 1;
                      }
@@ -144,7 +154,7 @@ th span { writing-mode: sideways-lr;   /* +90°: use 'tb-rl' */
               
               img = td[3].children[0];
               if (img) {
-                 if (document.getElementById("img_filter_infinite").src != fullUrl + "/assets/benchmark/disable.png"){
+                 if (document.getElementById("img_filter_infinite").src != fullUrl + "disable.png"){
                      if (document.getElementById("img_filter_infinite").src != img.src){
                          filter = 1;
                      }
@@ -153,7 +163,7 @@ th span { writing-mode: sideways-lr;   /* +90°: use 'tb-rl' */
               
               img = td[4].children[0];
               if (img) {
-                 if (document.getElementById("img_filter_circular").src != fullUrl + "/assets/benchmark/disable.png"){
+                 if (document.getElementById("img_filter_circular").src != fullUrl + "disable.png"){
                      if (document.getElementById("img_filter_circular").src != img.src){
                          filter = 1;
                      }
@@ -162,7 +172,7 @@ th span { writing-mode: sideways-lr;   /* +90°: use 'tb-rl' */
               
              img = td[5].children[0];
               if (img) {
-                 if (document.getElementById("img_filter_symbolic").src != fullUrl + "/assets/benchmark/disable.png"){
+                 if (document.getElementById("img_filter_symbolic").src != fullUrl + "disable.png"){
                      if (document.getElementById("img_filter_symbolic").src != img.src){
                          filter = 1;
                      }
@@ -171,7 +181,7 @@ th span { writing-mode: sideways-lr;   /* +90°: use 'tb-rl' */
               
               img = td[6].children[0];
               if (img) {
-                 if (document.getElementById("img_filter_continuous").src != fullUrl + "/assets/benchmark/disable.png"){
+                 if (document.getElementById("img_filter_continuous").src != fullUrl + "disable.png"){
                      if (document.getElementById("img_filter_continuous").src != img.src){
                          filter = 1;
                      }
