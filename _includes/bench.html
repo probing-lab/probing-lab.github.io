@@ -30,7 +30,6 @@ th span { writing-mode: sideways-lr;   /* +90°: use 'tb-rl' */
     <th><span>Symbolic <br>Constants</span></th>
     <th><span>Continuous <br>State-Space</span></th>
     <th><span>Defective <br>Variables</span></th>
-    <th><span>Loop <br>Guard</span></th>
   </tr>
 </thead>
 <tbody>
@@ -43,7 +42,6 @@ th span { writing-mode: sideways-lr;   /* +90°: use 'tb-rl' */
     <td class="tg-5924"><img id="img_filter_symbolic" name="img_filter_symbolic" src="/assets/benchmark/disable.png" style="width:50%;" onclick="changeImage('img_filter_symbolic', 'filter_symbolic')"/> <input type="hidden" id="filter_symbolic" name="filter_symbolic" value="-1"></td>
     <td class="tg-5924"><img id="img_filter_continuous" name="img_filter_continuous" src="/assets/benchmark/disable.png" style="width:50%;" onclick="changeImage('img_filter_continuous', 'filter_continuous')"/> <input type="hidden" id="filter_continuous" name="filter_continuous" value="-1"></td>
     <td class="tg-5924"><img id="img_filter_defective" name="img_filter_defective" src="/assets/benchmark/disable.png" style="width:50%;" onclick="changeImage('img_filter_defective', 'filter_defective')"/> <input type="hidden" id="filter_defective" name="filter_defective" value="-1"></td>
-    <td class="tg-5924"></td>
 </tr>
 {% for benchmark in site.benchmarks %}
 {%- comment -%} Determine Benchmark URL {%- endcomment -%}
@@ -103,7 +101,6 @@ th span { writing-mode: sideways-lr;   /* +90°: use 'tb-rl' */
     {%- else -%}
     {% endif %}
     </td>
-    <td class="tg-xwyw">{{ benchmark.loopguard }}</td>
   </tr>
 {% endfor %}
 </tbody>
