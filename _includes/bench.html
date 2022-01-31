@@ -106,24 +106,26 @@ th span { writing-mode: sideways-lr;   /* +90°: use 'tb-rl' */
 <script language="javascript">
     function changeImage(img_val) {
         
-        var fullUrl = window.location.protocol + "//" + window.location.hostname
-        alert(fullUrl);
-        if (document.getElementById(img_val).src == "https://probing-lab.github.io/assets/benchmark/disable.png") 
+        var fullUrl = window.location.protocol + "//" + window.location.hostname;
+       
+        if (document.getElementById(img_val).src == fullUrl + "/assets/benchmark/disable.png") 
         {
-            document.getElementById(img_val).src = "https://probing-lab.github.io/assets/benchmark/no_enable.png";
+            document.getElementById(img_val).src = fullUrl + "/assets/benchmark/no_enable.png";
         }
-        else if (document.getElementById(img_val).src == "https://probing-lab.github.io/assets/benchmark/no_enable.png") 
+        else if (document.getElementById(img_val).src == fullUrl + "/assets/benchmark/no_enable.png") 
         {
-            document.getElementById(img_val).src = "https://probing-lab.github.io/assets/benchmark/yes_enable.png";
-        }else if (document.getElementById(img_val).src == "https://probing-lab.github.io/assets/benchmark/yes_enable.png") 
+            document.getElementById(img_val).src = fullUrl + "/assets/benchmark/yes_enable.png";
+        }else if (document.getElementById(img_val).src == fullUrl + "/assets/benchmark/yes_enable.png") 
         {
-            document.getElementById(img_val).src = "https://probing-lab.github.io/assets/benchmark/disable.png";  
+            document.getElementById(img_val).src = fullUrl + "/assets/benchmark/disable.png";  
         }
         filterTable ();
     }
     
     function filterTable () {
-          var input, filter, rows, table, tr, td, i, img;
+          var input, filter, rows, fullUrl, table, tr, td, i, img;
+          
+          var fullUrl = window.location.protocol + "//" + window.location.hostname;
           table = document.getElementById("bench_table");
           tr = table.getElementsByTagName("tr");
           for (i = 3; i < tr.length; i++) {
@@ -133,7 +135,7 @@ th span { writing-mode: sideways-lr;   /* +90°: use 'tb-rl' */
               img    = td[2].children[0];
               
               if (img) {
-                 if (document.getElementById("img_filter_if").src != "https://probing-lab.github.io/assets/benchmark/disable.png"){
+                 if (document.getElementById("img_filter_if").src != fullUrl + "/assets/benchmark/disable.png"){
                      if (document.getElementById("img_filter_if").src != img.src){
                          filter = 1;
                      }
@@ -142,7 +144,7 @@ th span { writing-mode: sideways-lr;   /* +90°: use 'tb-rl' */
               
               img = td[3].children[0];
               if (img) {
-                 if (document.getElementById("img_filter_infinite").src != "https://probing-lab.github.io/assets/benchmark/disable.png"){
+                 if (document.getElementById("img_filter_infinite").src != fullUrl + "/assets/benchmark/disable.png"){
                      if (document.getElementById("img_filter_infinite").src != img.src){
                          filter = 1;
                      }
@@ -151,7 +153,7 @@ th span { writing-mode: sideways-lr;   /* +90°: use 'tb-rl' */
               
               img = td[4].children[0];
               if (img) {
-                 if (document.getElementById("img_filter_circular").src != "https://probing-lab.github.io/assets/benchmark/disable.png"){
+                 if (document.getElementById("img_filter_circular").src != fullUrl + "/assets/benchmark/disable.png"){
                      if (document.getElementById("img_filter_circular").src != img.src){
                          filter = 1;
                      }
@@ -160,7 +162,7 @@ th span { writing-mode: sideways-lr;   /* +90°: use 'tb-rl' */
               
              img = td[5].children[0];
               if (img) {
-                 if (document.getElementById("img_filter_symbolic").src != "https://probing-lab.github.io/assets/benchmark/disable.png"){
+                 if (document.getElementById("img_filter_symbolic").src != fullUrl + "/assets/benchmark/disable.png"){
                      if (document.getElementById("img_filter_symbolic").src != img.src){
                          filter = 1;
                      }
@@ -169,7 +171,7 @@ th span { writing-mode: sideways-lr;   /* +90°: use 'tb-rl' */
               
               img = td[6].children[0];
               if (img) {
-                 if (document.getElementById("img_filter_continuous").src != "https://probing-lab.github.io/assets/benchmark/disable.png"){
+                 if (document.getElementById("img_filter_continuous").src != fullUrl + "/assets/benchmark/disable.png"){
                      if (document.getElementById("img_filter_continuous").src != img.src){
                          filter = 1;
                      }
