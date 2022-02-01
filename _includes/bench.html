@@ -148,11 +148,10 @@ th span { writing-mode: sideways-lr;   /* +90°: use 'tb-rl' */
               benchmark_name = td[0].textContent || td[0].innerText;
               if (filter_bench_name != "" && !benchmark_name.includes(filter_bench_name)){
                   filter = 1;
-              }
-              
-              bench_vars = td[1].textContent || td[1].innerText;
-              if (filter_bench_vars != "" && filter_bench_vars != bench_vars){
-                  filter = 1;
+              }else{
+              	  bench_vars = td[1].textContent || td[1].innerText;
+              	  if (filter_bench_vars != "" && filter_bench_vars != bench_vars)
+                  	  filter = 1;
               }
               
               if (!filter){
