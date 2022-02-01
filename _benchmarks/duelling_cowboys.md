@@ -10,7 +10,7 @@ loopguard:      "(true)"
 defective:      "No"
 ---
 
-Duelling Cowboys
+Duelling Cowboys (Source Code)
 
 ```python
 turn = 0
