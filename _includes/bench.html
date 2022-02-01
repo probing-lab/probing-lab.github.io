@@ -28,7 +28,7 @@ th span { writing-mode: sideways-lr;   /* +90°: use 'tb-rl' */
 </thead>
 <tbody>
 <tr>
-     <td colspan="9" class="tg-5924">Selected Benchmarks</td>
+     <td colspan="9" class="tg-5924"></td>
 </tr>
 <tr>
     <td class="tg-5924"> <input type="text" id="filter_name" name="filter_name" size="10" value="" onkeypress="filterTable();" onchange="filterTable();"></td>
@@ -204,7 +204,7 @@ th span { writing-mode: sideways-lr;   /* +90°: use 'tb-rl' */
                   counter++;
               }
           }
-          tr[1].getElementsByTagName("td")[0].innerHTML =  "Selected " + counter.toString() + " records";
+          tr[1].getElementsByTagName("td")[0].innerHTML =  "Selected " + counter.toString() + " benchmarks";
     }
 
 	filterTable ();
