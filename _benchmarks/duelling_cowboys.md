@@ -76,3 +76,34 @@ end
 </table>
 
 <br>
+
+```
+python polar.py benchmarks/prinsys/duelling_cowboys.prob --goals "E(turn)"
+
+8888888b.   .d88888b.  888             d8888 8888888b.
+888   Y88b d88P" "Y88b 888            d88888 888   Y88b
+888    888 888     888 888           d88P888 888    888
+888   d88P 888     888 888          d88P 888 888   d88P
+8888888P"  888     888 888         d88P  888 8888888P"
+888        888     888 888        d88P   888 888 T88b
+888        Y88b. .d88P 888       d8888888888 888  T88b
+888         "Y88888P"  88888888 d88P     888 888   T88b
+
+By the ProbInG group
+
+
+
+-------------------
+- Analysis Result -
+-------------------
+
+E(turn) = 0; (-a*(a + b - 1)**n + a + (a + b - 1)**n - 1)/(a + b - 2)
+Solution is exact
+
+Elapsed time: 1.3329060077667236 s
+```
+
+
+<p>
+Solution: \[\mathbb{E} (turn) = \frac{a - a (a+b-1)^n + (a+b-1)^n - 1}{(a+b-2)}\]
+</p>
