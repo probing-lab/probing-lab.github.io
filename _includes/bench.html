@@ -146,30 +146,29 @@ th span { writing-mode: sideways-lr;   /* +90°: use 'tb-rl' */
               td     = tr[i].getElementsByTagName("td");
         
               benchmark_name = td[0].textContent || td[0].innerText;
-              if (filter_bench_name != ""){
-              	  if (!benchmark_name.includes(filter_bench_name)){
-                      filter = 1;
-                   }
+              if (filter_bench_name != "" && !benchmark_name.includes(filter_bench_name)){
+                  filter = 1;
               }
               
               bench_vars = td[1].textContent || td[1].innerText;
-              if (filter_bench_vars != ""){
-              	  if (filter_bench_vars != bench_vars){
-                      filter = 1;
-                   }
+              if (filter_bench_vars != "" && filter_bench_vars != bench_vars){
+                 filter = 1;
               }
               
-              for (var z = 2; z < fc_td.length; z++){
-          		   img_fc = fc_td[z].children[0];
-          		   img    = td[z].children[0];
-          		   img2   = document.getElementById(img_fc.id);
-          		   if (img2.src != fullUrl + "disable.png" && img2.src != img.src){
-          		      filter = 1;
-          		      break;
-          		   }    
+              if (!filter){
+              	 for (var z = 2; z < fc_td.length; z++){
+          		   	  img_fc = fc_td[z].children[0];
+          		      img    = td[z].children[0];
+          		      img2   = document.getElementById(img_fc.id);
+          		   
+          		      if (img2.src != fullUrl + "disable.png" && img2.src != img.src){
+          		          filter = 1;
+          		          break;
+          		       }    
+                  }
               }
               
-              if (filter == 1){
+              if (filter){
                   tr[i].style.display = "none";
               }else{
                   counter++;
