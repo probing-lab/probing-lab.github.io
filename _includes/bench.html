@@ -123,7 +123,7 @@ th span { writing-mode: sideways-lr;   /* +90°: use 'tb-rl' */
     }
     
     function filterTable () {
-          var input, filter, benchmark_name, bench_vars, filter_bench_name, filter_bench_vars, rows, fullUrl, table, tr, td, i, img;
+          var filter, benchmark_name, bench_vars, filter_bench_name, filter_bench_vars, fullUrl, table, tr, td, i, img;
           var counter = 0;
           
           var fc_td, img_fc, img2;
@@ -152,7 +152,7 @@ th span { writing-mode: sideways-lr;   /* +90°: use 'tb-rl' */
               
               bench_vars = td[1].textContent || td[1].innerText;
               if (filter_bench_vars != "" && filter_bench_vars != bench_vars){
-                 filter = 1;
+                  filter = 1;
               }
               
               if (!filter){
