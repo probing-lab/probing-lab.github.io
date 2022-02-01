@@ -125,6 +125,9 @@ th span { writing-mode: sideways-lr;   /* +90°: use 'tb-rl' */
     function filterTable () {
           var input, filter, benchmark_name, bench_vars, filter_bench_name, filter_bench_vars, rows, fullUrl, table, tr, td, i, img;
           var counter = 0;
+          
+          var fc_td, input_fc;
+          
           fullUrl = window.location.protocol + "//" + window.location.hostname + "/assets/benchmark/";
           //Reading the field filter
           filter_bench_name    = document.getElementById("filter_name").value.trim();
@@ -150,6 +153,13 @@ th span { writing-mode: sideways-lr;   /* +90°: use 'tb-rl' */
               	  if (filter_bench_vars != bench_vars){
                       filter = 1;
                    }
+              }
+              
+              fc_td = tr[1].getElementsByTagName("td");
+               
+              for (z = 2; z < td.length; z++) {
+                   input_fc = fc_td.getElementsByTagName("input");
+                   alert(input_fc.name);
               }
               
               img    = td[2].children[0];
