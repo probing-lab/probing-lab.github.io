@@ -133,10 +133,10 @@ th span { writing-mode: sideways-lr;   /* +90°: use 'tb-rl' */
           filter_bench_name    = document.getElementById("filter_name").value.trim();
           filter_bench_vars    = document.getElementById("filter_vars").value.trim();
           
-          fc_td = tr[1].getElementsByTagName("td");
+          /*fc_td = tr[1].getElementsByTagName("td");
           alert(fc_td);  
           img_fc = fc_td[0].getElementsByTagName("img");  
-          alert(img_fc.name);   
+          alert(img_fc.name);  */ 
               
           table = document.getElementById("bench_table");
           tr = table.getElementsByTagName("tr");
@@ -159,7 +159,6 @@ th span { writing-mode: sideways-lr;   /* +90°: use 'tb-rl' */
                       filter = 1;
                    }
               }
-              
               
               img    = td[2].children[0];
               
