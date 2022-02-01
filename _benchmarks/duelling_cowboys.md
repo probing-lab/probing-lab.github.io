@@ -49,24 +49,24 @@ end
     <tbody>
         <tr>
             <td>if statements</td>
-            <td>No</td>
-            <td rowspan=6>(L) Linear <br> (NL) nonlinear <br><img src="/assets/dep_graphs/binomial-p.png" alt="Dependency Graph" style="width:100px;"/></td>
+            <td>Yes</td>
+            <td rowspan=6>(L) Linear <br> (NL) nonlinear <br><img src="/assets/dep_graphs/duelling_cowboys_.png" alt="Dependency Graph" style="width:100px;"/></td>
         </tr>
         <tr>
             <td>State space</td>
-            <td>infinite, discrete</td>
+            <td>Finite, discrete</td>
         </tr>
         <tr>
             <td>Circular Dependency</td>
-            <td>No</td>
+            <td>Yes</td>
         </tr>
         <tr>
             <td>Symbolic Constants</td>
-            <td>Yes (p)</td>
+            <td>Yes (a, b)</td>
         </tr>
         <tr>
             <td>Effective Variables</td>
-            <td>Yes (x)</td>
+            <td>Yes (turn, continue, ahit, bhit)</td>
         </tr>
         <tr>
             <td>Defective Variables</td>
