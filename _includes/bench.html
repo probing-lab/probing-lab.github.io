@@ -142,8 +142,9 @@ th span { writing-mode: sideways-lr;   /* +90°: use 'tb-rl' */
           tr = table.getElementsByTagName("tr");
           
           fc_td = tr[2].getElementsByTagName("td");
-          img_fc = fc_td[2].getElementsByTagName("img");
+          img_fc = fc_td[2].children[0];
           alert(img_fc.src);
+          alert(img_fc.name);
           
           for (i = 3; i < tr.length; i++) {
               filter = 0;
