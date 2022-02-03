@@ -39,12 +39,9 @@ end
 <br>
 Description
 <p>
-Two cowboys A and B take turns to shoot at each other. 
-During each turn, cowboy A can hit cowboy B with probability 
-a while cowboy B can hit cowboy A with probability b.
-The duel terminates until one cowboy succeeds to hit the other.
-<br>
-What is the probability that Cowboy A win ?
+Two cowboys A and B take turns to shoot at each other.  During each turn, cowboy A can hit cowboy B with probability  a while cowboy B can hit cowboy A with probability b. The duel terminates until one cowboy succeeds to hit the other.
+<br><br>
+What is the probability that Cowboy A or Cowboy B wins ?
 </p>
 
 <br>
@@ -117,3 +114,11 @@ Elapsed time: 1.483273983001709 s
 <p>
 Solution: \[\mathbb{E} (ahit) = \frac{a (a (a + b - 1)^{(n - 1)} + b - (a + b - 1)^{(n - 1)} - 1)}{(a+b-2)}\]
 </p>
+
+| Parameter | Current Value | Tuning |
+| --- | ----------- | ----------- |
+| Number of program executions: | <input type="number" id="num_experiment_value" name="num_experiment_value" min="100" max="10000" step="100" value="1000" onchange="updateNumExp(this.value)"> | <input type="range" id="num_experiment" name="num_experiment" min="100" max="10000" step="100" value="1000" onchange="updateNumExp(this.value)"> |
+| Number of loop iterations (n): | <input type="number" id="num_iteration_value" name="num_iteration_value" min="10" max="100" step="10" value="10" onchange="updateNumIter(this.value)">  | <input type="range" id="num_iteration" name="num_iteration" min="10" max="100" step="10" value="10" onchange="updateNumIter(this.value)"> |
+| Probability (a): | <input type="number" id="probability_value_a" name="probability_value_b" min="0" max="1" step="0.1" value="0.5" onchange="updateProbability(this.value)"> | <input type="range" id="probability" name="probability" min="0" max="1" step="0.1" value="0.5" onchange="updateProbability(this.value)"> |
+| Probability (b): | <input type="number" id="probability_value_b" name="probability_value_b" min="0" max="1" step="0.1" value="0.5" onchange="updateProbability(this.value)"> | <input type="range" id="probability" name="probability" min="0" max="1" step="0.1" value="0.5" onchange="updateProbability(this.value)"> |
+
