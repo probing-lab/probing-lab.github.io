@@ -112,7 +112,7 @@ Elapsed time: 1.483273983001709 s
 
 
 <p>
-Solution: \[\mathbb{E} (ahit) = \frac{a (a (a + b - 1)^{(n - 1)} + b - (a + b - 1)^{(n - 1)} - 1)}{(a+b-2)}\]
+The probability that Cowboy A wins is: \[\mathbb{E} (ahit) = \frac{a (a (a + b - 1)^{(n - 1)} + b - (a + b - 1)^{(n - 1)} - 1)}{(a+b-2)}\]
 </p>
 
 | Parameter | Current Value | Tuning |
@@ -122,3 +122,6 @@ Solution: \[\mathbb{E} (ahit) = \frac{a (a (a + b - 1)^{(n - 1)} + b - (a + b - 
 | Probability (a): | <input type="number" id="probability_value_a" name="probability_value_b" min="0" max="1" step="0.1" value="0.5" onchange="updateProbability(this.value)"> | <input type="range" id="probability" name="probability" min="0" max="1" step="0.1" value="0.5" onchange="updateProbability(this.value)"> |
 | Probability (b): | <input type="number" id="probability_value_b" name="probability_value_b" min="0" max="1" step="0.1" value="0.5" onchange="updateProbability(this.value)"> | <input type="range" id="probability" name="probability" min="0" max="1" step="0.1" value="0.5" onchange="updateProbability(this.value)"> |
 
+| Exact E(ahit) | Approx. E(ahit) | 
+| --- | --- |
+| <input type="text" size="5" id="exact_ahit" name="exact_ahit"> | <input type="text" size="5" id="approx_ahit" name="approx_e_x"> | 
