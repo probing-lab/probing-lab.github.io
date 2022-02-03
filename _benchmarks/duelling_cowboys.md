@@ -190,14 +190,11 @@ The probability that Cowboy A wins is: \[\mathbb{E} (ahit * (1 - continue)) = \f
     	}
     	Plotly.newPlot('myDiv', data, layout);
     	
-    	var exact_e_x_elem   = document.getElementById("exact_e_x");
-    	exact_e_x_elem.value = val_p * nit;
+    	var exact_ahit_elem   = document.getElementById("exact_ahit");
+    	exact_ahit_elem.value = val_a * nit;
     	
-    	var approx_e_x_elem   = document.getElementById("approx_e_x");
-    	approx_e_x_elem.value = tot1/nsim;
-    	
-    	var exact_e_x2_elem   = document.getElementById("exact_e_x2");
-    	exact_e_x2_elem.value = val_p * nit * (val_p * (nit - 1) + 1);
+    	var approx_ahit_elem   = document.getElementById("approx_ahit");
+    	approx_ahit_elem.value = tot1/nsim;
     	
     }
     
@@ -237,18 +234,20 @@ The probability that Cowboy A wins is: \[\mathbb{E} (ahit * (1 - continue)) = \f
         elem1.value = nit;
         var elem2 = document.getElementById("num_iteration");
         elem2.value = nit;
-        var prob_elem = document.getElementById("probability_value");
+        var prob_elem_a = document.getElementById("probability_value_a");
+        var prob_elem_b = document.getElementById("probability_value_b");
     	var exp_elem  = document.getElementById("num_experiment_value");
-    	plotProbProgram (prob_elem.value, nit, exp_elem.value);
+    	plotProbProgram (prob_elem_a.value, prob_elem_b.value, nit, exp_elem.value);
 	}
 	function updateNumExp(nsim) {
   		var elem1 = document.getElementById("num_experiment_value");
         elem1.value = nsim;
         var elem2 = document.getElementById("num_experiment");
         elem2.value = nsim;
-    	var prob_elem = document.getElementById("probability_value");
+    	var prob_elem_a = document.getElementById("probability_value_a");
+    	var prob_elem_b = document.getElementById("probability_value_b");
     	var iter_elem = document.getElementById("num_iteration_value");
-    	plotProbProgram (prob_elem.value, iter_elem.value, nsim);
+    	plotProbProgram (prob_elem_a.value, prob_elem_b.value, iter_elem.value, nsim);
 	}
      
   </script>
