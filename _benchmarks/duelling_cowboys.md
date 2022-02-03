@@ -105,5 +105,5 @@ Elapsed time: 1.483273983001709 s
 
 
 <p>
-Solution: \[\mathbb{E} (turn) = \frac{a (a (a + b - 1)^{(n - 1)} + b - (a + b - 1)^{(n - 1)} - 1)}{(a+b-2)}\]
+Solution: \[\mathbb{E} (ahit) = \frac{a (a (a + b - 1)^{(n - 1)} + b - (a + b - 1)^{(n - 1)} - 1)}{(a+b-2)}\]
 </p>
