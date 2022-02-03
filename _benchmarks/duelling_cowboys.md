@@ -37,7 +37,17 @@ end
 ```
 
 <br>
+Description
+<p>
+Two cowboys A and B take turns to shoot at each other. 
+During each turn, cowboy A can hit cowboy B with probability 
+a while cowboy B can hit cowboy A with probability b.
+The duel terminates until one cowboy succeeds to hit the other.
+<br>
+What is the probability that Cowboy A win ?
+</p>
 
+<br>
 <table>
     <thead>
         <tr>
