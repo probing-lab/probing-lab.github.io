@@ -85,7 +85,7 @@ What is the probability that Cowboy A or Cowboy B wins ?
 <br>
 
 ```
-python polar.py benchmarks/prinsys/duelling_cowboys.prob --goals "E(ahit)"
+python polar.py benchmarks/prinsys/duelling_cowboys.prob --goals "E(ahit * (1 - continue))"
 
 8888888b.   .d88888b.  888             d8888 8888888b.
 888   Y88b d88P" "Y88b 888            d88888 888   Y88b
@@ -104,15 +104,15 @@ By the ProbInG group
 - Analysis Result -
 -------------------
 
-E(ahit) = 0; a*(a*(a + b - 1)**(n - 1) + b - (a + b - 1)**(n - 1) - 1)/(a + b - 2)
+E(ahit*(1 - continue)) = 0; a*(a*(a + b - 1)**(n - 1) + b - (a + b - 1)**(n - 1) - 1)/(a + b - 2)
 Solution is exact
 
-Elapsed time: 1.483273983001709 s
+Elapsed time: 1.5660450458526611 s
 ```
 
 
 <p>
-The probability that Cowboy A wins is: \[\mathbb{E} (ahit) = \frac{a (a (a + b - 1)^{(n - 1)} + b - (a + b - 1)^{(n - 1)} - 1)}{(a+b-2)}\]
+The probability that Cowboy A wins is: \[\mathbb{E} (ahit * (1 - continue)) = \frac{a (a (a + b - 1)^{(n - 1)} + b - (a + b - 1)^{(n - 1)} - 1)}{(a+b-2)}\]
 </p>
 
 | Parameter | Current Value | Tuning |
@@ -125,3 +125,116 @@ The probability that Cowboy A wins is: \[\mathbb{E} (ahit) = \frac{a (a (a + b -
 | Exact E(ahit) | Approx. E(ahit) | 
 | --- | --- |
 | <input type="text" size="5" id="exact_ahit" name="exact_ahit"> | <input type="text" size="5" id="approx_ahit" name="approx_e_x"> | 
+
+<div id="myDiv"><!-- Plotly chart will be drawn inside this DIV --></div>
+<script>
+
+    function sampleBernoulli(val_p){
+    	if (Math.random() < val_p) return 1;
+        return 0;
+    }
+    function plotProbProgram (val_a, val_b, nit, nsim){
+        var x = [];
+        var tot1 = 0;
+        var turn     = 0;
+        var continue = 1;
+        var ahit     = 0;
+        var bhit     = 0;
+    	for (var i = 0; i < nsim; i++) { 
+             for (var j = 0; j < nit; j++){
+                 if (turn == 0){
+                     ahit = sampleBernoulli(val_a);
+                     if (ahit == 1){
+                         continue = 0;
+                     }else{
+                         turn = 1;
+                     }
+                 }else{
+                     bhit = sampleBernoulli(val_b);
+                     if (bhit == 1){
+                         continue = 0;
+                     }else{
+                         turn = 0;
+                     }
+                 }
+             }
+             x[i] = ahit;
+             tot1 += x[i];
+    	} 
+    	
+    	
+    	var trace = {
+      		x: x,
+       		type: 'histogram',
+			histnorm: 'probability',
+			marker: { 
+			     color: "rgba(255, 100, 102, 0.7)", 
+                 line: { color:  "rgba(255, 100, 102, 1)", 
+                         width: 1
+                 }
+              },
+              autobinx: false, 
+              xbins: { 
+                 size: 1 
+              }
+    	};
+    
+    	var data = [trace];
+    	var layout = {
+      		bargap: 0.05, 
+      		bargroupgap: 0.2, 
+      		barmode: "overlay", 
+      		title: "Sampled Results (p=" + val_p.toString() + ", loop iteration=" + nit.toString()  + ", num. simulations = " + nsim.toString()  + ")", 
+      		xaxis: {title: "X Value"}, 
+      		yaxis: {title: "Probability"}
+    	}
+    	Plotly.newPlot('myDiv', data, layout);
+    	
+    	var exact_e_x_elem   = document.getElementById("exact_e_x");
+    	exact_e_x_elem.value = val_p * nit;
+    	
+    	var approx_e_x_elem   = document.getElementById("approx_e_x");
+    	approx_e_x_elem.value = tot1/nsim;
+    	
+    	var exact_e_x2_elem   = document.getElementById("exact_e_x2");
+    	exact_e_x2_elem.value = val_p * nit * (val_p * (nit - 1) + 1);
+    	
+    }
+    
+    var prob_elem = document.getElementById("probability_value");
+    var iter_elem = document.getElementById("num_iteration_value");
+    var exp_elem  = document.getElementById("num_experiment_value");
+    
+    plotProbProgram (prob_elem.value, iter_elem.value, exp_elem.value);
+    
+
+    
+    function updateProbability(val_p) {
+  		var elem1 = document.getElementById("probability_value");
+        elem1.value = val_p;
+        var elem2 = document.getElementById("probability");
+        elem2.value = val_p;
+    	var iter_elem = document.getElementById("num_iteration_value");
+    	var exp_elem  = document.getElementById("num_experiment_value");
+        plotProbProgram (val_p, iter_elem.value, exp_elem.value);
+	}
+	function updateNumIter(nit) {
+  		var elem1 = document.getElementById("num_iteration_value");
+        elem1.value = nit;
+        var elem2 = document.getElementById("num_iteration");
+        elem2.value = nit;
+        var prob_elem = document.getElementById("probability_value");
+    	var exp_elem  = document.getElementById("num_experiment_value");
+    	plotProbProgram (prob_elem.value, nit, exp_elem.value);
+	}
+	function updateNumExp(nsim) {
+  		var elem1 = document.getElementById("num_experiment_value");
+        elem1.value = nsim;
+        var elem2 = document.getElementById("num_experiment");
+        elem2.value = nsim;
+    	var prob_elem = document.getElementById("probability_value");
+    	var iter_elem = document.getElementById("num_iteration_value");
+    	plotProbProgram (prob_elem.value, iter_elem.value, nsim);
+	}
+     
+  </script>
