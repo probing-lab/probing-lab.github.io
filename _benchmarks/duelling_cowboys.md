@@ -119,8 +119,8 @@ The probability that Cowboy A wins is: \[\mathbb{E} (ahit * (1 - continue)) = \f
 | --- | ----------- | ----------- |
 | Number of program executions: | <input type="number" id="num_experiment_value" name="num_experiment_value" min="100" max="10000" step="100" value="1000" onchange="updateNumExp(this.value)"> | <input type="range" id="num_experiment" name="num_experiment" min="100" max="10000" step="100" value="1000" onchange="updateNumExp(this.value)"> |
 | Number of loop iterations (n): | <input type="number" id="num_iteration_value" name="num_iteration_value" min="10" max="100" step="10" value="10" onchange="updateNumIter(this.value)">  | <input type="range" id="num_iteration" name="num_iteration" min="10" max="100" step="10" value="10" onchange="updateNumIter(this.value)"> |
-| Probability (a): | <input type="number" id="probability_value_a" name="probability_value_b" min="0" max="1" step="0.1" value="0.5" onchange="updateProbability(this.value)"> | <input type="range" id="probability" name="probability" min="0" max="1" step="0.1" value="0.5" onchange="updateProbability(this.value)"> |
-| Probability (b): | <input type="number" id="probability_value_b" name="probability_value_b" min="0" max="1" step="0.1" value="0.5" onchange="updateProbability(this.value)"> | <input type="range" id="probability" name="probability" min="0" max="1" step="0.1" value="0.5" onchange="updateProbability(this.value)"> |
+| Probability (a): | <input type="number" id="probability_value_a" name="probability_value_b" min="0" max="1" step="0.1" value="0.5" onchange="updateProbability(this.value)"> | <input type="range" id="probability" name="probability_a" min="0" max="1" step="0.1" value="0.5" onchange="updateProbability(this.value)"> |
+| Probability (b): | <input type="number" id="probability_value_b" name="probability_value_b" min="0" max="1" step="0.1" value="0.5" onchange="updateProbability(this.value)"> | <input type="range" id="probability" name="probability_b" min="0" max="1" step="0.1" value="0.5" onchange="updateProbability(this.value)"> |
 
 | Exact E(ahit) | Approx. E(ahit) | 
 | --- | --- |
@@ -201,23 +201,37 @@ The probability that Cowboy A wins is: \[\mathbb{E} (ahit * (1 - continue)) = \f
     	
     }
     
-    var prob_elem = document.getElementById("probability_value");
+    var prob_elem_a = document.getElementById("probability_value_a");
+    var prob_elem_b = document.getElementById("probability_value_b");
     var iter_elem = document.getElementById("num_iteration_value");
     var exp_elem  = document.getElementById("num_experiment_value");
     
-    plotProbProgram (prob_elem.value, iter_elem.value, exp_elem.value);
+    plotProbProgram (prob_elem_a.value, prob_elem_b.value, iter_elem.value, exp_elem.value);
     
 
     
-    function updateProbability(val_p) {
-  		var elem1 = document.getElementById("probability_value");
-        elem1.value = val_p;
-        var elem2 = document.getElementById("probability");
-        elem2.value = val_p;
+    function updateProbability(val_a) {
+  		var elem1 = document.getElementById("probability_value_a");
+        elem1.value = val_a;
+        var elem2 = document.getElementById("probability_a");
+        elem2.value = val_a;
     	var iter_elem = document.getElementById("num_iteration_value");
     	var exp_elem  = document.getElementById("num_experiment_value");
-        plotProbProgram (val_p, iter_elem.value, exp_elem.value);
+    	var prob_elem_b = document.getElementById("probability_value_b");
+        plotProbProgram (val_a, prob_elem_b.value, iter_elem.value, exp_elem.value);
 	}
+	
+	function updateProbability(val_b) {
+  		var elem1 = document.getElementById("probability_value_b");
+        elem1.value = val_b;
+        var elem2 = document.getElementById("probability_b");
+        elem2.value = val_b;
+        var prob_elem_a = document.getElementById("probability_value_a");
+    	var iter_elem = document.getElementById("num_iteration_value");
+    	var exp_elem  = document.getElementById("num_experiment_value");
+        plotProbProgram (prob_elem_a.value, val_b, iter_elem.value, exp_elem.value);
+	}
+	
 	function updateNumIter(nit) {
   		var elem1 = document.getElementById("num_iteration_value");
         elem1.value = nit;
