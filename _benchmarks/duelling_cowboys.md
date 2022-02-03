@@ -78,7 +78,7 @@ end
 <br>
 
 ```
-python polar.py benchmarks/prinsys/duelling_cowboys.prob --goals "E(turn)"
+python polar.py benchmarks/prinsys/duelling_cowboys.prob --goals "E(ahit)"
 
 8888888b.   .d88888b.  888             d8888 8888888b.
 888   Y88b d88P" "Y88b 888            d88888 888   Y88b
@@ -97,13 +97,13 @@ By the ProbInG group
 - Analysis Result -
 -------------------
 
-E(turn) = 0; (-a*(a + b - 1)**n + a + (a + b - 1)**n - 1)/(a + b - 2)
+E(ahit) = 0; a*(a*(a + b - 1)**(n - 1) + b - (a + b - 1)**(n - 1) - 1)/(a + b - 2)
 Solution is exact
 
-Elapsed time: 1.3329060077667236 s
+Elapsed time: 1.483273983001709 s
 ```
 
 
 <p>
-Solution: \[\mathbb{E} (turn) = \frac{a - a (a+b-1)^n + (a+b-1)^n - 1}{(a+b-2)}\]
+Solution: \[\mathbb{E} (turn) = \frac{a (a (a + b - 1)^(n - 1) + b - (a + b - 1)^(n - 1) - 1)}{(a+b-2)}\]
 </p>
