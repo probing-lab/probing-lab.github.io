@@ -208,6 +208,28 @@ The probability that Cowboy A wins is: \[\mathbb{E} (ahit * (1 - continue)) = \f
         var ahit     = 0;
         var bhit     = 0;
         
+        for (var i = 0; i < nsim; i++) { 
+             for (var j = 0; j < nit; j++){
+                 if (turn == 0){
+                     ahit = sampleBernoulli(val_a);
+                     if (ahit == 1){
+                         continue = 0;
+                     }else{
+                         turn = 1;
+                     }
+                 }else{
+                     bhit = sampleBernoulli(val_b);
+                     if (bhit == 1){
+                         continue = 0;
+                     }else{
+                         turn = 0;
+                     }
+                 }
+             }
+             x[i] = ahit;
+             tot1 += x[i];
+    	} 
+        
     }
     
     var prob_elem_a = document.getElementById("probability_value_a");
