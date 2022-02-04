@@ -134,6 +134,7 @@ The probability that Cowboy A wins is: \[\mathbb{E} (ahit * (1 - continue)) = \f
         return 0;
     }
 
+    /*
     function plotProbProgram (val_a, val_b, nit, nsim){
         var x = [];
         var tot1 = 0;
@@ -141,7 +142,7 @@ The probability that Cowboy A wins is: \[\mathbb{E} (ahit * (1 - continue)) = \f
         var continue = 1;
         var ahit     = 0;
         var bhit     = 0;
-    	/*for (var i = 0; i < nsim; i++) { 
+        for (var i = 0; i < nsim; i++) { 
              for (var j = 0; j < nit; j++){
                  if (turn == 0){
                      ahit = sampleBernoulli(val_a);
@@ -194,7 +195,7 @@ The probability that Cowboy A wins is: \[\mathbb{E} (ahit * (1 - continue)) = \f
     	var exact_ahit_elem   = document.getElementById("exact_ahit");
     	
     	var approx_ahit_elem   = document.getElementById("approx_ahit");
-    	approx_ahit_elem.value = tot1/nsim;*/
+    	approx_ahit_elem.value = tot1/nsim;
     	
     }
     
@@ -203,8 +204,8 @@ The probability that Cowboy A wins is: \[\mathbb{E} (ahit * (1 - continue)) = \f
     var iter_elem = document.getElementById("num_iteration_value");
     var exp_elem  = document.getElementById("num_experiment_value");
     
-    //plotProbProgram (prob_elem_a.value, prob_elem_b.value, iter_elem.value, exp_elem.value);
-    
+    plotProbProgram (prob_elem_a.value, prob_elem_b.value, iter_elem.value, exp_elem.value);
+    */
     
     
     function updateProbability_a(val_a) {
