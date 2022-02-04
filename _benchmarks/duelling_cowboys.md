@@ -119,8 +119,8 @@ The probability that Cowboy A wins is: \[\mathbb{E} (ahit * (1 - continue)) = \f
 | --- | ----------- | ----------- |
 | Number of program executions: | <input type="number" id="num_experiment_value" name="num_experiment_value" min="100" max="10000" step="100" value="1000" onchange="updateNumExp(this.value)"> | <input type="range" id="num_experiment" name="num_experiment" min="100" max="10000" step="100" value="1000" onchange="updateNumExp(this.value)"> |
 | Number of loop iterations (n): | <input type="number" id="num_iteration_value" name="num_iteration_value" min="10" max="100" step="10" value="10" onchange="updateNumIter(this.value)">  | <input type="range" id="num_iteration" name="num_iteration" min="10" max="100" step="10" value="10" onchange="updateNumIter(this.value)"> |
-| Probability (a): | <input type="number" id="probability_value_a" name="probability_value_b" min="0" max="1" step="0.1" value="0.5" onchange="updateProbability(this.value)"> | <input type="range" id="probability" name="probability_a" min="0" max="1" step="0.1" value="0.5" onchange="updateProbability(this.value)"> |
-| Probability (b): | <input type="number" id="probability_value_b" name="probability_value_b" min="0" max="1" step="0.1" value="0.5" onchange="updateProbability(this.value)"> | <input type="range" id="probability" name="probability_b" min="0" max="1" step="0.1" value="0.5" onchange="updateProbability(this.value)"> |
+| Probability (a): | <input type="number" id="probability_value_a" name="probability_value_b" min="0" max="1" step="0.1" value="0.5" onchange="updateProbability_a(this.value)"> | <input type="range" id="probability" name="probability_a" min="0" max="1" step="0.1" value="0.5" onchange="updateProbability(this.value)"> |
+| Probability (b): | <input type="number" id="probability_value_b" name="probability_value_b" min="0" max="1" step="0.1" value="0.5" onchange="updateProbability_b(this.value)"> | <input type="range" id="probability" name="probability_b" min="0" max="1" step="0.1" value="0.5" onchange="updateProbability(this.value)"> |
 
 | Exact E(ahit) | Approx. E(ahit) | 
 | --- | --- |
@@ -191,7 +191,7 @@ The probability that Cowboy A wins is: \[\mathbb{E} (ahit * (1 - continue)) = \f
     	Plotly.newPlot('myDiv', data, layout);
     	
     	var exact_ahit_elem   = document.getElementById("exact_ahit");
-    	exact_ahit_elem.value = val_a * nit;
+    	//exact_ahit_elem.value = val_a * nit;
     	
     	var approx_ahit_elem   = document.getElementById("approx_ahit");
     	approx_ahit_elem.value = tot1/nsim;
@@ -207,7 +207,7 @@ The probability that Cowboy A wins is: \[\mathbb{E} (ahit * (1 - continue)) = \f
     
 
     
-    function updateProbability(val_a) {
+    function updateProbability_a(val_a) {
   		var elem1 = document.getElementById("probability_value_a");
         elem1.value = val_a;
         var elem2 = document.getElementById("probability_a");
@@ -218,7 +218,7 @@ The probability that Cowboy A wins is: \[\mathbb{E} (ahit * (1 - continue)) = \f
         plotProbProgram (val_a, prob_elem_b.value, iter_elem.value, exp_elem.value);
 	}
 	
-	function updateProbability(val_b) {
+	function updateProbability_b(val_b) {
   		var elem1 = document.getElementById("probability_value_b");
         elem1.value = val_b;
         var elem2 = document.getElementById("probability_b");
