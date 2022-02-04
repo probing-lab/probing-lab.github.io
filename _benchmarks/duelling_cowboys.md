@@ -137,12 +137,15 @@ The probability that Cowboy A wins is: \[\mathbb{E} (ahit * (1 - continue)) = \f
 
     
     function plotProbProgram (val_a, val_b, nit, nsim){
+        var tot1, turn, continue, ahit, bhit;
         var x = [];
-        var tot1 = 0;
-        var turn     = 0;
-        var continue = 1;
-        var ahit     = 0;
-        var bhit     = 0;
+        
+        tot1     = 0;
+        turn     = 0;
+        continue = 1;
+        ahit     = 0;
+        bhit     = 0;
+        return 0;
         /* for (var i = 0; i < nsim; i++) { 
              for (var j = 0; j < nit; j++){
                  if (turn == 0){
