@@ -215,7 +215,7 @@ The probability that Cowboy A wins is: \[\mathbb{E} (ahit * (1 - continue)) = \f
     	var iter_elem = document.getElementById("num_iteration_value");
     	var exp_elem  = document.getElementById("num_experiment_value");
     	var prob_elem_b = document.getElementById("probability_value_b");
-        plotProbProgram (val_a, prob_elem_b.value, iter_elem.value, exp_elem.value);
+        //plotProbProgram (val_a, prob_elem_b.value, iter_elem.value, exp_elem.value);
 	}
 	
 	function updateProbability_b(val_b) {
@@ -226,7 +226,7 @@ The probability that Cowboy A wins is: \[\mathbb{E} (ahit * (1 - continue)) = \f
         var prob_elem_a = document.getElementById("probability_value_a");
     	var iter_elem = document.getElementById("num_iteration_value");
     	var exp_elem  = document.getElementById("num_experiment_value");
-        plotProbProgram (prob_elem_a.value, val_b, iter_elem.value, exp_elem.value);
+        //plotProbProgram (prob_elem_a.value, val_b, iter_elem.value, exp_elem.value);
 	}
 	
 	function updateNumIter(nit) {
@@ -237,7 +237,7 @@ The probability that Cowboy A wins is: \[\mathbb{E} (ahit * (1 - continue)) = \f
         var prob_elem_a = document.getElementById("probability_value_a");
         var prob_elem_b = document.getElementById("probability_value_b");
     	var exp_elem  = document.getElementById("num_experiment_value");
-    	plotProbProgram (prob_elem_a.value, prob_elem_b.value, nit, exp_elem.value);
+    	//plotProbProgram (prob_elem_a.value, prob_elem_b.value, nit, exp_elem.value);
 	}
 	function updateNumExp(nsim) {
   		var elem1 = document.getElementById("num_experiment_value");
@@ -247,7 +247,7 @@ The probability that Cowboy A wins is: \[\mathbb{E} (ahit * (1 - continue)) = \f
     	var prob_elem_a = document.getElementById("probability_value_a");
     	var prob_elem_b = document.getElementById("probability_value_b");
     	var iter_elem = document.getElementById("num_iteration_value");
-    	plotProbProgram (prob_elem_a.value, prob_elem_b.value, iter_elem.value, nsim);
+    	//plotProbProgram (prob_elem_a.value, prob_elem_b.value, iter_elem.value, nsim);
 	}
      
   </script>
