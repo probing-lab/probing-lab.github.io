@@ -204,7 +204,7 @@ The probability that Cowboy A wins is: \[\mathbb{E} (ahit * (1 - continue)) = \f
     var iter_elem = document.getElementById("num_iteration_value");
     var exp_elem  = document.getElementById("num_experiment_value");
     
-    plotProbProgram (prob_elem_a.value, prob_elem_b.value, iter_elem.value, exp_elem.value);
+    //plotProbProgram (prob_elem_a.value, prob_elem_b.value, iter_elem.value, exp_elem.value);
     
     
     
