@@ -200,7 +200,20 @@ The probability that Cowboy A wins is: \[\mathbb{E} (ahit * (1 - continue)) = \f
     }
     */
     
-    
+    function plotProbProgram (val_a, val_b, nit, nsim){
+        var x = [];
+        var tot1 = 0;
+        var turn     = 0;
+        var continue = 1;
+        var ahit     = 0;
+        var bhit     = 0;
+        for (var i = 0; i < nsim; i++) { 
+        }
+        
+        var exact_ahit_elem   = document.getElementById("exact_ahit");
+        var approx_ahit_elem   = document.getElementById("approx_ahit");
+    	approx_ahit_elem.value = "ciao";
+    }    
     
     var prob_elem_a = document.getElementById("probability_value_a");
     var prob_elem_b = document.getElementById("probability_value_b");
