@@ -184,7 +184,7 @@ The probability that Cowboy A wins is: \[\mathbb{E} (ahit * (1 - continue)) = \f
       		bargap: 0.05, 
       		bargroupgap: 0.2, 
       		barmode: "overlay", 
-      		title: "Sampled Results (p=" + val_p.toString() + ", loop iteration=" + nit.toString()  + ", num. simulations = " + nsim.toString()  + ")", 
+      		title: "Sampled Results (a=" + val_a.toString() + ", b=" + val_b.toString() + " loop iteration=" + nit.toString()  + ", num. simulations = " + nsim.toString()  + ")", 
       		xaxis: {title: "X Value"}, 
       		yaxis: {title: "Probability"}
     	}
