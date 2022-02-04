@@ -141,7 +141,7 @@ The probability that Cowboy A wins is: \[\mathbb{E} (ahit * (1 - continue)) = \f
         var continue = 1;
         var ahit     = 0;
         var bhit     = 0;
-    	for (var i = 0; i < nsim; i++) { 
+    	/*for (var i = 0; i < nsim; i++) { 
              for (var j = 0; j < nit; j++){
                  if (turn == 0){
                      ahit = sampleBernoulli(val_a);
@@ -192,10 +192,9 @@ The probability that Cowboy A wins is: \[\mathbb{E} (ahit * (1 - continue)) = \f
     	Plotly.newPlot('myDiv', data, layout);
     	
     	var exact_ahit_elem   = document.getElementById("exact_ahit");
-    	//exact_ahit_elem.value = val_a * nit;
     	
     	var approx_ahit_elem   = document.getElementById("approx_ahit");
-    	approx_ahit_elem.value = tot1/nsim;
+    	approx_ahit_elem.value = tot1/nsim;*/
     	
     }
     
