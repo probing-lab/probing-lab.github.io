@@ -133,6 +133,7 @@ The probability that Cowboy A wins is: \[\mathbb{E} (ahit * (1 - continue)) = \f
     	if (Math.random() < val_p) return 1;
         return 0;
     }
+    /*
     function plotProbProgram (val_a, val_b, nit, nsim){
         var x = [];
         var tot1 = 0;
@@ -205,7 +206,7 @@ The probability that Cowboy A wins is: \[\mathbb{E} (ahit * (1 - continue)) = \f
     
     plotProbProgram (prob_elem_a.value, prob_elem_b.value, iter_elem.value, exp_elem.value);
     
-
+    */
     
     function updateProbability_a(val_a) {
   		var elem1 = document.getElementById("probability_value_a");
