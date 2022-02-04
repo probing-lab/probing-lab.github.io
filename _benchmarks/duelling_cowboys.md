@@ -209,10 +209,6 @@ The probability that Cowboy A wins is: \[\mathbb{E} (ahit * (1 - continue)) = \f
         var bhit     = 0;
         for (var i = 0; i < nsim; i++) { 
         }
-        
-        var exact_ahit_elem   = document.getElementById("exact_ahit");
-        var approx_ahit_elem   = document.getElementById("approx_ahit");
-    	approx_ahit_elem.value = "ciao";
     }    
     
     var prob_elem_a = document.getElementById("probability_value_a");
