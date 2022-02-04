@@ -124,9 +124,10 @@ The probability that Cowboy A wins is: \[\mathbb{E} (ahit * (1 - continue)) = \f
 
 | Exact E(ahit) | Approx. E(ahit) | 
 | --- | --- |
-| <input type="text" size="5" id="exact_ahit" name="exact_ahit"> | <input type="text" size="5" id="approx_ahit" name="approx_e_x"> | 
+| <input type="text" size="5" id="exact_ahit" name="exact_ahit"> | <input type="text" size="5" id="approx_ahit" name="approx_ahit"> | 
 
 <div id="myDiv"><!-- Plotly chart will be drawn inside this DIV --></div>
+
 <script>
 
     function sampleBernoulli(val_p){
@@ -200,14 +201,7 @@ The probability that Cowboy A wins is: \[\mathbb{E} (ahit * (1 - continue)) = \f
     }
     */
     
-    function plotProbProgram (val_a, val_b, nit, nsim){
-        var x = [];
-        var tot1 = 0;
-        var turn     = 0;
-        var continue = 1;
-        var ahit     = 0;
-        var bhit     = 0;
-    }    
+ 
     
     var prob_elem_a = document.getElementById("probability_value_a");
     var prob_elem_b = document.getElementById("probability_value_b");
