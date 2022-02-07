@@ -49,7 +49,7 @@ Which is the probability that one of the two cowboys wins the duel ?
 A similar example was first introduced in: 
 <ul>
     <li>A. McIver, C. Morgan:
-<a href="https://link.springer.com/book/10.1007/b138392">Abstraction, Refinement and Proof for Probabilistic Systems. Monographs in Computer Science</a></i>, Springer 2005, ISBN 978-0-387-40115-7, (pag. 211)</li>
+<a href="https://link.springer.com/book/10.1007/b138392">Abstraction, Refinement and Proof for Probabilistic Systems. Monographs in Computer Science</a>, Springer 2005, ISBN 978-0-387-40115-7, (pag. 211)</li>
 </ul>
 </p>
 <br>
