@@ -95,7 +95,7 @@ This example was first introduced in:
 
 <b>Solving the problem using POLAR:</b>
 <p>
-The probability that Cowboy A can be calculated using POLAR as: \[\mathbb{E} (ahit) = \frac{a (a (a + b - 1)^{(n - 1)} + b - (a + b - 1)^{(n - 1)} - 1)}{(a+b-2)}\]
+The probability that Cowboy A will finally win can be calculated using POLAR as: \[\mathbb{E} (ahit) = \frac{a (a (a + b - 1)^{(n - 1)} + b - (a + b - 1)^{(n - 1)} - 1)}{(a+b-2)}\]
 </p>
 
 ```
