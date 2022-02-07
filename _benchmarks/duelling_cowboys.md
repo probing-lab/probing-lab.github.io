@@ -66,7 +66,7 @@ This example was first introduced in:
         <tr>
             <td>if statements</td>
             <td>Yes</td>
-            <td rowspan=6>(L) Linear <br> (NL) nonlinear <br><img src="/assets/dep_graphs/duelling_cowboys.png" alt="Dependency Graph" style="width:200px;"/></td>
+            <td rowspan=6>(L) Linear <br> (NL) nonlinear <br><img src="/assets/dep_graphs/duelling_cowboys.png" alt="Dependency Graph" style="width:400px;"/></td>
         </tr>
         <tr>
             <td>State space</td>
