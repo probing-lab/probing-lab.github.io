@@ -46,7 +46,7 @@ What is the probability that Cowboy A or Cowboy B wins ?
 <br>
 <br>
 <br>
-<b>This example was first introduced in: </b>
+This example was first introduced in: 
 <ul>
     <li>A. McIver, C. Morgan:
 <a href="https://link.springer.com/book/10.1007/b138392">Abstraction, Refinement and Proof for Probabilistic Systems. Monographs in Computer Science</a></i>, Springer 2005, ISBN 978-0-387-40115-7, (pag. 211)</li>
