@@ -126,9 +126,10 @@ The probability that Cowboy A can be calculated as: \[\mathbb{E} (ahit * (1 - co
 If <i>a</i> and <i>b<i> are both equal to 1 then the program becomes deterministic and 
 in that case Cowboy A will always win since is the first to shoot. If either <i>a</i> or 
 <i>b<i> is less than 1 then the limit for n to infinity of <i>(a + b - 1) < 1</i> is:
-\[\lim_{n \to \infinity} (a + b - 1)^{(n - 1)} = 0\]
+\[\lim_{n \to \infty} (a + b - 1)^{(n - 1)} = 0\]
 <br>
-Consequently the: \[ \lim_{n \to \infinity} \frac{a (a (a + b - 1)^{(n - 1)} + b - (a + b - 1)^{(n - 1)} - 1)}{(a+b-2)} =  \]
+<br>
+Consequently the: \[ \lim_{n \to \infty} \frac{a (a (a + b - 1)^{(n - 1)} + b - (a + b - 1)^{(n - 1)} - 1)}{(a+b-2)} =  \]
 </p>
 
 
