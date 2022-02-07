@@ -93,7 +93,7 @@ This example was first introduced in:
 
 <br>
 
-<b>Using POLAR</b>
+<b>Solving the problem using POLAR:</b>
 <p>
 The probability that Cowboy A can be calculated using POLAR as: \[\mathbb{E} (ahit * (1 - continue)) = \frac{a (a (a + b - 1)^{(n - 1)} + b - (a + b - 1)^{(n - 1)} - 1)}{(a+b-2)}\]
 </p>
@@ -149,6 +149,39 @@ Consequently we have that: \[ \lim_{n \to \infty} \frac{a (a (a + b - 1)^{(n - 1
 | <input type="text" size="5" id="exact_ahit" name="exact_ahit"> | <input type="text" size="5" id="approx_ahit" name="approx_ahit"> | 
 
 <div id="myDiv"><!-- Plotly chart will be drawn inside this DIV --></div>
+
+<b>Limitation of POLAR in this example:</b>
+
+<p>
+While we can compute the exact probability for the Cowboy A to win with two symbolic parameters, 
+we have issues to compute the exact probability for the Cowboy B to win with two symbolic parameters
+(while it works with only one parameter) due to some limitations of the library sympy that 
+POLAR is using.
+</p>
+
+```
+python polar.py benchmarks/prinsys/duelling_cowboys.prob --goals "E(bhit * (1 - continue))"
+
+8888888b.   .d88888b.  888             d8888 8888888b.
+888   Y88b d88P" "Y88b 888            d88888 888   Y88b
+888    888 888     888 888           d88P888 888    888
+888   d88P 888     888 888          d88P 888 888   d88P
+8888888P"  888     888 888         d88P  888 8888888P"
+888        888     888 888        d88P   888 888 T88b
+888        Y88b. .d88P 888       d8888888888 888  T88b
+888         "Y88888P"  88888888 d88P     888 888   T88b
+
+By the ProbInG group
+
+
+
+-------------------
+- Analysis Result -
+-------------------
+
+sorted roots not supported over ZZ[a,b]
+```
+
 
 <script>
 
