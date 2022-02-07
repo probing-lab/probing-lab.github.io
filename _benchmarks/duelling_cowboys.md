@@ -14,21 +14,21 @@ defective:      "No"
 
 ```python
 turn = 0
-continue = 1
+stop = 0
 ahit = 0
 bhit = 0
 while true:
     if turn == 0:
         ahit = Bernoulli(a)
         if ahit == 1:
-            continue = 0
+            stop = 1
         else:
             turn = 1
         end
     else:
         bhit = Bernoulli(b)
         if bhit == 1:
-            continue = 0
+            stop = 1
         else:
             turn = 0
         end
@@ -115,16 +115,16 @@ types
     _turn1 : Finite(0, 1)
 end
 turn = 0
-continue = 1
+stop = 0
 ahit = 0
 bhit = 0
 while true:
     _old0 = turn
     ahit = Bernoulli(a)  |  _old0 == 0  :  ahit
-    _continue1 = 0  |  (ahit == 1 ∧ _old0 == 0)  :  continue
+    _stop1 = 1  |  (ahit == 1 ∧ _old0 == 0)  :  stop
     _turn1 = 1  |  (¬(ahit == 1) ∧ _old0 == 0)  :  turn
     bhit = Bernoulli(b)  |  ¬(_old0 == 0)  :  bhit
-    continue = 0  |  (bhit == 1 ∧ ¬(_old0 == 0))  :  _continue1
+    stop = 1  |  (bhit == 1 ∧ ¬(_old0 == 0))  :  _stop1
     turn = 0  |  (¬(bhit == 1) ∧ ¬(_old0 == 0))  :  _turn1
 end
 ```
