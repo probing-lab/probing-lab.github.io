@@ -182,7 +182,7 @@ By the ProbInG group
 sorted roots not supported over ZZ[a,b]
 ```
 
-However, if we fix <i>a</i> and  <i>b</i> to a value (for example both to 0.5): 
+However, if we set <i>a</i> and <i>b</i> to a specific value (for example both to 0.5): 
 
 ```python
 turn = 0
@@ -208,7 +208,7 @@ while true:
 end
 ```
 
-Then we can compute the solution for Cowboy B.
+Then, we can compute the solution for Cowboy B.
 
 ```
 python polar.py benchmarks/prinsys/duelling_cowboys.prob --goals "E(bhit)"
