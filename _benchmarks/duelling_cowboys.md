@@ -191,7 +191,7 @@ The probability that Cowboy A wins is: \[\mathbb{E} (ahit * (1 - continue)) = \f
       		bargroupgap: 0.2, 
       		barmode: "overlay", 
       		title: "Sampled Results (a=" + val_a.toString() + ", b=" + val_b.toString() + " loop iteration=" + nit.toString()  + ", num. simulations = " + nsim.toString()  + ")", 
-      		xaxis: {title: "X Value"}, 
+      		xaxis: {title: "Cowboy A wins (1) or does not win (0)."}, 
       		yaxis: {title: "Probability"}
     	}
     	Plotly.newPlot('myDiv', data, layout);
