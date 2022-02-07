@@ -218,21 +218,21 @@ However, if we set <i>a</i> and <i>b</i> to a specific value (for example both t
 
 ```python
 turn = 0
-continue = 1
+stop = 0
 ahit = 0
 bhit = 0
 while true:
     if turn == 0:
         ahit = Bernoulli(0.5)
         if ahit == 1:
-            continue = 0
+            stop = 1
         else:
             turn = 1
         end
     else:
         bhit = Bernoulli(0.5)
         if bhit == 1:
-            continue = 0
+            stop = 1
         else:
             turn = 0
         end
