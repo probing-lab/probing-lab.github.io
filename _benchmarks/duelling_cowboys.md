@@ -129,7 +129,7 @@ while true:
 end
 ```
 
-<p>This is the command line and the solution of the expected value for the ahit variable:</p>
+<p>This is the command line for POLAR to compute the closed-form solution of the expected value for the ahit variable:</p>
 
 ```
 python polar.py benchmarks/prinsys/duelling_cowboys.prob --goals "E(ahit)"
