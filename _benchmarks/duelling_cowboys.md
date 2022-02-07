@@ -95,11 +95,11 @@ This example was first introduced in:
 
 <b>Solving the problem using POLAR:</b>
 <p>
-The probability that Cowboy A can be calculated using POLAR as: \[\mathbb{E} (ahit * (1 - continue)) = \frac{a (a (a + b - 1)^{(n - 1)} + b - (a + b - 1)^{(n - 1)} - 1)}{(a+b-2)}\]
+The probability that Cowboy A can be calculated using POLAR as: \[\mathbb{E} (ahit) = \frac{a (a (a + b - 1)^{(n - 1)} + b - (a + b - 1)^{(n - 1)} - 1)}{(a+b-2)}\]
 </p>
 
 ```
-python polar.py benchmarks/prinsys/duelling_cowboys.prob --goals "E(ahit * (1 - continue))"
+python polar.py benchmarks/prinsys/duelling_cowboys.prob --goals "E(ahit)"
 
 8888888b.   .d88888b.  888             d8888 8888888b.
 888   Y88b d88P" "Y88b 888            d88888 888   Y88b
@@ -118,10 +118,10 @@ By the ProbInG group
 - Analysis Result -
 -------------------
 
-E(ahit*(1 - continue)) = 0; a*(a*(a + b - 1)**(n - 1) + b - (a + b - 1)**(n - 1) - 1)/(a + b - 2)
+E(ahit) = 0; a*(a*(a + b - 1)**(n - 1) + b - (a + b - 1)**(n - 1) - 1)/(a + b - 2)
 Solution is exact
 
-Elapsed time: 1.5660450458526611 s
+Elapsed time: 1.5186586380004883 s
 ```
 
 
@@ -160,7 +160,7 @@ POLAR is using.
 </p>
 
 ```
-python polar.py benchmarks/prinsys/duelling_cowboys.prob --goals "E(bhit * (1 - continue))"
+python polar.py benchmarks/prinsys/duelling_cowboys.prob --goals "E(bhit)"
 
 8888888b.   .d88888b.  888             d8888 8888888b.
 888   Y88b d88P" "Y88b 888            d88888 888   Y88b
