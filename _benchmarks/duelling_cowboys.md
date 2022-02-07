@@ -49,7 +49,7 @@ What is the probability that Cowboy A or Cowboy B wins ?
 <b>This example was first introduced in: </b>
 <ul>
     <li>A. McIver, C. Morgan:
-<a href="https://link.springer.com/book/10.1007/b138392">Abstraction, Refinement and Proof for Probabilistic Systems. Monographs in Computer Science</i>, Springer 2005, ISBN 978-0-387-40115-7, (pag. 211)</li>
+<a href="https://link.springer.com/book/10.1007/b138392">Abstraction, Refinement and Proof for Probabilistic Systems. Monographs in Computer Science</a></i>, Springer 2005, ISBN 978-0-387-40115-7, (pag. 211)</li>
 </ul>
 </p>
 
@@ -125,8 +125,10 @@ The probability that Cowboy A can be calculated as: \[\mathbb{E} (ahit * (1 - co
 
 If <i>a</i> and <i>b<i> are both equal to 1 then the program becomes deterministic and 
 in that case Cowboy A will always win since is the first to shoot. If either <i>a</i> or 
-<i>b<i> is less than 1 then the limit for n to infinity of <i>(a + b - 1)</i> is:
-\[
+<i>b<i> is less than 1 then the limit for n to infinity of <i>(a + b - 1) < 1</i> is:
+\[\lim_{n \to \infinity} (a + b - 1)^{(n - 1)} = 0\]
+<br>
+Consequently the: \[ \lim_{n \to \infinity} \frac{a (a (a + b - 1)^{(n - 1)} + b - (a + b - 1)^{(n - 1)} - 1)}{(a+b-2)} =  \]
 </p>
 
 
