@@ -50,8 +50,7 @@ Which is the probability that one of the two cowboys wins the duel ?
 <br>
 A similar example was first introduced in: 
 <ul>
-    <li>A. McIver, C. Morgan:
-<a href="https://link.springer.com/book/10.1007/b138392">Abstraction, Refinement and Proof for Probabilistic Systems. Monographs in Computer Science</a>, Springer 2005, ISBN 978-0-387-40115-7, (pag. 211)</li>
+    <ol>A. McIver, C. Morgan, Abstraction, Refinement and Proof for Probabilistic Systems. Monographs in Computer Science, Springer 2005, ISBN 978-0-387-40115-7, (pag. 211), [<a href="https://link.springer.com/book/10.1007/b138392">Link</a>]</ol>
 </ul>
 </p>
 <br>
