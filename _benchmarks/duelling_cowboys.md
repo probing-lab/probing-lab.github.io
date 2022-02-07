@@ -39,9 +39,9 @@ end
 <br>
 <b>Description</b>
 <p>
-Two cowboys A and B take turns to shoot at each other.  During each turn, cowboy A can hit cowboy B with probability  a while cowboy B can hit cowboy A with probability b. The duel terminates until one cowboy succeeds to hit and eliminate the other.
+Two cowboys A and B take turns to shoot at each other.  During each turn, cowboy A can hit cowboy B with probability  a while cowboy B can hit cowboy A with probability b. The duel terminates until one cowboy succeeds to hit the other.
 <br><br>
-What is the probability that Cowboy A or Cowboy B wins ?
+Which is the probability that one of the two cowboys wins the duel ?
 <br>
 <br>
 <br>
