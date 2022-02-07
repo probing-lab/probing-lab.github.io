@@ -129,7 +129,7 @@ in that case Cowboy A will always win since is the first to shoot. If either <i>
 \[\lim_{n \to \infty} (a + b - 1)^{(n - 1)} = 0\]
 <br>
 <br>
-Consequently the: \[ \lim_{n \to \infty} \frac{a (a (a + b - 1)^{(n - 1)} + b - (a + b - 1)^{(n - 1)} - 1)}{(a+b-2)} =  \]
+Consequently the: \[ \lim_{n \to \infty} \frac{a (a (a + b - 1)^{(n - 1)} + b - (a + b - 1)^{(n - 1)} - 1)}{(a+b-2)} = \frac{a(b - 1)}{a + b - 2}  \]
 </p>
 
 
