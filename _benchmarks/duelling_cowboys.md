@@ -128,7 +128,7 @@ Elapsed time: 1.5660450458526611 s
 <p>
 If <i>a</i> and <i>b</i> are both equal to 1 then the program becomes deterministic and 
 in that case Cowboy A will always win since is the first to shoot. If either <i>a</i> or 
-<i>b<\i> is less than 1 then the limit for n to infinity of <i>(a + b - 1) < 1</i> is:
+<i>b</i> is less than 1 then the limit for n to infinity of <i>(a + b - 1) < 1</i> is:
 \[\lim_{n \to \infty} (a + b - 1)^{(n - 1)} = 0\]
 <br>
 <br>
