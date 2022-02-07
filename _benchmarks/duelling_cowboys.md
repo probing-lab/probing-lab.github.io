@@ -10,7 +10,7 @@ loopguard:      "(true)"
 defective:      "No"
 ---
 
-Duelling Cowboys (Source Code)
+<b>Duelling Cowboys (Source Code)</b>
 
 ```python
 turn = 0
@@ -37,11 +37,17 @@ end
 ```
 
 <br>
-Description
+<b>Description</b>
 <p>
 Two cowboys A and B take turns to shoot at each other.  During each turn, cowboy A can hit cowboy B with probability  a while cowboy B can hit cowboy A with probability b. The duel terminates until one cowboy succeeds to hit the other.
 <br><br>
 What is the probability that Cowboy A or Cowboy B wins ?
+<br>
+<b>References: </b>
+<ul>
+    <li>Annabelle McIver, Carroll Morgan:
+Abstraction, Refinement and Proof for Probabilistic Systems. Monographs in Computer Science, Springer 2005, ISBN 978-0-387-40115-7, (pag. 211)</li>
+</ul>
 </p>
 
 <br>
@@ -112,7 +118,7 @@ Elapsed time: 1.5660450458526611 s
 
 
 <p>
-The probability that Cowboy A wins is: \[\mathbb{E} (ahit * (1 - continue)) = \frac{a (a (a + b - 1)^{(n - 1)} + b - (a + b - 1)^{(n - 1)} - 1)}{(a+b-2)}\]
+The probability that Cowboy A can be calculated as: \[\mathbb{E} (ahit * (1 - continue)) = \frac{a (a (a + b - 1)^{(n - 1)} + b - (a + b - 1)^{(n - 1)} - 1)}{(a+b-2)}\]
 </p>
 
 | Parameter | Current Value | Tuning |
