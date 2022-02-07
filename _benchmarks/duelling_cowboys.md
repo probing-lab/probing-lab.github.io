@@ -107,11 +107,11 @@ polynomial assignments as follows:
 ```python
 types
     turn : Finite(0, 1)
-    continue : Finite(0, 1)
+    stop : Finite(0, 1)
     ahit : Finite(0, 1)
     bhit : Finite(0, 1)
     _old0 : Finite(0, 1)
-    _continue1 : Finite(0, 1)
+    _stop1 : Finite(0, 1)
     _turn1 : Finite(0, 1)
 end
 turn = 0
