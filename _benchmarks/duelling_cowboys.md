@@ -102,7 +102,7 @@ The probability that Cowboy A will finally win can be calculated using POLAR as:
 
 <p>POLAR transforms the original programs by replacing the if-then-else conditions as 
 polynomial assignments as follows:
-<p>
+</p>
 
 ```python
 types
@@ -129,7 +129,7 @@ while true:
 end
 ```
 
-This is the command line and the solution of the expected value for the ahit variable:
+<p>This is the command line and the solution of the expected value for the ahit variable:</p>
 
 ```
 python polar.py benchmarks/prinsys/duelling_cowboys.prob --goals "E(ahit)"
