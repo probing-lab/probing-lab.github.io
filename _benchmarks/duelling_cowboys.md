@@ -154,8 +154,8 @@ Consequently we have that: \[ \lim_{n \to \infty} \frac{a (a (a + b - 1)^{(n - 1
 
 <p>
 While we can compute the exact probability for the Cowboy A to win, 
-we have issues to compute the exact probability for the Cowboy B to win with two symbolic parameters
-(while it works with only one parameter) due to some limitations of the library sympy that 
+we have issues to compute the exact probability for the Cowboy B to win using 
+symbolic parameters due to some limitations of the library sympy that 
 POLAR is using.
 </p>
 
@@ -180,6 +180,60 @@ By the ProbInG group
 -------------------
 
 sorted roots not supported over ZZ[a,b]
+```
+
+However, if we fix <i>a</i> and  <i>b</i> to a value (for example both to 0.5): 
+
+```python
+turn = 0
+continue = 1
+ahit = 0
+bhit = 0
+while true:
+    if turn == 0:
+        ahit = Bernoulli(0.5)
+        if ahit == 1:
+            continue = 0
+        else:
+            turn = 1
+        end
+    else:
+        bhit = Bernoulli(0.5)
+        if bhit == 1:
+            continue = 0
+        else:
+            turn = 0
+        end
+    end
+end
+```
+
+Then we can compute the solution for Cowboy B.
+
+```
+python polar.py benchmarks/prinsys/duelling_cowboys.prob --goals "E(bhit)"
+
+8888888b.   .d88888b.  888             d8888 8888888b.
+888   Y88b d88P" "Y88b 888            d88888 888   Y88b
+888    888 888     888 888           d88P888 888    888
+888   d88P 888     888 888          d88P 888 888   d88P
+8888888P"  888     888 888         d88P  888 8888888P"
+888        888     888 888        d88P   888 888 T88b
+888        Y88b. .d88P 888       d8888888888 888  T88b
+888         "Y88888P"  88888888 d88P     888 888   T88b
+
+By the ProbInG group
+
+
+
+-------------------
+- Analysis Result -
+-------------------
+
+E(bhit) = 0; 0; 1/4; 1/4; 1/2 - 2**(-n)
+Solution is exact
+
+Elapsed time: 0.47222185134887695 s
 ```
 
 
