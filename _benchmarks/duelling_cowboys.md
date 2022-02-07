@@ -36,6 +36,8 @@ while true:
 end
 ```
 
+
+
 <br>
 <b>Description</b>
 <p>
@@ -97,6 +99,37 @@ A similar example was first introduced in:
 <p>
 The probability that Cowboy A will finally win can be calculated using POLAR as: \[\mathbb{E} (ahit) = \frac{a (a (a + b - 1)^{(n - 1)} + b - (a + b - 1)^{(n - 1)} - 1)}{(a+b-2)}\]
 </p>
+
+<p>POLAR transforms the original programs by replacing the if-then-else conditions as 
+polynomial assignments as follows:
+<p>
+
+```python
+types
+    turn : Finite(0, 1)
+    continue : Finite(0, 1)
+    ahit : Finite(0, 1)
+    bhit : Finite(0, 1)
+    _old0 : Finite(0, 1)
+    _continue1 : Finite(0, 1)
+    _turn1 : Finite(0, 1)
+end
+turn = 0
+continue = 1
+ahit = 0
+bhit = 0
+while true:
+    _old0 = turn
+    ahit = Bernoulli(a)  |  _old0 == 0  :  ahit
+    _continue1 = 0  |  (ahit == 1 ∧ _old0 == 0)  :  continue
+    _turn1 = 1  |  (¬(ahit == 1) ∧ _old0 == 0)  :  turn
+    bhit = Bernoulli(b)  |  ¬(_old0 == 0)  :  bhit
+    continue = 0  |  (bhit == 1 ∧ ¬(_old0 == 0))  :  _continue1
+    turn = 0  |  (¬(bhit == 1) ∧ ¬(_old0 == 0))  :  _turn1
+end
+```
+
+This is the command line and the solution of the expected value for the ahit variable:
 
 ```
 python polar.py benchmarks/prinsys/duelling_cowboys.prob --goals "E(ahit)"
@@ -208,7 +241,7 @@ while true:
 end
 ```
 
-Then, we can compute the solution for Cowboy B.
+Then, we can compute the solution for Cowboy B as follows:
 
 ```
 python polar.py benchmarks/prinsys/duelling_cowboys.prob --goals "E(bhit)"
