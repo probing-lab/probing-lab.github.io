@@ -155,7 +155,7 @@ Consequently we have that: \[ \lim_{n \to \infty} \frac{a (a (a + b - 1)^{(n - 1
 <p>
 While we can compute the exact probability for the Cowboy A to win, 
 we have issues to compute the exact probability for the Cowboy B to win using 
-symbolic parameters due to some limitations of the library sympy that 
+symbolic constants due to some limitations of the library sympy that 
 POLAR is using.
 </p>
 
