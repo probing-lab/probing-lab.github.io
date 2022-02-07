@@ -99,7 +99,7 @@ A similar example was first introduced in:
 The probability that Cowboy A will finally win can be calculated using POLAR as: \[\mathbb{E} (ahit) = \frac{a (a (a + b - 1)^{(n - 1)} + b - (a + b - 1)^{(n - 1)} - 1)}{(a+b-2)}\]
 </p>
 
-<p>POLAR transforms the original programs by replacing the if-then-else conditions as 
+<p>POLAR transforms the original program by replacing the if-then-else conditions as 
 polynomial assignments as follows:
 </p>
 
