@@ -31,7 +31,10 @@ end
 <br>
 <b>Description</b>
 <p>
-
+Imagine there are boxes of cereals offering inside special coupons of two different kind. 
+In order to win an award one needs to collect at least one coupon of each different type. 
+The question to solve is what is the expected number of boxes one needs to open in order 
+to collect all different coupons ?
 </p>
 <br>
 <br>
