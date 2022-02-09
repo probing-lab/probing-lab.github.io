@@ -32,6 +32,53 @@ end
 <b>Description</b>
 <p>
 
+</p>
+<br>
+<br>
+<table>
+    <thead>
+        <tr>
+            <th>Program features</th>
+            <th>Value</th>
+            <th>Dependency Graph</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>if statements</td>
+            <td>Yes</td>
+            <td rowspan=6>(L) Linear <br> (NL) nonlinear <br><img src="/assets/dep_graphs/duelling_cowboys.png" alt="Dependency Graph" style="width:400px;"/></td>
+        </tr>
+        <tr>
+            <td>State space</td>
+            <td>Finite, discrete</td>
+        </tr>
+        <tr>
+            <td>Circular Dependency</td>
+            <td>Yes</td>
+        </tr>
+        <tr>
+            <td>Symbolic Constants</td>
+            <td>Yes (a, b)</td>
+        </tr>
+        <tr>
+            <td>Effective Variables</td>
+            <td>Yes (turn, continue, ahit, bhit)</td>
+        </tr>
+        <tr>
+            <td>Defective Variables</td>
+            <td>No</td>
+        </tr>
+    </tbody>
+</table>
+
+<br>
+
+<b>Solving the problem using POLAR:</b>
+<p>
+The probability that Cowboy A will finally win can be calculated using POLAR as: \[\mathbb{E} (ahit) = \frac{a (a (a + b - 1)^{(n - 1)} + b - (a + b - 1)^{(n - 1)} - 1)}{(a+b-2)}\]
+</p>
+
 <br>
 <b>Comparison with Monte Carlo simulation:</b>
 
