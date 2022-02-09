@@ -79,7 +79,7 @@ to collect all different coupons ?
 
 <b>Solving the problem using POLAR:</b>
 <p>
-The expected number of boxes can be calculated using POLAR as: \[\mathbb{E} (boxes) = 3 - 4 (\frac{1}{2})^(-n) \]
+The expected number of boxes can be calculated using POLAR as: \[\mathbb{E} (boxes) = 3 - 4 (\frac{1}{2^n}) \]
 </p>
 
 ```
