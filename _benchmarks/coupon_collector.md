@@ -10,7 +10,7 @@ loopguard:      "condition"
 defective:      "No"
 ---
 
-Coupon Collector Problem - Two Coupons (Source Code)
+<b>Coupon Collector Problem - Two Coupons (Source Code)</b>
 
 ```python
 c0, c1 = 0, 0
@@ -28,6 +28,11 @@ while new_box == 1:
 end
 ```
 
+<br>
+<b>Description</b>
+<p>
+
+<br>
 <b>Comparison with Monte Carlo simulation:</b>
 
 | Parameter | Current Value | Tuning |
@@ -106,8 +111,8 @@ end
       		bargroupgap: 0.2, 
       		barmode: "overlay", 
       		title: "Sampled Results (loop iteration=" + nit.toString()  + ", num. simulations = " + nsim.toString()  + ")", 
-      		xaxis: {title: "Cowboy A wins (1) or does not win (0)."}, 
-      		yaxis: {title: "Expected number of Boxes"}
+      		xaxis: {title: "Number of Boxes"}, 
+      		yaxis: {title: "Probability"}
     	}
     	Plotly.newPlot('myDiv', data, layout);
     	
@@ -115,7 +120,7 @@ end
     	//exact_boxes_elem.value = Number(val_a) * (Number(val_a) * temp + Number(val_b) - temp - 1) / (Number(val_a) + Number(val_b) - 2);
     	
     	var approx_boxes_elem   = document.getElementById("approx_boxes");
-    	approx_boxes_elem.value = tot1;
+    	approx_boxes_elem.value = tot1/sim;
     	
     	
     }
