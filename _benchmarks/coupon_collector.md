@@ -49,7 +49,7 @@ end
     }
 
     
-    function plotProbProgram (val_a, val_b, nit, nsim){
+    function plotProbProgram (nit, nsim){
         var tot1, turn, cont, ahit, bhit;
         var x = [];
         
