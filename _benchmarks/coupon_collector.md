@@ -13,13 +13,18 @@ defective:      "No"
 Coupon Collector
 
 ```python
-f = 0
-c = 0
-d = 0
-while true:
-   f = 1 {1/2} 0
-   c = 1 - f + c*f
-   d = d + f - d*f
+c0, c1 = 0, 0
+continue = 1
+runtime = 0
+while continue == 1:
+    card = Bernoulli(1/2)
+    if card == 0:
+        c0 = 1
+    else:
+        c1 = 1
+    end
+    runtime = runtime + continue
+    continue = 1 - c0*c1
 end
 ```
 
