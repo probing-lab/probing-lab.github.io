@@ -54,7 +54,7 @@ to collect all different coupons ?
         </tr>
         <tr>
             <td>State space</td>
-            <td>Finite, discrete</td>
+            <td>Infinite, discrete</td>
         </tr>
         <tr>
             <td>Circular Dependency</td>
@@ -62,11 +62,11 @@ to collect all different coupons ?
         </tr>
         <tr>
             <td>Symbolic Constants</td>
-            <td>Yes (a, b)</td>
+            <td>No</td>
         </tr>
         <tr>
             <td>Effective Variables</td>
-            <td>Yes (turn, continue, ahit, bhit)</td>
+            <td>Yes (all)</td>
         </tr>
         <tr>
             <td>Defective Variables</td>
