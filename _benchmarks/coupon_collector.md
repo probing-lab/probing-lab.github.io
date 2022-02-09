@@ -102,7 +102,7 @@ By the ProbInG group
 - Analysis Result -
 -------------------
 
-E(runtime) = 0; 1; 2; 5/2; 3 - 4*2**(-n)
+E(boxes) = 0; 1; 2; 5/2; 3 - 4*2**(-n)
 Solution is exact
 
 Elapsed time: 0.44837403297424316 s
