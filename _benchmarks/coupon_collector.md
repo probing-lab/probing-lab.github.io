@@ -196,7 +196,7 @@ Elapsed time: 0.44837403297424316 s
     	//exact_boxes_elem.value = Number(val_a) * (Number(val_a) * temp + Number(val_b) - temp - 1) / (Number(val_a) + Number(val_b) - 2);
     	
     	var approx_boxes_elem   = document.getElementById("approx_boxes");
-    	approx_boxes_elem.value = tot1/sim;
+    	approx_boxes_elem.value = tot1/nsim;
     	
     	
     }
