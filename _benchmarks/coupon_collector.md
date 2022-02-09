@@ -60,6 +60,7 @@ end
         c1      = 0;
         new_box = 1;
         boxes   = 0;
+        coupon  = 0;
 
         for (var i = 0; i < nsim; i++) { 
              for (var j = 0; j < nit; j++){
@@ -110,7 +111,7 @@ end
     	//exact_boxes_elem.value = Number(val_a) * (Number(val_a) * temp + Number(val_b) - temp - 1) / (Number(val_a) + Number(val_b) - 2);
     	
     	var approx_boxes_elem   = document.getElementById("approx_boxes");
-    	approx_boxes_elem.value = tot1/nsim;
+    	approx_boxes_elem.value = tot1;
     	
     	
     }
