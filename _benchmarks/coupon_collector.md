@@ -1,30 +1,30 @@
 ---
-name:           "Coupon Collector"
-numvars:        "3"
-ifthenelse:     "No"
-infinitesp:     "No"
-circdependency: "No"
+name:           "Coupon Collector Problem (2 Coupons)"
+numvars:        "5"
+ifthenelse:     "Yes"
+infinitesp:     "Yes"
+circdependency: "Yes"
 symbolicconst:  "No"
 contstatesp:    "No"
-loopguard:      "(true)"
+loopguard:      "condition"
 defective:      "No"
 ---
 
-Coupon Collector
+Coupon Collector Problem
 
 ```python
 c0, c1 = 0, 0
-continue = 1
-runtime = 0
-while continue == 1:
-    card = Bernoulli(1/2)
-    if card == 0:
+new_box = 1
+boxes = 0
+while new_box == 1:
+    coupon = Bernoulli(1/2)
+    if coupon == 0:
         c0 = 1
     else:
         c1 = 1
     end
-    runtime = runtime + continue
-    continue = 1 - c0*c1
+    boxes = boxes + new_box
+    new_box = 1 - c0*c1
 end
 ```
 
