@@ -56,13 +56,15 @@ end
         tot1     = 0;
         var c0, c1, new_box, boxes, coupon;
         
-        c0      = 0;
-        c1      = 0;
-        new_box = 1;
-        boxes   = 0;
-        coupon  = 0;
+
 
         for (var i = 0; i < nsim; i++) { 
+            c0      = 0;
+        	c1      = 0;
+        	new_box = 1;
+        	boxes   = 0;
+        	coupon  = 0;
+        
              for (var j = 0; j < nit; j++){
                 if (new_box == 1){
                     coupon = sampleBernoulli(1/2);
