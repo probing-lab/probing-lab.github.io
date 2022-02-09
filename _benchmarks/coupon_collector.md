@@ -79,8 +79,34 @@ to collect all different coupons ?
 
 <b>Solving the problem using POLAR:</b>
 <p>
-The probability that Cowboy A will finally win can be calculated using POLAR as: \[\mathbb{E} (ahit) = \frac{a (a (a + b - 1)^{(n - 1)} + b - (a + b - 1)^{(n - 1)} - 1)}{(a+b-2)}\]
+The expected number of boxes can be calculated using POLAR as: \[\mathbb{E} (boxes) = 3 - 4 (\frac{1}{2})^(-n) \]
 </p>
+
+```
+python polar.py benchmarks/coupon_collector2.prob --goals "E(boxes)"
+
+8888888b.   .d88888b.  888             d8888 8888888b.
+888   Y88b d88P" "Y88b 888            d88888 888   Y88b
+888    888 888     888 888           d88P888 888    888
+888   d88P 888     888 888          d88P 888 888   d88P
+8888888P"  888     888 888         d88P  888 8888888P"
+888        888     888 888        d88P   888 888 T88b
+888        Y88b. .d88P 888       d8888888888 888  T88b
+888         "Y88888P"  88888888 d88P     888 888   T88b
+
+By the ProbInG group
+
+
+
+-------------------
+- Analysis Result -
+-------------------
+
+E(runtime) = 0; 1; 2; 5/2; 3 - 4*2**(-n)
+Solution is exact
+
+Elapsed time: 0.44837403297424316 s
+```
 
 <br>
 <b>Comparison with Monte Carlo simulation:</b>
