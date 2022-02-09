@@ -71,8 +71,10 @@ end
                     }else{
                         c1 = 1;
                     }
-                    boxes = boxes + new_box
-                    new_box = 1 - c0*c1
+                    boxes = boxes + new_box;
+                    new_box = 1 - c0*c1;
+                }else{
+                    break;
                 }
              }
              x[i] = boxes;
