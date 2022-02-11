@@ -28,7 +28,7 @@ while new_box == 1:
         c3 = 1
     end
     boxes = boxes + new_box
-    new_box = 1 - c0*c1*c2
+    new_box = 1 - c0*c1*c2*c3
 end
 ```
 
@@ -83,11 +83,11 @@ to collect all different coupons at least one time ?
 
 <b>Solving the problem using POLAR:</b>
 <p>
-The expected number of boxes can be calculated using POLAR as: \[\mathbb{E} (boxes) = 3 - \frac{4}{2^n} \]
+The expected number of boxes can be calculated using POLAR as: \[\mathbb{E} (boxes) = \frac{25}{3} - 16 \left (\frac{3}{4} \right)^n - \frac{16}{3} \left (\frac{1}{4} \right)^n + 12 \frac{1}{2^n} \]
 </p>
 
 ```
-python polar.py benchmarks/coupon_collector2.prob --goals "E(boxes)"
+python polar.py benchmarks/kura_2019/coupon_collector4.prob --goals "E(boxes)"
 
 8888888b.   .d88888b.  888             d8888 8888888b.
 888   Y88b d88P" "Y88b 888            d88888 888   Y88b
@@ -106,10 +106,10 @@ By the ProbInG group
 - Analysis Result -
 -------------------
 
-E(boxes) = 0; 1; 2; 5/2; 3 - 4*2**(-n)
+E(boxes) = 0; 1; 2; 3; 4; 157/32; 363/64; 3221/512; 6941/1024; 58617/8192; 121963/16384; 1004461/131072; 2052441/262144; 16682177/2097152; 33759863/4194304; 272458101/33554432; -16*(3/4)**n + 25/3 - 16*4**(-n)/3 + 12*2**(-n)
 Solution is exact
 
-Elapsed time: 0.44837403297424316 s
+Elapsed time: 2.3164360523223877 s
 ```
 
 <br>
