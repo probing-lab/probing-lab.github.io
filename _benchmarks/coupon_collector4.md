@@ -168,7 +168,7 @@ Elapsed time: 2.3164360523223877 s
                         c1 = 1;
                     }else if (coupon == 2){
                         c2 = 1;
-                    }else{
+                    }else if (coupon == 3){
                         c3 = 1;
                     }
                     boxes = boxes + new_box;
