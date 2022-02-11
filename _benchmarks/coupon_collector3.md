@@ -203,7 +203,7 @@ Elapsed time: 0.7299349308013916 s
     	Plotly.newPlot('myDiv', data, layout);
     	
     	var exact_boxes_elem  = document.getElementById("exact_boxes");
-    	exact_boxes_elem.value = 11/2 - 9 * Math.pow(2/3, nit) + 9/(Math.pow(3,nit)*2);
+    	exact_boxes_elem.value = 11/2 - 9 * Math.pow(2/3, nit) + 9*(Math.pow(3,-nit))/2;
     	
     	var approx_boxes_elem   = document.getElementById("approx_boxes");
     	approx_boxes_elem.value = tot1/nsim;
