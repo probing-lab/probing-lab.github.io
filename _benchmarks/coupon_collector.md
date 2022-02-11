@@ -33,7 +33,7 @@ end
 <p>
 Imagine there are boxes of cereals offering inside special coupons of two different kind. 
 In order to win an award one needs to collect at least one coupon of each different type. 
-The question to solve is what is the expected number of boxes one needs to open in order 
+What is the expected number of boxes one needs to open in order 
 to collect all different coupons ?
 </p>
 <br>
@@ -193,7 +193,7 @@ Elapsed time: 0.44837403297424316 s
     	Plotly.newPlot('myDiv', data, layout);
     	
     	var exact_boxes_elem  = document.getElementById("exact_boxes");
-    	//exact_boxes_elem.value = Number(val_a) * (Number(val_a) * temp + Number(val_b) - temp - 1) / (Number(val_a) + Number(val_b) - 2);
+    	exact_boxes_elem.value = 3 - 4/Math.pow(2, nit);
     	
     	var approx_boxes_elem   = document.getElementById("approx_boxes");
     	approx_boxes_elem.value = tot1/nsim;
