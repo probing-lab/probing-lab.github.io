@@ -129,6 +129,12 @@ Elapsed time: 0.7299349308013916 s
     	if (Math.random() < val_p) return 1;
         return 0;
     }
+    
+    function sampleCategorical3(val_p){
+    	if (Math.random() < val_p)     return 0;
+    	if (Math.random() < 2 * val_p) return 1;
+        return 2;
+    }
 
     
     function plotProbProgram (nit, nsim){
@@ -136,27 +142,30 @@ Elapsed time: 0.7299349308013916 s
         var x = [];
         
         tot1     = 0;
-        var c0, c1, new_box, boxes, coupon;
+        var c0, c1, c2, new_box, boxes, coupon;
         
 
 
         for (var i = 0; i < nsim; i++) { 
             c0      = 0;
         	c1      = 0;
+        	c2      = 0;
         	new_box = 1;
         	boxes   = 0;
         	coupon  = 0;
         
              for (var j = 0; j < nit; j++){
                 if (new_box == 1){
-                    coupon = sampleBernoulli(1/2);
+                    coupon = sampleCategorical3(1/3);
                     if (coupon == 0){
                         c0 = 1;
-                    }else{
+                    }else if (coupon == 1){
                         c1 = 1;
+                    }else {
+                        c2 = 1;
                     }
                     boxes = boxes + new_box;
-                    new_box = 1 - c0*c1;
+                    new_box = 1 - c0*c1*c2;
                 }else{
                     break;
                 }
