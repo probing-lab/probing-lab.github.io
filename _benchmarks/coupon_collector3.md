@@ -81,7 +81,7 @@ to collect all different coupons at least one time ?
 
 <b>Solving the problem using POLAR:</b>
 <p>
-The expected number of boxes can be calculated using POLAR as: \[\mathbb{E} (boxes) = \frac{11}{2} - 9 \left (\frac{2}{3} \right)^n + (\frac{9}{2 3^n} \]
+The expected number of boxes can be calculated using POLAR as: \[\mathbb{E} (boxes) = \frac{11}{2} - 9 \left (\frac{2}{3} \right)^n + \frac{9}{2 \cdot 3^n} \]
 </p>
 
 ```
@@ -194,7 +194,7 @@ Elapsed time: 0.7299349308013916 s
     	Plotly.newPlot('myDiv', data, layout);
     	
     	var exact_boxes_elem  = document.getElementById("exact_boxes");
-    	exact_boxes_elem.value = 11/2 - 9 * Math.pow(2/3, nit) + 9/(Math.pow(3,n)*2);
+    	exact_boxes_elem.value = 11/2 - 9 * Math.pow(2/3, nit) + 9/(Math.pow(3,nit)*2);
     	
     	var approx_boxes_elem   = document.getElementById("approx_boxes");
     	approx_boxes_elem.value = tot1/nsim;
