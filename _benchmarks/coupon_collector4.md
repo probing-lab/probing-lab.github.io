@@ -83,7 +83,7 @@ to collect all different coupons at least one time ?
 
 <b>Solving the problem using POLAR:</b>
 <p>
-The expected number of boxes can be calculated using POLAR as: \[\mathbb{E} (boxes) = \frac{25}{3} - 16 \left (\frac{3}{4} \right)^n - \frac{16}{3} \left (\frac{1}{4} \right)^n + 12 \frac{1}{2^n} \]
+The expected number of boxes can be calculated using POLAR as: \[\mathbb{E} (boxes) = \frac{25}{3} - 16 \left (\frac{3}{4} \right)^n - \frac{16}{3} \left (\frac{1}{4} \right)^n +  \frac{12}{2^n} \]
 </p>
 
 ```
@@ -133,10 +133,11 @@ Elapsed time: 2.3164360523223877 s
         return 0;
     }
     
-    function sampleCategorical3(val_p){
+    function sampleCategorical4(val_p){
     	if (Math.random() < val_p)     return 0;
     	if (Math.random() < 2 * val_p) return 1;
-        return 2;
+    	if (Math.random() < 3 * val_p) return 2;
+        return 3;
     }
 
     
@@ -145,7 +146,7 @@ Elapsed time: 2.3164360523223877 s
         var x = [];
         
         tot1     = 0;
-        var c0, c1, c2, new_box, boxes, coupon;
+        var c0, c1, c2, c3, new_box, boxes, coupon;
         
 
 
@@ -153,22 +154,25 @@ Elapsed time: 2.3164360523223877 s
             c0      = 0;
         	c1      = 0;
         	c2      = 0;
+        	c3      = 0;
         	new_box = 1;
         	boxes   = 0;
         	coupon  = 0;
         
              for (var j = 0; j < nit; j++){
                 if (new_box == 1){
-                    coupon = sampleCategorical3(1/3);
+                    coupon = sampleCategorical4(1/4);
                     if (coupon == 0){
                         c0 = 1;
                     }else if (coupon == 1){
                         c1 = 1;
-                    }else {
+                    }else if (coupon == 2){
                         c2 = 1;
+                    }else{
+                        c3 = 1;
                     }
                     boxes = boxes + new_box;
-                    new_box = 1 - c0*c1*c2;
+                    new_box = 1 - c0*c1*c2*c3;
                 }else{
                     break;
                 }
@@ -206,7 +210,7 @@ Elapsed time: 2.3164360523223877 s
     	Plotly.newPlot('myDiv', data, layout);
     	
     	var exact_boxes_elem  = document.getElementById("exact_boxes");
-    	exact_boxes_elem.value = 11/2 - 9 * Math.pow(2/3, nit) + 9*(Math.pow(3,-nit))/2;
+    	exact_boxes_elem.value = 25/3 - 16 * Math.pow(3/4, nit) - (16/3)*(Math.pow(1/4,nit)) + 12*(Math.pow(1/2,nit));
     	
     	var approx_boxes_elem   = document.getElementById("approx_boxes");
     	approx_boxes_elem.value = tot1/nsim;
