@@ -34,7 +34,7 @@ end
 Imagine there are boxes of cereals offering inside special coupons of two different kind. 
 In order to win an award one needs to collect at least one coupon of each different type. 
 What is the expected number of boxes one needs to open in order 
-to collect all different coupons ?
+to collect all different coupons at least one time ?
 </p>
 <br>
 <br>
