@@ -132,6 +132,12 @@ Elapsed time: 2.3164360523223877 s
     	if (Math.random() < val_p) return 1;
         return 0;
     }
+    
+    function sampleCategorical3(val_p){
+    	if (Math.random() < val_p)     return 0;
+    	if (Math.random() < 2 * val_p) return 1;
+        return 2;
+    }
 
     
     function plotProbProgram (nit, nsim){
@@ -139,27 +145,30 @@ Elapsed time: 2.3164360523223877 s
         var x = [];
         
         tot1     = 0;
-        var c0, c1, new_box, boxes, coupon;
+        var c0, c1, c2, new_box, boxes, coupon;
         
 
 
         for (var i = 0; i < nsim; i++) { 
             c0      = 0;
         	c1      = 0;
+        	c2      = 0;
         	new_box = 1;
         	boxes   = 0;
         	coupon  = 0;
         
              for (var j = 0; j < nit; j++){
                 if (new_box == 1){
-                    coupon = sampleBernoulli(1/2);
+                    coupon = sampleCategorical3(1/3);
                     if (coupon == 0){
                         c0 = 1;
-                    }else{
+                    }else if (coupon == 1){
                         c1 = 1;
+                    }else {
+                        c2 = 1;
                     }
                     boxes = boxes + new_box;
-                    new_box = 1 - c0*c1;
+                    new_box = 1 - c0*c1*c2;
                 }else{
                     break;
                 }
@@ -197,7 +206,7 @@ Elapsed time: 2.3164360523223877 s
     	Plotly.newPlot('myDiv', data, layout);
     	
     	var exact_boxes_elem  = document.getElementById("exact_boxes");
-    	//exact_boxes_elem.value = Number(val_a) * (Number(val_a) * temp + Number(val_b) - temp - 1) / (Number(val_a) + Number(val_b) - 2);
+    	exact_boxes_elem.value = 11/2 - 9 * Math.pow(2/3, nit) + 9*(Math.pow(3,-nit))/2;
     	
     	var approx_boxes_elem   = document.getElementById("approx_boxes");
     	approx_boxes_elem.value = tot1/nsim;
@@ -233,4 +242,5 @@ Elapsed time: 2.3164360523223877 s
     	var iter_elem = document.getElementById("num_iteration_value");
     	plotProbProgram (iter_elem.value, nsim);
 	}
+
 
