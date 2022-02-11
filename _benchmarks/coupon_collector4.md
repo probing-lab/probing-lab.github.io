@@ -87,7 +87,7 @@ The expected number of boxes can be calculated using POLAR as: \[\mathbb{E} (box
 </p>
 
 ```
-python polar.py benchmarks/kura_2019/coupon_collector4.prob --goals "E(boxes)"
+python polar.py benchmarks/coupon_collector4.prob --goals "E(boxes)"
 
 8888888b.   .d88888b.  888             d8888 8888888b.
 888   Y88b d88P" "Y88b 888            d88888 888   Y88b
