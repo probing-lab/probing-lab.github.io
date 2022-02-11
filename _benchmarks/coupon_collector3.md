@@ -81,11 +81,11 @@ to collect all different coupons at least one time ?
 
 <b>Solving the problem using POLAR:</b>
 <p>
-The expected number of boxes can be calculated using POLAR as: \[\mathbb{E} (boxes) = 3 - \frac{4}{2^n} \]
+The expected number of boxes can be calculated using POLAR as: \[\mathbb{E} (boxes) = \frac{11}{2} - 9 \left (\frac{2}{3} \right)^n \]
 </p>
 
 ```
-python polar.py benchmarks/coupon_collector2.prob --goals "E(boxes)"
+python polar.py benchmarks/coupon_collector3.prob --goals "E(boxes)"
 
 8888888b.   .d88888b.  888             d8888 8888888b.
 888   Y88b d88P" "Y88b 888            d88888 888   Y88b
@@ -104,12 +104,11 @@ By the ProbInG group
 - Analysis Result -
 -------------------
 
-E(boxes) = 0; 1; 2; 5/2; 3 - 4*2**(-n)
+E(boxes) = 0; 1; 2; 3; 34/9; 13/3; 382/81; 403/81; -9*(2/3)**n + 11/2 + 9*3**(-n)/2
 Solution is exact
 
-Elapsed time: 0.44837403297424316 s
+Elapsed time: 0.7299349308013916 s
 ```
-
 <br>
 <b>Comparison with Monte Carlo simulation:</b>
 
@@ -195,7 +194,7 @@ Elapsed time: 0.44837403297424316 s
     	Plotly.newPlot('myDiv', data, layout);
     	
     	var exact_boxes_elem  = document.getElementById("exact_boxes");
-    	//exact_boxes_elem.value = Number(val_a) * (Number(val_a) * temp + Number(val_b) - temp - 1) / (Number(val_a) + Number(val_b) - 2);
+    	exact_boxes_elem.value = 3 - 4/Math.pow(2, nit);
     	
     	var approx_boxes_elem   = document.getElementById("approx_boxes");
     	approx_boxes_elem.value = tot1/nsim;
