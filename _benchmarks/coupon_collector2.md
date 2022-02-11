@@ -50,7 +50,7 @@ to collect all different coupons at least one time ?
         <tr>
             <td>if statements</td>
             <td>Yes</td>
-            <td rowspan=6>(L) Linear <br> (NL) nonlinear <br><img src="/assets/dep_graphs/duelling_cowboys.png" alt="Dependency Graph" style="width:400px;"/></td>
+            <td rowspan=6>(L) Linear <br> (NL) nonlinear <br><img src="/assets/dep_graphs/coupon_collector2.png" alt="Dependency Graph" style="width:400px;"/></td>
         </tr>
         <tr>
             <td>State space</td>

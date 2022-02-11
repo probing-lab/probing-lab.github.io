@@ -35,10 +35,10 @@ end
 <br>
 <b>Description</b>
 <p>
-Imagine there are boxes of cereals offering inside special coupons of three different kind. 
-In order to win an award one needs to collect at least one coupon of each different type. 
-The question to solve is what is the expected number of boxes one needs to open in order 
-to collect all different type of coupons ?
+Imagine there are boxes of cereals offering inside special coupons of four different kind. 
+In order to win an award one needs to collect at least one coupon for each different type. 
+What is the expected number of boxes one needs to open in order 
+to collect all different coupons at least one time ?
 </p>
 <br>
 <br>
@@ -54,7 +54,7 @@ to collect all different type of coupons ?
         <tr>
             <td>if statements</td>
             <td>Yes</td>
-            <td rowspan=6>(L) Linear <br> (NL) nonlinear <br><img src="/assets/dep_graphs/duelling_cowboys.png" alt="Dependency Graph" style="width:400px;"/></td>
+            <td rowspan=6>(L) Linear <br> (NL) nonlinear <br><img src="/assets/dep_graphs/coupon_collector4.png" alt="Dependency Graph" style="width:400px;"/></td>
         </tr>
         <tr>
             <td>State space</td>
