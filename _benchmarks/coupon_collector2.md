@@ -34,8 +34,10 @@ end
 Imagine there are boxes of cereals offering inside special coupons of two different kind. 
 In order to win an award one needs to collect at least one coupon of each different type. 
 <br>
+<br>
 <i>What is the expected number of boxes one needs to open in order 
 to collect all different coupons at least one time ?</i>
+<br>
 <br>
 A description of the general problem of the Coupon collector is explained <a href="https://en.wikipedia.org/wiki/Coupon_collector%27s_problem">here</a>.
 </p>
@@ -117,7 +119,7 @@ Elapsed time: 0.44837403297424316 s
 | Parameter | Current Value | Tuning |
 | --- | ----------- | ----------- |
 | Number of program executions: | <input type="number" id="num_experiment_value" name="num_experiment_value" min="100" max="10000" step="100" value="1000" onchange="updateNumExp(this.value)"> | <input type="range" id="num_experiment" name="num_experiment" min="100" max="10000" step="100" value="1000" onchange="updateNumExp(this.value)"> |
-| Number of loop iterations (n): | <input type="number" id="num_iteration_value" name="num_iteration_value" min="1" max="100" step="1" value="10" onchange="updateNumIter(this.value)">  | <input type="range" id="num_iteration" name="num_iteration" min="1" max="100" step="10" value="1" onchange="updateNumIter(this.value)"> |
+| Number of loop iterations (n): | <input type="number" id="num_iteration_value" name="num_iteration_value" min="1" max="100" step="1" value="10" onchange="updateNumIter(this.value)">  | <input type="range" id="num_iteration" name="num_iteration" min="1" max="100" step="10" value="10" onchange="updateNumIter(this.value)"> |
 
 | Exact E(boxes) | Approx. E(boxes) | 
 | --- | --- |
