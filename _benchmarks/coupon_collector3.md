@@ -33,8 +33,8 @@ end
 <br>
 <b>Description</b>
 <p>
-There are boxes of cereals offering inside special coupons of three different types. 
-To win an award one needs to collect at least one coupon of each different type. 
+There are boxes of cereals offering inside special coupons of two different types. 
+One needs to collect at least one coupon of each different type to win an award.
 <br>
 <br>
 <i>What is the expected number of boxes one needs to open in order 
