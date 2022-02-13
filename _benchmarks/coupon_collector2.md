@@ -61,7 +61,7 @@ Click <a href="https://probing-lab.github.io/benchmarks/coupon-collector4">here<
         <tr>
             <td>if statements</td>
             <td>Yes</td>
-            <td rowspan=6>(L) Linear <br> (NL) nonlinear <br><img src="/assets/dep_graphs/coupon_collector2.png" alt="Dependency Graph" style="width:400px;"/></td>
+            <td rowspan=6>(L) Linear <br> (NL) nonlinear <br><img src="/assets/dep_graphs/coupon-collector2.png" alt="Dependency Graph" style="width:400px;"/></td>
         </tr>
         <tr>
             <td>State space</td>
