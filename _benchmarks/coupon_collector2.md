@@ -41,6 +41,7 @@ to collect all different coupons at least one time ?</i>
 <br>
 A description of the general problem of the Coupon collector is explained <a href="https://en.wikipedia.org/wiki/Coupon_collector%27s_problem">here</a>.
 <br>
+<br>
 Click <a href="https://probing-lab.github.io/benchmarks/coupon-collector3">here</a> to see the Coupon Collector Problem with Three Coupons.
 <br>
 Click <a href="https://probing-lab.github.io/benchmarks/coupon-collector4">here</a> to see the Coupon Collector Problem with Four Coupons.
