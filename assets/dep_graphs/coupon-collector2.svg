@@ -9,7 +9,7 @@
    id="svg5"
    inkscape:version="1.1.1 (c3084ef, 2021-09-22)"
    sodipodi:docname="coupon-collector2.svg"
-   inkscape:export-filename="/Users/eziobartocci/Desktop/duelling_cowboys.png"
+   inkscape:export-filename="/Users/eziobartocci/Desktop/coupon-collector2.png"
    inkscape:export-xdpi="100"
    inkscape:export-ydpi="100"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
@@ -32,8 +32,8 @@
      inkscape:cy="115.25235"
      inkscape:window-width="1440"
      inkscape:window-height="847"
-     inkscape:window-x="43"
-     inkscape:window-y="39"
+     inkscape:window-x="98"
+     inkscape:window-y="157"
      inkscape:window-maximized="0"
      inkscape:current-layer="layer1" />
   <defs
@@ -731,11 +731,11 @@
        inkscape:original-d="M 90.717568,47.123225 C 81.066785,46.312617 71.415738,45.501744 61.764426,44.690607"
        sodipodi:nodetypes="cc" />
     <path
-       style="fill:none;stroke:#000000;stroke-width:0.9;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none;marker-end:url(#marker37610)"
-       d="m 128.99753,46.37451 c 7.87748,-0.167453 15.75471,-0.334901 23.63168,-0.502343"
+       style="fill:none;stroke:#000000;stroke-width:0.9;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#marker31057)"
+       d="m 130.05587,46.37451 c 7.87748,-0.167453 15.75471,-0.334901 23.63168,-0.502343"
        id="path12790"
        inkscape:path-effect="#path-effect12792"
-       inkscape:original-d="m 128.99753,46.37451 c 7.87749,-0.167185 15.75472,-0.334632 23.63168,-0.502343" />
+       inkscape:original-d="m 130.05587,46.37451 c 7.87749,-0.167185 15.75472,-0.334632 23.63168,-0.502343" />
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
