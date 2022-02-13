@@ -31,8 +31,8 @@ end
 <br>
 <b>Description</b>
 <p>
-Imagine there are boxes of cereals offering inside special coupons of two different kind. 
-In order to win an award one needs to collect at least one coupon of each different type. 
+Imagine there are boxes of cereals offering inside special coupons of two different types. 
+To win an award one needs to collect at least one coupon of each different type. 
 <br>
 <br>
 <i>What is the expected number of boxes one needs to open in order 
