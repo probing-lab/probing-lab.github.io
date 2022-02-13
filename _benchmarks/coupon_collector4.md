@@ -22,7 +22,7 @@ while new_box == 1:
         c0 = 1
     elif coupon == 1:
         c1 = 1
-    elif coupon == 1:
+    elif coupon == 2:
         c2 = 1
     else:
         c3 = 1
