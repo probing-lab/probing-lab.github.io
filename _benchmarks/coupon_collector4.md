@@ -35,10 +35,21 @@ end
 <br>
 <b>Description</b>
 <p>
-Imagine there are boxes of cereals offering inside special coupons of four different kind. 
-In order to win an award one needs to collect at least one coupon for each different type. 
-What is the expected number of boxes one needs to open in order 
-to collect all different coupons at least one time ?
+There are boxes of cereals offering inside special coupons of four different types. 
+To win an award one needs to collect at least one coupon of each different type. 
+<br>
+<br>
+<i>What is the expected number of boxes one needs to open in order 
+to collect all different coupons at least one time ?</i>
+<br>
+<br>
+A description of the general Coupon Collector Problem is explained <a href="https://en.wikipedia.org/wiki/Coupon_collector%27s_problem">here</a>.
+<br>
+<br>
+Click <a href="https://probing-lab.github.io/benchmarks/coupon-collector3">here</a> to see the Coupon Collector Problem with three coupons.
+<br>
+Click <a href="https://probing-lab.github.io/benchmarks/coupon-collector4">here</a> to see the Coupon Collector Problem with four coupons.
+<br>
 </p>
 <br>
 <br>
