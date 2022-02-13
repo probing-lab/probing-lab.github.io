@@ -109,6 +109,48 @@ By the ProbInG group
 
 
 
+------------------
+- Parsed program -
+------------------
+_t0 = 0
+_t1 = 0
+c0 = _t0
+c1 = _t1
+new_box = 1
+boxes = 0
+while new_box == 1:
+    coupon = Bernoulli(1/2)
+    if coupon == 0:
+        c0 = 1
+    else:
+        c1 = 1
+    boxes = boxes + new_box
+    new_box = 1 - c0*c1
+end
+
+-----------------------
+- Transformed program -
+-----------------------
+types
+    c0 : Finite(0, 1)
+    c1 : Finite(0, 1)
+    new_box : Finite(0, 1)
+    _old2 : Finite(0, 1)
+    coupon : Finite(0, 1)
+end
+c0 = 0
+c1 = 0
+new_box = 1
+boxes = 0
+while true:
+    _old2 = new_box
+    coupon = Bernoulli(1/2)  |  _old2 == 1  :  coupon
+    c0 = 1  |  (coupon == 0 ∧ _old2 == 1)  :  c0
+    c1 = 1  |  (¬(coupon == 0) ∧ _old2 == 1)  :  c1
+    boxes = boxes + new_box  |  _old2 == 1  :  boxes
+    new_box = 1 - c0*c1  |  _old2 == 1  :  new_box
+end
+
 -------------------
 - Analysis Result -
 -------------------
@@ -116,7 +158,7 @@ By the ProbInG group
 E(boxes) = 0; 1; 2; 5/2; 3 - 4*2**(-n)
 Solution is exact
 
-Elapsed time: 0.44837403297424316 s
+Elapsed time: 0.4739878177642822 s
 ```
 
 <br>
