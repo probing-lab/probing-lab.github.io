@@ -31,7 +31,7 @@ end
 <br>
 <b>Description</b>
 <p>
-Imagine there are boxes of cereals offering inside special coupons of two different types. 
+There are boxes of cereals offering inside special coupons of two different types. 
 To win an award one needs to collect at least one coupon of each different type. 
 <br>
 <br>
