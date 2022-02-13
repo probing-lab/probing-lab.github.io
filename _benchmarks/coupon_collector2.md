@@ -39,7 +39,7 @@ To win an award one needs to collect at least one coupon of each different type.
 to collect all different coupons at least one time ?</i>
 <br>
 <br>
-A description of the general problem of the Coupon collector is explained <a href="https://en.wikipedia.org/wiki/Coupon_collector%27s_problem">here</a>.
+A description of the general Coupon Collector Problem is explained <a href="https://en.wikipedia.org/wiki/Coupon_collector%27s_problem">here</a>.
 <br>
 <br>
 Click <a href="https://probing-lab.github.io/benchmarks/coupon-collector3">here</a> to see the Coupon Collector Problem with three coupons.
