@@ -102,6 +102,62 @@ By the ProbInG group
 
 
 
+------------------
+- Parsed program -
+------------------
+_t0 = 0
+_t1 = 0
+_t2 = 0
+_t3 = 0
+c0 = _t0
+c1 = _t1
+c2 = _t2
+c3 = _t3
+new_box = 1
+boxes = 0
+while new_box == 1:
+    coupon = Categorical(1/4, 1/4, 1/4, 1/4)
+    if coupon == 0:
+        c0 = 1
+    else if coupon == 1:
+        c1 = 1
+    else if coupon == 2:
+        c2 = 1
+    else:
+        c3 = 1
+    boxes = boxes + new_box
+    new_box = 1 - c0*c1*c2*c3
+end
+
+-----------------------
+- Transformed program -
+-----------------------
+types
+    c0 : Finite(0, 1)
+    c1 : Finite(0, 1)
+    c2 : Finite(0, 1)
+    c3 : Finite(0, 1)
+    new_box : Finite(0, 1)
+    _old4 : Finite(0, 1)
+    coupon : Finite(0, 1, 2, 3)
+end
+c0 = 0
+c1 = 0
+c2 = 0
+c3 = 0
+new_box = 1
+boxes = 0
+while true:
+    _old4 = new_box
+    coupon = Categorical(1/4, 1/4, 1/4, 1/4)  |  _old4 == 1  :  coupon
+    c0 = 1  |  (coupon == 0 ∧ _old4 == 1)  :  c0
+    c1 = 1  |  ((¬(coupon == 0) ∧ coupon == 1) ∧ _old4 == 1)  :  c1
+    c2 = 1  |  (((¬(coupon == 0) ∧ ¬(coupon == 1)) ∧ coupon == 2) ∧ _old4 == 1)  :  c2
+    c3 = 1  |  (((¬(coupon == 0) ∧ ¬(coupon == 1)) ∧ ¬(coupon == 2)) ∧ _old4 == 1)  :  c3
+    boxes = boxes + new_box  |  _old4 == 1  :  boxes
+    new_box = 1 - c0*c1*c2*c3  |  _old4 == 1  :  new_box
+end
+
 -------------------
 - Analysis Result -
 -------------------
@@ -109,7 +165,7 @@ By the ProbInG group
 E(boxes) = 0; 1; 2; 3; 4; 157/32; 363/64; 3221/512; 6941/1024; 58617/8192; 121963/16384; 1004461/131072; 2052441/262144; 16682177/2097152; 33759863/4194304; 272458101/33554432; -16*(3/4)**n + 25/3 - 16*4**(-n)/3 + 12*2**(-n)
 Solution is exact
 
-Elapsed time: 2.3164360523223877 s
+Elapsed time: 2.2366819381713867 s
 ```
 
 <br>
