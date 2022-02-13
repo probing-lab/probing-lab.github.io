@@ -111,6 +111,55 @@ By the ProbInG group
 
 
 
+------------------
+- Parsed program -
+------------------
+_t0 = 0
+_t1 = 0
+_t2 = 0
+c0 = _t0
+c1 = _t1
+c2 = _t2
+new_box = 1
+boxes = 0
+while new_box == 1:
+    coupon = Categorical(1/3, 1/3, 1/3)
+    if coupon == 0:
+        c0 = 1
+    else if coupon == 1:
+        c1 = 1
+    else:
+        c2 = 1
+    boxes = boxes + new_box
+    new_box = 1 - c0*c1*c2
+end
+
+-----------------------
+- Transformed program -
+-----------------------
+types
+    c0 : Finite(0, 1)
+    c1 : Finite(0, 1)
+    c2 : Finite(0, 1)
+    new_box : Finite(0, 1)
+    _old3 : Finite(0, 1)
+    coupon : Finite(0, 1, 2)
+end
+c0 = 0
+c1 = 0
+c2 = 0
+new_box = 1
+boxes = 0
+while true:
+    _old3 = new_box
+    coupon = Categorical(1/3, 1/3, 1/3)  |  _old3 == 1  :  coupon
+    c0 = 1  |  (coupon == 0 ∧ _old3 == 1)  :  c0
+    c1 = 1  |  ((¬(coupon == 0) ∧ coupon == 1) ∧ _old3 == 1)  :  c1
+    c2 = 1  |  ((¬(coupon == 0) ∧ ¬(coupon == 1)) ∧ _old3 == 1)  :  c2
+    boxes = boxes + new_box  |  _old3 == 1  :  boxes
+    new_box = 1 - c0*c1*c2  |  _old3 == 1  :  new_box
+end
+
 -------------------
 - Analysis Result -
 -------------------
@@ -118,7 +167,7 @@ By the ProbInG group
 E(boxes) = 0; 1; 2; 3; 34/9; 13/3; 382/81; 403/81; -9*(2/3)**n + 11/2 + 9*3**(-n)/2
 Solution is exact
 
-Elapsed time: 0.7299349308013916 s
+Elapsed time: 0.7428438663482666 s
 ```
 <br>
 <b>Comparison with Monte Carlo simulation:</b>
