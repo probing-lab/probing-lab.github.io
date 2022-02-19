@@ -12,12 +12,19 @@ defective:      "Yes"
 
 Bees Model
 <p>
-\[ \begin{array}{lcr}
-\mbox{First number} & x & 8 \\
-\mbox{Second number} & y & 15 \\
-\mbox{Sum} & x + y & 23 \\
-\mbox{Difference} & x - y & -7 \\
-\mbox{Product} & xy & 120 \end{array}\] 
+\[ \begin{array}{lcl}
+X(0) & = & \mathcal{N} (475,5) \\
+Y_1(0) & = & \mathcal{U} (350,500) \\
+Y_2(0) & = & \mathcal{U} (100,150) \\
+Z_1(0) & = & \mathcal{N} (35,1.5) \\
+Z_2(0) & = & \mathcal{N} (35,1.5) \\
+ &  &  \\
+\dot{X} & = & -\beta_1 XY_1 - \beta_2 XY_2 \\
+\dot{Y_1} & = & \beta_1 XY_1 -\gamma Y_1 + \delta \beta_1 Y_1 Z_1 + \alpha \beta_1 Y_1 Z_2\\
+\dot{Y_2} & = & \beta_2 XY_2 -\gamma Y_2 + \delta \beta_2 Y_2 Z_2 + \alpha \beta_2 Y_2 Z_1\\
+\dot{Z_1} & = & \gamma Y_1 - \delta \beta_1 Y_1 Z_1 - \alpha \beta_2 Y_2 Z_1\\
+\dot{Z_2} & = & \gamma Y_2 - \delta \beta_2 Y_2 Z_2 - \alpha \beta_1 Y_1 Z_2
+\end{array}\] 
 </p>
 
 Description
