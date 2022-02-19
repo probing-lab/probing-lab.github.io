@@ -37,14 +37,14 @@ Z_2(0) & = & \mathcal{N} (35,1.5) \\
 </p>
 
 <b>Description</b>
-The population of the honeybees is divided in three main groups: X are the bees that 
+<p>The population of the honeybees is divided in three main groups: X are the bees that 
 are neutral (or unbelievers) in the decision, Y is the class of the bees that believes either
 in one site (Y1) or in the other site (Y2) and they are actively spreading their beliefs 
 to the other bees, Z is the class of the bees that believes either
 in one site (Z1) or in the other site (Z2) but they do not spread their beliefs 
-to the others.
+to the others.</p>
 
-Probabilistic Program Computing the Bees Model (Source Code)
+<b>Probabilistic Program Computing the Bees Model (Source Code)</b>
 ```python
 x = Normal(475, 5)
 y1 = Uniform(350, 400)
