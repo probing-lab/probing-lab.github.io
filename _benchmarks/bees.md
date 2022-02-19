@@ -23,7 +23,13 @@ Z_2(0) & = & \mathcal{N} (35,1.5) \\
 \dot{Y_1} & = & \beta_1 XY_1 -\gamma Y_1 + \delta \beta_1 Y_1 Z_1 + \alpha \beta_1 Y_1 Z_2\\
 \dot{Y_2} & = & \beta_2 XY_2 -\gamma Y_2 + \delta \beta_2 Y_2 Z_2 + \alpha \beta_2 Y_2 Z_1\\
 \dot{Z_1} & = & \gamma Y_1 - \delta \beta_1 Y_1 Z_1 - \alpha \beta_2 Y_2 Z_1\\
-\dot{Z_2} & = & \gamma Y_2 - \delta \beta_2 Y_2 Z_2 - \alpha \beta_1 Y_1 Z_2
+\dot{Z_2} & = & \gamma Y_2 - \delta \beta_2 Y_2 Z_2 - \alpha \beta_1 Y_1 Z_2\\
+ &  &  \\
+\beta_1 & = & 0.001\\
+\beta_2 & = & 0.001\\
+\gamma & = & 0.3\\
+\delta & = & 0.5\\
+\alpha & = & 0.7\\
 \end{array}\] 
 </p>
 
