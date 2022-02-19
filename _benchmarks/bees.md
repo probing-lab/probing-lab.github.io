@@ -11,10 +11,9 @@ defective:      "Yes"
 ---
 
 <b>Mathematical model describing the decision-making process of a swarm of honeybees for selecting one nest-site among many</b>
-<ol>
-    <li>N.F. Britton, N.R. Franks, S.C. Pratt, T.D. Seeley, Deciding on a new home: how do honeybees agree ?, Proceedings of the Royal Society of London. Series B: Biological Sciences 269 (1498), 1383-1388 (2002)
-    [<a href="https://royalsocietypublishing.org/doi/10.1098/rspb.2002.2001">Link</a>]</li>
-</ol>
+
+N.F. Britton, N.R. Franks, S.C. Pratt, T.D. Seeley, Deciding on a new home: how do honeybees agree ?, Proceedings of the Royal Society of London. Series B: Biological Sciences 269 (1498), 1383-1388 (2002)
+    [<a href="https://royalsocietypublishing.org/doi/10.1098/rspb.2002.2001">Link</a>]
 <p>
 \[ \begin{array}{lcl}
 X(0) & = & \mathcal{N} (475,5) \\
