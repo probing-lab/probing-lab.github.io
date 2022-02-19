@@ -1,5 +1,5 @@
 ---
-name:           "Bees"
+name:           "Bees Model"
 numvars:        "5"
 ifthenelse:     "No"
 infinitesp:     "No"
