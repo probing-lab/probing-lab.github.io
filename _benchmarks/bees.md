@@ -53,12 +53,12 @@ z1 = Normal(35, 1.5)
 z2 = Normal(35, 1.5)
 
 #dt = 0.1
-#c2 = 0.001
-#c3 = 0.3
+#beta = 0.001
+#gamma = 0.3
 #c4 = 0.0005
 #c5 = 0.0007
 
 while true:
-    x, y1, y2, z1, z2 = x + dt*((-c2)*x*y1 - c2*x*y2), y1 + dt*(c2*x*y1 - c3*y1 + c4*y1*z1 + c5*y1*z2), y2 + dt*(c2*x*y2 - c3*y2 + c4*y2*z2 + c5*y2*z1), z1 + dt*(c3*y1 - c4*y1*z1 - c5*y2*z1), z2 + dt*(c3*y2 - c4*y2*z2 - c5*y1*z2)
+    x, y1, y2, z1, z2 = x + dt*((-beta)*x*y1 - beta*x*y2), y1 + dt*(beta*x*y1 - gamma*y1 + c4*y1*z1 + c5*y1*z2), y2 + dt*(beta*x*y2 - gamma*y2 + c4*y2*z2 + c5*y2*z1), z1 + dt*(gamma*y1 - c4*y1*z1 - c5*y2*z1), z2 + dt*(gamma*y2 - c4*y2*z2 - c5*y1*z2)
 end
 ```
