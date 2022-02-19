@@ -11,7 +11,19 @@ defective:      "Yes"
 ---
 
 Bees Model
+<p>
+\[ \begin{array}{lcr}
+\mbox{First number} & x & 8 \\
+\mbox{Second number} & y & 15 \\
+\mbox{Sum} & x + y & 23 \\
+\mbox{Difference} & x - y & -7 \\
+\mbox{Product} & xy & 120 \end{array}\] 
+</p>
 
+Description
+
+
+Probabilistic Program Computing the Bees Model (Source Code)
 ```python
 x = Normal(475, 5)
 y1 = Uniform(350, 400)
