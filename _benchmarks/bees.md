@@ -52,12 +52,25 @@ z1 = Normal(35, 1.5)
 z2 = Normal(35, 1.5)
 
 #dt = 0.1
-#beta = 0.001
+#beta = 0.001         - We assume that beta1 = beta2 
 #gamma = 0.3
-#c4 = 0.0005
-#c5 = 0.0007
+#delta_beta = 0.0005  - delta * beta
+#alpha_beta = 0.0007
 
 while true:
-    x, y1, y2, z1, z2 = x + dt*((-beta)*x*y1 - beta*x*y2), y1 + dt*(beta*x*y1 - gamma*y1 + c4*y1*z1 + c5*y1*z2), y2 + dt*(beta*x*y2 - gamma*y2 + c4*y2*z2 + c5*y2*z1), z1 + dt*(gamma*y1 - c4*y1*z1 - c5*y2*z1), z2 + dt*(gamma*y2 - c4*y2*z2 - c5*y1*z2)
+    x, y1, y2, z1, z2 = x + dt*((-beta)*x*y1 - beta*x*y2), y1 + dt*(beta*x*y1 - gamma*y1 + delta_beta *y1*z1 + alpha_beta*y1*z2), y2 + dt*(beta*x*y2 - gamma*y2 + delta_beta*y2*z2 + alpha_beta*y2*z1), z1 + dt*(gamma*y1 - delta_beta*y1*z1 - alpha_beta*y2*z1), z2 + dt*(gamma*y2 - delta_beta*y2*z2 - alpha_beta*y1*z2)
 end
 ```
+
+<b>Probabilistic Program Simulation:</b>
+
+| Parameter | Current Value | Tuning |
+| --- | ----------- | ----------- |
+| Number of program executions: | <input type="number" id="num_experiment_value" name="num_experiment_value" min="100" max="10000" step="100" value="1000" onchange="updateNumExp(this.value)"> | <input type="range" id="num_experiment" name="num_experiment" min="100" max="10000" step="100" value="1000" onchange="updateNumExp(this.value)"> |
+| Number of loop iterations (n): | <input type="number" id="num_iteration_value" name="num_iteration_value" min="10" max="100" step="10" value="10" onchange="updateNumIter(this.value)">  | <input type="range" id="num_iteration" name="num_iteration" min="10" max="100" step="10" value="10" onchange="updateNumIter(this.value)"> |
+| Integration step (dt): | <input type="number" id="probability_value_a" name="probability_value_a" min="0" max="1" step="0.1" value="0.5" onchange="updateProbability_a(this.value)"> | <input type="range" id="probability_a" name="probability_a" min="0" max="1" step="0.1" value="0.5" onchange="updateProbability_a(this.value)"> |
+| Parameter (beta): | <input type="number" id="probability_value_b" name="probability_value_b" min="0" max="1" step="0.1" value="0.5" onchange="updateProbability_b(this.value)"> | <input type="range" id="probability_b" name="probability_b" min="0" max="1" step="0.1" value="0.5" onchange="updateProbability_b(this.value)"> |
+| Parameter (gamma): | <input type="number" id="probability_value_b" name="probability_value_b" min="0" max="1" step="0.1" value="0.5" onchange="updateProbability_b(this.value)"> | <input type="range" id="probability_b" name="probability_b" min="0" max="1" step="0.1" value="0.5" onchange="updateProbability_b(this.value)"> |
+| Parameter (deltabeta): | <input type="number" id="probability_value_b" name="probability_value_b" min="0" max="1" step="0.1" value="0.5" onchange="updateProbability_b(this.value)"> | <input type="range" id="probability_b" name="probability_b" min="0" max="1" step="0.1" value="0.5" onchange="updateProbability_b(this.value)"> |
+| Parameter (alphabeta): | <input type="number" id="probability_value_b" name="probability_value_b" min="0" max="1" step="0.1" value="0.5" onchange="updateProbability_b(this.value)"> | <input type="range" id="probability_b" name="probability_b" min="0" max="1" step="0.1" value="0.5" onchange="updateProbability_b(this.value)"> |
+
