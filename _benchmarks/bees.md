@@ -10,7 +10,7 @@ loopguard:      "(true)"
 defective:      "Yes"
 ---
 
-Bees Model
+<b>Mathematical model describing the decision-making process of a swarm of honeybees for selecting one nest-site among many</b>
 <p>
 \[ \begin{array}{lcl}
 X(0) & = & \mathcal{N} (475,5) \\
@@ -33,7 +33,7 @@ Z_2(0) & = & \mathcal{N} (35,1.5) \\
 \end{array}\] 
 </p>
 
-Description
+<b>Description</b>
 
 
 Probabilistic Program Computing the Bees Model (Source Code)
