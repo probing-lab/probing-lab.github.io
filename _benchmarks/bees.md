@@ -211,5 +211,40 @@ end
         var elem2 = document.getElementById("num_experiments");
         elem2.value = nsim;
 	}
+	
+	function updateIntegrationStep(dt){
+	    var elem1 = document.getElementById("integration_step_slider");
+        elem1.value = dt;
+        var elem2 = document.getElementById("integration_step");
+        elem2.value = dt;
+	}
+	
+	function updateParameterBeta(beta){
+	    var elem1 = document.getElementById("parameter_beta_slider");
+        elem1.value = beta;
+        var elem2 = document.getElementById("parameter_beta");
+        elem2.value = beta;
+	}
+	
+    function updateParameterGamma(gamma){
+	    var elem1 = document.getElementById("parameter_gamma_slider");
+        elem1.value = gamma;
+        var elem2 = document.getElementById("parameter_gamma");
+        elem2.value = gamma;
+	}
+	
+    function updateParameterDelta(delta){
+	    var elem1 = document.getElementById("parameter_delta_slider");
+        elem1.value = delta;
+        var elem2 = document.getElementById("parameter_delta");
+        elem2.value = delta;
+	}
+	
+	function updateParameterAlpha(alpha){
+	    var elem1 = document.getElementById("parameter_alpha_slider");
+        elem1.value = alpha;
+        var elem2 = document.getElementById("parameter_alpha");
+        elem2.value = alpha;
+	}
      
   </script>
