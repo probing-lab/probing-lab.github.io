@@ -122,6 +122,10 @@ end
     	if (Math.random() < val_p) return 1;
         return 0;
     }
+    
+    function computeProgram(nit, nexps, dt, beta, gamma, delta, alpha){
+             alert("Numero iterazioni:" + nit.toString() + " Numero di esperimenti: " + nexps.toString() + " dt=" + dt.toString() + " beta=" + beta.toString() + " gamma=" + gamma.toString() + " delta=" + delta.toString() + " alpha=" + alpha.toString());
+    }
     function plotProbProgram (val_p, nit, nsim){
         var x = [];
         var tot1 = 0;
@@ -204,6 +208,14 @@ end
         elem1.value = nit;
         var elem2 = document.getElementById("num_iterations");
         elem2.value = nit;
+        
+        var elem3 = document.getElementById("num_experiments");
+        var elem4 = document.getElementById("integration_step");
+        var elem5 = document.getElementById("parameter_beta");
+        var elem6 = document.getElementById("parameter_gamma");
+        var elem7 = document.getElementById("parameter_delta");
+        var elem8 = document.getElementById("parameter_alpha");
+        computeProgram(nit, elem3.value, elem4.value, elem5.value, elem6.value, elem7.value, elem8.value);
 	}
 	function updateNumExp(nsim) {
   		var elem1 = document.getElementById("num_experiments_slider");
