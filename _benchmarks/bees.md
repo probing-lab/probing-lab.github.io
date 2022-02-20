@@ -200,15 +200,15 @@ end
 
 
 	function updateNumIter(nit) {
-  		var elem1 = document.getElementById("num_iteration_value");
+  		var elem1 = document.getElementById("num_iterations_slider");
         elem1.value = nit;
-        var elem2 = document.getElementById("num_iteration");
+        var elem2 = document.getElementById("num_iterations");
         elem2.value = nit;
 	}
 	function updateNumExp(nsim) {
-  		var elem1 = document.getElementById("num_experiment_value");
+  		var elem1 = document.getElementById("num_experiments_slider");
         elem1.value = nsim;
-        var elem2 = document.getElementById("num_experiment");
+        var elem2 = document.getElementById("num_experiments");
         elem2.value = nsim;
 	}
      
