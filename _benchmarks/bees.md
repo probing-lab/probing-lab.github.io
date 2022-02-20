@@ -127,6 +127,7 @@ end
         return (Math.random() * (max - min)) + min;
     }
     
+    //From https://stackoverflow.com/questions/25582882/javascript-math-random-normal-distribution-gaussian-bell-curve
     function sampleNormal(mean, stdev) {
   		var y2;
   		var use_last = false;
@@ -165,10 +166,13 @@ end
              var z2_trace = [];
              
              for (var i = 0; i < nsim; i++) {
-                 x_trace[i,0] = 
-             
+                 x_trace[i,0] = sampleNormal(475, 5);
+                 y1_trace[i,0] = sampleUniform(350, 400);
+                 y2_trace[i,0] = sampleUniform(100, 150);
+                 z1_trace[i,0] = sampleNormal(35, 1.5);
+                 z1_trace[i,0] = sampleNormal(35, 1.5);
                  for (var j = 1; j < nit; j++){
-                 
+                     x_trace[i,j] = x_trace[i,j-1] + dt * (-beta * x_trace[i,j-1] * y1_trace[i,j-1] - beta * x_trace[i,j-1] * y2_trace[i,j-1]); 
                  }
              }
     }
