@@ -115,3 +115,101 @@ end
 | Parameter (delta): | <input type="number" id="parameter_delta" name="parameter_delta" min="0" max="1" step="0.1" value="0.5" onchange="updateParameterDelta(this.value)"> | <input type="range" id="parameter_delta_slider" name="parameter_delta_slider" min="0" max="1" step="0.1" value="0.5" onchange="updateParameterDelta(this.value)"> |
 | Parameter (alpha): | <input type="number" id="parameter_alpha" name="parameter_alpha" min="0" max="1" step="0.1" value="0.7" onchange="updateParameterAlpha(this.value)"> | <input type="range" id="parameter_alpha_slider" name="parameter_alpha_slider" min="0" max="1" step="0.1" value="0.7" onchange="updateParameterAlpha(this.value)"> |
 
+<div id="myDiv"><!-- Plotly chart will be drawn inside this DIV --></div>
+<script>
+
+    function sampleBernoulli(val_p){
+    	if (Math.random() < val_p) return 1;
+        return 0;
+    }
+    function plotProbProgram (val_p, nit, nsim){
+        var x = [];
+        var tot1 = 0;
+        var tot2 = 0;
+        var tot3 = 0;
+        var tot4 = 0;
+    	for (var i = 0; i < nsim; i++) {
+             x[i] = 0;  
+             for (var j = 0; j < nit; j++)
+            	x[i] += sampleBernoulli(val_p);
+             tot1 += x[i];
+             tot2 += x[i]*x[i];
+             tot3 += x[i]*x[i]*x[i];
+             tot4 += x[i]*x[i]*x[i]*x[i];
+    	} 
+    	
+    	
+    	var trace = {
+      		x: x,
+       		type: 'histogram',
+			histnorm: 'probability',
+			marker: { 
+			     color: "rgba(255, 100, 102, 0.7)", 
+                 line: { color:  "rgba(255, 100, 102, 1)", 
+                         width: 1
+                 }
+              },
+              autobinx: false, 
+              xbins: { 
+                 size: 1 
+              }
+    	};
+    
+    	var data = [trace];
+    	var layout = {
+      		bargap: 0.05, 
+      		bargroupgap: 0.2, 
+      		barmode: "overlay", 
+      		title: "Sampled Results (p=" + val_p.toString() + ", loop iteration=" + nit.toString()  + ", num. simulations = " + nsim.toString()  + ")", 
+      		xaxis: {title: "X Value"}, 
+      		yaxis: {title: "Probability"}
+    	}
+    	Plotly.newPlot('myDiv', data, layout);
+    	
+    	var exact_e_x_elem   = document.getElementById("exact_e_x");
+    	exact_e_x_elem.value = val_p * nit;
+    	
+    	var approx_e_x_elem   = document.getElementById("approx_e_x");
+    	approx_e_x_elem.value = tot1/nsim;
+    	
+    	var exact_e_x2_elem   = document.getElementById("exact_e_x2");
+    	exact_e_x2_elem.value = val_p * nit * (val_p * (nit - 1) + 1);
+    	
+    	var approx_e_x2_elem   = document.getElementById("approx_e_x2");
+    	approx_e_x2_elem.value = tot2/nsim;
+    	
+    	var exact_e_x3_elem   = document.getElementById("exact_e_x3");
+    	exact_e_x3_elem.value = val_p * nit * (val_p * val_p * nit * nit - 3 * nit * val_p * val_p + 3 * nit * val_p + 2 * val_p * val_p - 3 * val_p + 1);
+    	
+    	var approx_e_x3_elem   = document.getElementById("approx_e_x3");
+    	approx_e_x3_elem.value = tot3/nsim;
+    	
+    	var exact_e_x4_elem   = document.getElementById("exact_e_x4");
+    	exact_e_x4_elem.value = val_p * nit * (val_p * val_p * val_p * nit * nit * nit - 6 * nit * nit * val_p * val_p * val_p + 6 * nit * nit * val_p * val_p + 11 * nit * val_p * val_p * val_p - 18 * nit * val_p * val_p + 7 * nit * val_p - 6 * val_p * val_p * val_p + 12 * val_p * val_p - 7 * val_p + 1);
+    	
+    	var approx_e_x4_elem   = document.getElementById("approx_e_x4");
+    	approx_e_x4_elem.value = tot4/nsim;
+    }
+    
+    //var prob_elem = document.getElementById("probability_value");
+    //var iter_elem = document.getElementById("num_iteration_value");
+    //var exp_elem  = document.getElementById("num_experiment_value");
+    
+    //plotProbProgram (prob_elem.value, iter_elem.value, exp_elem.value);
+    
+
+
+	function updateNumIter(nit) {
+  		var elem1 = document.getElementById("num_iteration_value");
+        elem1.value = nit;
+        var elem2 = document.getElementById("num_iteration");
+        elem2.value = nit;
+	}
+	function updateNumExp(nsim) {
+  		var elem1 = document.getElementById("num_experiment_value");
+        elem1.value = nsim;
+        var elem2 = document.getElementById("num_experiment");
+        elem2.value = nsim;
+	}
+     
+  </script>
