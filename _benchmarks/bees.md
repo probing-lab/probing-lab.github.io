@@ -123,8 +123,54 @@ end
         return 0;
     }
     
+    function sampleUniform(min, max) {
+        return (Math.random() * (max - min)) + min;
+    }
+    
+    function sampleNormal(mean, stdev) {
+  		var y2;
+  		var use_last = false;
+  		
+  		return function() {
+   			 var y1;
+    		 if (use_last) {
+                y1 = y2;
+                use_last = false;
+             } else {
+                var x1, x2, w;
+                do {
+                   x1 = 2.0 * Math.random() - 1.0;
+                   x2 = 2.0 * Math.random() - 1.0;
+                   w = x1 * x1 + x2 * x2;
+               } while (w >= 1.0);
+               w = Math.sqrt((-2.0 * Math.log(w)) / w);
+               y1 = x1 * w;
+               y2 = x2 * w;
+               use_last = true;
+             }
+             var retval = mean + stdev * y1;
+             if (retval > 0) return retval;
+             return -retval;
+        }
+    }
+    
     function computeProgram(nit, nexps, dt, beta, gamma, delta, alpha){
-             alert("Numero iterazioni:" + nit.toString() + " Numero di esperimenti: " + nexps.toString() + " dt=" + dt.toString() + " beta=" + beta.toString() + " gamma=" + gamma.toString() + " delta=" + delta.toString() + " alpha=" + alpha.toString());
+             //alert("Numero iterazioni:" + nit.toString() + " Numero di esperimenti: " + nexps.toString() + " dt=" + dt.toString() + " beta=" + beta.toString() + " gamma=" + gamma.toString() + " delta=" + delta.toString() + " alpha=" + alpha.toString());
+             var x, y1, y2, z1, z2;
+             
+             var x_trace  = [];
+             var y1_trace = [];
+             var y2_trace = [];
+             var z1_trace = [];
+             var z2_trace = [];
+             
+             for (var i = 0; i < nsim; i++) {
+                 x_trace[i,0] = 
+             
+                 for (var j = 1; j < nit; j++){
+                 
+                 }
+             }
     }
     function plotProbProgram (val_p, nit, nsim){
         var x = [];
