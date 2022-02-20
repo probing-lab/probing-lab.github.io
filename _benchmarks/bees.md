@@ -222,6 +222,14 @@ end
         elem1.value = nsim;
         var elem2 = document.getElementById("num_experiments");
         elem2.value = nsim;
+        
+        var elem3 = document.getElementById("num_iterations");
+        var elem4 = document.getElementById("integration_step");
+        var elem5 = document.getElementById("parameter_beta");
+        var elem6 = document.getElementById("parameter_gamma");
+        var elem7 = document.getElementById("parameter_delta");
+        var elem8 = document.getElementById("parameter_alpha");
+        computeProgram(elem3.value, nsim, elem4.value, elem5.value, elem6.value, elem7.value, elem8.value);
 	}
 	
 	function updateIntegrationStep(dt){
