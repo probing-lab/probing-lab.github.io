@@ -62,6 +62,47 @@ while true:
 end
 ```
 
+<br>
+<table>
+    <thead>
+        <tr>
+            <th>Program features</th>
+            <th>Value</th>
+            <th>Dependency Graph</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>if statements</td>
+            <td>Yes</td>
+            <td rowspan=6>(L) Linear <br> (NL) nonlinear <br><img src="/assets/dep_graphs/bees.png" alt="Dependency Graph" style="width:400px;"/></td>
+        </tr>
+        <tr>
+            <td>State space</td>
+            <td>Infinite, continuous</td>
+        </tr>
+        <tr>
+            <td>Circular Dependency</td>
+            <td>Yes</td>
+        </tr>
+        <tr>
+            <td>Symbolic Constants</td>
+            <td>Yes</td>
+        </tr>
+        <tr>
+            <td>Effective Variables</td>
+            <td>No</td>
+        </tr>
+        <tr>
+            <td>Defective Variables</td>
+            <td>Yes (x, y1, y2, z1, z2)</td>
+        </tr>
+    </tbody>
+</table>
+
+<br>
+
+
 <b>Probabilistic Program Simulation:</b>
 
 | Parameter | Current Value | Tuning |
