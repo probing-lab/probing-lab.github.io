@@ -195,9 +195,14 @@ end
     	approx_e_x4_elem.value = tot4/nsim;
     }
     
-    //var prob_elem = document.getElementById("probability_value");
-    //var iter_elem = document.getElementById("num_iteration_value");
-    //var exp_elem  = document.getElementById("num_experiment_value");
+    var elem2 = document.getElementById("num_iterations");
+    var elem3 = document.getElementById("num_experiments");
+    var elem4 = document.getElementById("integration_step");
+    var elem5 = document.getElementById("parameter_beta");
+    var elem6 = document.getElementById("parameter_gamma");
+    var elem7 = document.getElementById("parameter_delta");
+    var elem8 = document.getElementById("parameter_alpha");
+    computeProgram(elem2.value, elem3.value, elem4.value, elem5.value, elem6.value, elem7.value, elem8.value);
     
     //plotProbProgram (prob_elem.value, iter_elem.value, exp_elem.value);
     
