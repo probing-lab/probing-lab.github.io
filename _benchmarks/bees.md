@@ -274,6 +274,16 @@ end
         elem1.value = gamma;
         var elem2 = document.getElementById("parameter_gamma");
         elem2.value = gamma;
+        
+        elem2 = document.getElementById("num_iterations");
+    	var elem3 = document.getElementById("num_experiments");
+    	var elem4 = document.getElementById("integration_step");
+    	var elem5 = document.getElementById("parameter_beta");
+    	var elem6 = document.getElementById("parameter_gamma");
+    	var elem7 = document.getElementById("parameter_delta");
+    	var elem8 = document.getElementById("parameter_alpha");
+    	computeProgram(elem2.value, elem3.value, elem4.value, elem5.value, elem6.value, elem7.value, elem8.value);
+        
 	}
 	
     function updateParameterDelta(delta){
