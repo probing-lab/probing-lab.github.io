@@ -155,7 +155,7 @@ end
         }
     }
     
-    function computeProgram(nit, nexps, dt, beta, gamma, delta, alpha){
+    function computeProgram(nit, nsim, dt, beta, gamma, delta, alpha){
              //alert("Numero iterazioni:" + nit.toString() + " Numero di esperimenti: " + nexps.toString() + " dt=" + dt.toString() + " beta=" + beta.toString() + " gamma=" + gamma.toString() + " delta=" + delta.toString() + " alpha=" + alpha.toString());
              var x, y1, y2, z1, z2;
              
