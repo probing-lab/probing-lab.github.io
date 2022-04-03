@@ -1,9 +1,9 @@
 ---
-title: Laura Kovacs is one of the PI of new FWF funded "SPyCoDe" special research programme 
+title: New FWF funded "SPyCoDe" special research programme (SFB)
 tags: [Probabilistic Hyperproperties, Quantitative Information Flow]  
 style: fill
 color: light
-description: New paper on "Probabilistic Hyperproperties with Rewards" accepted at NASA Formal Methods 2022
+description: Laura Kovacs is one of the PIs of new FWF funded "SPyCoDe" special research programme 
 ---
 
 # Probabilistic Hyperproperties with Rewards
