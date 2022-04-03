@@ -1,6 +1,6 @@
 ---
-title: New FWF funded "SPyCoDe" special research programme (SFB)
-tags: [Probabilistic Hyperproperties, Quantitative Information Flow]  
+title: New FWF funded "SPyCoDe" special research programme
+tags: [Security, Formal Methods]  
 style: fill
 color: light
 description: Laura Kovacs is one of the PIs of new FWF funded "SPyCoDe" special research programme 
