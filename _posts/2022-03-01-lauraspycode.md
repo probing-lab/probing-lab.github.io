@@ -1,17 +1,17 @@
 ---
 title: New FWF funded "SPyCoDe" special research programme
-tags: [Security, Formal Methods]  
+tags: [Security, Formal Methods, Security and privacy by design]  
 style: fill
 color: light
 description: Laura Kovacs is one of the PIs of new FWF funded "SPyCoDe" special research programme 
 ---
 
-# Probabilistic Hyperproperties with Rewards
+# “SPyCoDe” special research programme 
 
-Lukas Wilke, Oyendrila Dobe, Erika Abraham, Ezio Bartocci, Borzoo Bonakdarpour
+Security and privacy are human rights which should hold in the digital society, too. The “security and privacy by design” principle, advocated in the new European GDPR, dictates that data protection should already be embedded in the early design phase of IT infrastructures. Unfortunately, state-of-the-art technologies are inadequate to realise this principle, as witnessed by the number of attacks and breaches. Without security and privacy, large-scale digitalisation is simply not possible. For all these reasons, security and privacy is a research field with extraordinary technological, societal, and economic impact.
 
-Probabilistic hyperproperties describe system properties that are concerned with the probability relation between di?erent system executions. Likewise, it is desirable to relate performance metrics (e.g., energy, execution time, etc) between multiple runs. This paper introduces the notion of rewards to the temporal logic HyperPCTL by extending the syntax and semantics of the logic to express the accumulated reward relation among di?erent computations. We demonstrate the application of the extended logic in expressing side-channel timing countermeasures, recovery time in distributed self-stabilizing systems, e?ciency in probabilistic conformance, and path planning in robotics applications. We also propose a model checking algorithm for verifying Markov decision processes against HyperPCTL with rewards and report experimental results. 
+The “SPyCoDe” special research programme aims at creating the technological foundations to realise the “security and privacy by design” principle, offering companies methods and tools to build large-scale, complex systems that are secure and privacy-preserving by construction, based on the safe composition of their components. This research crosscuts computer science, combining breakthroughs in logics, system security, and cryptography.
 
 
-
+[Source: FWF](https://www.fwf.ac.at/de/news-presse/news/nachricht/nid/20220120-0)
 
