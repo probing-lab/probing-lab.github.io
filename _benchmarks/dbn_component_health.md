@@ -8,6 +8,7 @@ symbolicconst:  "No"
 contstatesp:    "No"
 loopguard:      "(true)"
 defective:      "No"
+nonpolynomial:  "No"
 ---
 
 DBN Component Health

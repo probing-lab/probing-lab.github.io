@@ -8,6 +8,7 @@ symbolicconst:  "Yes"
 contstatesp:    "No"
 loopguard:      "(true)"
 defective:      "No"
+nonpolynomial:  "No"
 ---
 
 <b>Duelling Cowboys (Source Code)</b>

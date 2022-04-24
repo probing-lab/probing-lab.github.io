@@ -8,6 +8,7 @@ symbolicconst:  "No"
 contstatesp:    "Yes"
 loopguard:      "(true)"
 defective:      "No"
+nonpolynomial:  "No"
 ---
 
 PI Approximation

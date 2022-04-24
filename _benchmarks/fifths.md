@@ -8,6 +8,7 @@ symbolicconst:  "Yes"
 contstatesp:    "Yes"
 loopguard:      "(true)"
 defective:      "Yes"
+nonpolynomial:  "No"
 ---
 
 Fifths Model

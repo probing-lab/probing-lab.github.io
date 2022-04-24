@@ -8,6 +8,7 @@ symbolicconst:  "No"
 contstatesp:    "No"
 loopguard:      "(true)"
 defective:      "No"
+nonpolynomial:  "No"
 ---
 
 Random Walk 2D

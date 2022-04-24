@@ -9,6 +9,7 @@ contstatesp:    "Yes"
 loopguard:      "(true)"
 defective:      "Yes"
 defective:      "No"
+nonpolynomial:  "No"
 ---
 
 
