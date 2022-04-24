@@ -8,6 +8,7 @@ symbolicconst:  "No"
 contstatesp:    "No"
 loopguard:      "condition"
 defective:      "No"
+nonpolynomial:  "No"
 ---
 
 <b>Coupon Collector Problem - Two Coupons (Source Code)</b>

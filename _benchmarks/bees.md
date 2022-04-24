@@ -8,6 +8,7 @@ symbolicconst:  "Yes"
 contstatesp:    "Yes"
 loopguard:      "(true)"
 defective:      "Yes"
+nonpolynomial:  "No"
 ---
 
 <b>Mathematical model describing the decision-making process of a swarm of honeybees for selecting one nest-site among many</b>
