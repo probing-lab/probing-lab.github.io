@@ -24,11 +24,12 @@ th span { writing-mode: sideways-lr;   /* +90°: use 'tb-rl' */
     <th><span>Symbolic <br>Constants</span></th>
     <th><span>Continuous <br>State-Space</span></th>
     <th><span>Defective <br>Variables</span></th>
+    <th><span>Non-polynomial <br>Updates</span></th>
   </tr>
 </thead>
 <tbody>
 <tr>
-     <td colspan="9" class="tg-5924"></td>
+     <td colspan="10" class="tg-5924"></td>
 </tr>
 <tr>
     <td class="tg-5924"> <input type="text" id="filter_name" name="filter_name" size="10" value="" onkeypress="filterTable();" onchange="filterTable();"></td>
@@ -38,6 +39,7 @@ th span { writing-mode: sideways-lr;   /* +90°: use 'tb-rl' */
     <td class="tg-5924"><img id="img_filter_circular" name="img_filter_circular" src="/assets/benchmark/disable.png"  onclick="changeImage('img_filter_circular')"/> </td>
     <td class="tg-5924"><img id="img_filter_symbolic" name="img_filter_symbolic" src="/assets/benchmark/disable.png"  onclick="changeImage('img_filter_symbolic')"/> </td>
     <td class="tg-5924"><img id="img_filter_continuous" name="img_filter_continuous" src="/assets/benchmark/disable.png"  onclick="changeImage('img_filter_continuous')"/> </td>
+    <td class="tg-5924"><img id="img_filter_defective" name="img_filter_defective" src="/assets/benchmark/disable.png"  onclick="changeImage('img_filter_defective')"/> </td>
     <td class="tg-5924"><img id="img_filter_defective" name="img_filter_defective" src="/assets/benchmark/disable.png"  onclick="changeImage('img_filter_defective')"/> </td>
 </tr>
 {% for benchmark in site.benchmarks %}
@@ -94,6 +96,14 @@ th span { writing-mode: sideways-lr;   /* +90°: use 'tb-rl' */
     {% if benchmark.defective == "Yes" %}  
     <img src="/assets/benchmark/yes_enable.png" />  
     {% elsif benchmark.defective == "No" %}
+    <img src="/assets/benchmark/no_enable.png" /> 
+    {%- else -%}
+    {% endif %}
+    </td>
+    <td class="tg-xwyw">
+    {% if benchmark.nonpolynomial == "Yes" %}  
+    <img src="/assets/benchmark/yes_enable.png" />  
+    {% elsif benchmark.nonpolynomial == "No" %}
     <img src="/assets/benchmark/no_enable.png" /> 
     {%- else -%}
     {% endif %}
