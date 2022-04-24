@@ -1,6 +1,6 @@
 ---
 name:           "Turning Vehicle"
-numvars:        "4"
+numvars:        "6"
 ifthenelse:     "No"
 infinitesp:     "Yes"
 circdependency: "No"
