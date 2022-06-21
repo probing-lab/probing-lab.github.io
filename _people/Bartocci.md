@@ -15,10 +15,10 @@ at Faculty of Informatics at TU Wien.  I am leading the Trustworthy
  The primary focus of my research is to develop formal methods, computational tools and 
  techniques that support the modeling and the automated analysis of complex computational 
  systems, including software systems, cyber-physical systems and biological systems. 
- On these topics I co-authored 100 referred papers published in the main international 
- journals and top-tier conferences of my research areas (CAV, ICCPS, TACAS, ATVA, CDC, 
- EMSOFT, HSCC, etc.), generating more than 3300 citations (h-index >= 34) according to 
- [Google Scholar](https://scholar.google.com/citations?user=EeK43rAAAAAJ&hl=it&oi=ao). I am the scientific coordinator of the ProgInG project.
+ On these topics I co-authored more than 100 referred papers published in the main international 
+ journals and top-tier conferences of my research areas.
+ [Google Scholar](https://scholar.google.com/citations?user=EeK43rAAAAAJ&hl=it&oi=ao). 
+ I am the scientific coordinator and principal investigator of the ProgInG project.
  
  
 <div class="container">
