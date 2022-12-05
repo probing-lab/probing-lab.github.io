@@ -4,6 +4,7 @@ tags: [Award]
 style: fill
 color: light
 description: A team of ProInG researchers won the renowned Best Paper Award at QEST 2022. 
+---
 
 # Best Paper Award at QEST 2022 
 Andrey Kofnov, Marcel Moosbrugger, Miroslav Stankovic, Ezio Bartocci, Efstathia Bura 
