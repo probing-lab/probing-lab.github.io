@@ -4,7 +4,7 @@ style: fill
 color: secondary
 description: Amber is an academic prototype to decide the probabilistic termination behavior of Prob-solvable loops.
 ---
-
+ 
 
 <p align="center">
   <img src="https://github.com/probing-lab/amber/blob/master/logo.svg">
