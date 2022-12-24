@@ -2,14 +2,130 @@
 title: Amber
 style: fill
 color: secondary
-description: This is a small description of Amber. This is a small description of Amber. This is a small description of Amber.
+description: Amber is an academic prototype to decide the probabilistic termination behavior of Prob-solvable loops.
 ---
 
 
-## Amber
+<p align="center">
+  <img src="https://github.com/probing-lab/amber/blob/master/logo.svg">
+</p>
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mattis aliquam faucibus purus in massa tempor. Pulvinar elementum integer enim neque volutpat ac tincidunt vitae. At ultrices mi tempus imperdiet nulla malesuada pellentesque elit. Tincidunt dui ut ornare lectus sit amet est placerat in. Sagittis eu volutpat odio facilisis mauris sit amet. Velit aliquet sagittis id consectetur purus ut. Dolor sit amet consectetur adipiscing. Quis enim lobortis scelerisque fermentum dui faucibus in ornare quam. Hendrerit gravida rutrum quisque non tellus orci ac. Pulvinar neque laoreet suspendisse interdum consectetur.
 
-Molestie ac feugiat sed lectus vestibulum mattis. Molestie a iaculis at erat pellentesque adipiscing. Risus feugiat in ante metus dictum. Adipiscing at in tellus integer feugiat scelerisque varius morbi. Sapien eget mi proin sed libero. At consectetur lorem donec massa sapien faucibus. Morbi tempus iaculis urna id volutpat. Venenatis tellus in metus vulputate eu scelerisque felis imperdiet. Sed id semper risus in hendrerit gravida rutrum. Mauris nunc congue nisi vitae suscipit tellus mauris. Vulputate dignissim suspendisse in est. Id aliquet lectus proin nibh nisl. Pellentesque elit ullamcorper dignissim cras tincidunt lobortis feugiat. Libero id faucibus nisl tincidunt eget nullam non nisi est. Suscipit tellus mauris a diam maecenas sed enim ut sem. Adipiscing commodo elit at imperdiet dui accumsan. Nec ullamcorper sit amet risus. Non diam phasellus vestibulum lorem. In hendrerit gravida rutrum quisque non.
+# Amber
 
-Est sit amet facilisis magna etiam. Convallis aenean et tortor at risus viverra adipiscing at. Interdum posuere lorem ipsum dolor sit amet consectetur. Ut tortor pretium viverra suspendisse potenti nullam ac. Tortor dignissim convallis aenean et tortor at risus. Ullamcorper sit amet risus nullam eget felis. Quis auctor elit sed vulputate mi sit amet. Tincidunt ornare massa eget egestas. Nullam non nisi est sit amet facilisis. In fermentum et sollicitudin ac orci phasellus egestas tellus. Malesuada bibendum arcu vitae elementum curabitur. Ac felis donec et odio. Volutpat maecenas volutpat blandit aliquam etiam erat velit. Viverra aliquet eget sit amet tellus. Augue ut lectus arcu bibendum at. Scelerisque felis imperdiet proin fermentum leo vel orci. Volutpat maecenas volutpat blandit aliquam.
+Amber is an academic prototype to decide the probabilistic termination behavior of Prob-solvable loops.
+
+## Run Amber with Docker
+
+The repository comes with a Dockerfile. 
+This is the easiest way to run Amber.
+
+1. Make sure Docker is installed on your local machine ([docs.docker.com/get-docker/](https://docs.docker.com/get-docker/)).
+
+2. Execute the following command, to run a docker container containing Amber and connect to the container:
+
+```shell script
+docker run -ti marcelmoosbrugger/amber
+```
+
+Now you can run Amber on a given benchmark file with the following command:
+
+```shell script
+./amber benchmarks/past/2d_bounded_random_walk
+```
+
+If you want to use your own benchmarks within the Docker container please see the Docker documentation on volumes ([docs.docker.com/storage/volumes/](https://docs.docker.com/storage/volumes/)).
+
+
+## Local Installation
+
+Amber needs the following dependencies:
+- Python version &geq; 3.8 and pip
+- scipy
+- diofant
+- lark-parser
+
+To install these you can do the following steps.
+
+1. Make sure you have python (version &geq; 3.8) and pip installed on your system.
+Otherwise install it in your preferred way.
+
+2. Clone the repository:
+
+```shell script
+git clone git@github.com:probing-lab/amber.git
+cd amber
+```
+
+3. Create a virtual environment in the `.venv` directory:
+```shell script
+pip3 install --user virtualenv
+python3 -m venv .venv
+```
+
+4. Activate the virtual environment:
+```shell script
+source .venv/bin/activate
+```
+
+5. Install the required dependencies with pip:
+```shell script
+pip install -r requirements.txt
+```
+
+If the previous command failed, try the following instead:
+```shell script
+python -m pip install -r requirements.txt
+```
+
+
+## Run Amber
+
+Having all dependencies installed, you can run Amber for example like this:
+```shell script
+python ./amber.py --benchmarks benchmarks/past/2d_bounded_random_walk
+```
+
+A more extensive help can be obtained by:
+```shell script
+python ./amber.py --help
+```
+
+## Run Automatic Tests
+
+You can run all automatic tests with:
+```shell script
+python -m unittest
+```
+
+
+## Writing your own Prob-solvable loop
+A Prob-solvable loop consist of initial assignments (one per line), a loop head `while P > Q:`
+and a loop body consisting of multiple variable updates (also one per line).
+The loop guard `P > Q` consists of two polynomials `P` and `Q` over the program variables.
+
+Initial assignments:
+- format:  `var = value
+- comment: not all variables have to have initial value specified
+- example: `x = 123`
+
+Variable updates:
+- format:  `var = option1 @ probability1; option2 @ probability2 ...`
+- comment: last probability can be omitted, it's assumed to be whatever
+values is needed for probabilities to sum up to 1.
+- comment: variables can depend only on previous variables non-linearly,
+and on itself linearly - e.g. `x = x + 1` followed by `y = y + x^2` is allowed.
+However, `x = x + y` followed by `y = y + 1`, or `x = x^2` is not allowed.
+- example: `x = x @ 1/2; x + u`
+
+An example program would be:
+
+```
+# this is a comment
+y = 0.01
+x = 5
+while x > 0:
+    y = 2*y
+    x = x + 200*y**2 @ 1/2; x - y**3
+```
+More examples can be found in the `benchmarks` folder.
