@@ -7,4 +7,11 @@ weight: 5
 
 # Press
 
-Coming soon.
+ - [ICT22 Call – A Funding Firework for TU Wien Informatics](https://informatics.tuwien.ac.at/news/2340)
+ - [Radhia Cousot Best Paper Award 2022 goes to researchers from TU Wien Informatics](https://informatics.tuwien.ac.at/news/2334)
+ - [Best Paper Award: Inter-faculty Cooperation Honored at QEST 2022](https://informatics.tuwien.ac.at/news/2282)
+ - [Laura Kovacs Awarded with Amazon Research Award](https://informatics.tuwien.ac.at/news/2008)
+ - [Laura Kovacs Receives City of Vienna’s Sponsorship Award](https://informatics.tuwien.ac.at/news/2083)
+ - [ERC Consolidator Grant 2020 Goes to Laura Kovacs](https://informatics.tuwien.ac.at/news/1964)
+ - [Doctoral College for Secure and Intelligent Human-Centric Digital Technologies](https://informatics.tuwien.ac.at/news/1897)
+ - [TU Wien Informatics Wins 7 of 9 Grants in WWTF’s ICT19 Call](https://informatics.tuwien.ac.at/news/1770)
