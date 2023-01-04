@@ -19,3 +19,4 @@ weight: 5
  - [City of Vienna Diploma Thesis Award for Marcel Moosbrugger](https://informatics.tuwien.ac.at/news/2034)
  - [Doctoral College for Secure and Intelligent Human-Centric Digital Technologies](https://informatics.tuwien.ac.at/news/1897)
  - [TU Wien Informatics Wins 7 of 9 Grants in WWTF’s ICT19 Call](https://informatics.tuwien.ac.at/news/1770)
+ - [QONFEST 2020](https://informatics.tuwien.ac.at/news/1906)
