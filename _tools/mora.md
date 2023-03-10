@@ -2,11 +2,11 @@
 title: Mora
 style: fill
 color: primary
-description:  <div align="justify">Mora is an automated tool for generating invariants of probabilistic programs. Inputs to Mora are so-called Prob-solvable loops, that is probabilistic programs with polynomial assignments over random variables and parametrized distributions.</div> 
+description: Mora is an automated tool for generating invariants of probabilistic programs. Inputs to Mora are so-called Prob-solvable loops, that is probabilistic programs with polynomial assignments over random variables and parametrized distributions.
 ---
 
 
-## Mora
+# Mora
 
  <div align="justify">Mora is an automated tool for generating invariants of probabilistic programs. Inputs to 
  Mora are so-called Prob-solvable loops that are probabilistic programs with polynomial 
@@ -16,48 +16,47 @@ description:  <div align="justify">Mora is an automated tool for generating inva
  statistical properties, such as expected values and variances, over the value distribution 
  of loop variables.</div>
  
- # Installation
+## Installation
 
 Mora needs to following dependencies:
-- Python version &geq; 3.8 and pip
+- Python version &ge; 3.8 and pip
 - scipy
 - diofant
 - lark-parser
 
 To install these you can do the following steps.
 
-1. Make sure you have python (version &geq; 3.8) and pip installed on your system.
+1. Make sure you have python (version &ge; 3.8) and pip installed on your system.
 Otherwise install it in your preferred way.
 
 2. Clone the repository:
-
-```shell script
+```
 git clone git@github.com:probing-lab/mora.git
 cd mora
 ```
 
 3. Create a virtual environment in the `.venv` directory:
-```shell script
+```
 pip3 install --user virtualenv
 python3 -m venv .venv
 ```
 
 4. Activate the virtual environment:
-```shell script
+```
 source .venv/bin/activate
 ```
 
 5. Install the required dependencies with pip:
-```shell script
+```
 pip install scipy
 pip install diofant==0.11
 pip install lark-parser
 ```
 
-# Run Mora
+## Run Mora
 
 Having all dependencies installed, you can run Mora for example like this:
-```shell script
+```
 python ./run.py --benchmarks benchmarks/binomial --goal 1
 ```
 If you run the command from the example above, Mora will compute the invariants
@@ -65,28 +64,28 @@ for the first-order moments (expected values) of the program variables of the pr
 file `benchmarks/binomial`.
 
 The general command for running Mora is:
-```shell script
+```
 python ./run.py --benchmarks <list of files/file pattern> --goal <list of goals>
 ```
 
 A more extensive help can be obtained by:
-```shell script
+```
 python ./run.py --help
 ```
 
-# Run Tests
+## Run Tests
 Automatic tests can be run with
-```shell script
+```
 python -m unittest
 ```
 
-# Writing your own Prob-solvable program
+## Writing your own Prob-solvable program
 A Prob-solvable program consist of initial assignments (one per line), a loop head `while true:`
 and a loop body consisting of multiple variable updates (also one per line).
 In the variable updates as well as the initial assignments, random variables can be used.
 
 Initial assignments:
-- format:  var = value`
+- format:  `var = value`
 - comment: not all variables have to have initial value specified
 - example: `x = 123`
 
@@ -105,7 +104,6 @@ However, `x = x + y` followed by `y = y + 1`, or `x = x^2` is not allowed.
 - example: `x = x @ 1/2; x + u`
 
 An example program would be:
-
 ```
 # this is a comment
 x=0

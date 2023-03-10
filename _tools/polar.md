@@ -2,30 +2,29 @@
 title: Polar
 style: fill
 color: primary
-description:  <div align="justify">Polar implements a novel static analysis technique to derive higher moments for program variables for a large class
-of probabilistic loops with potentially uncountable state spaces.</div> 
+description: Polar implements a novel static analysis technique to derive higher moments for program variables for a large class of probabilistic loops with potentially uncountable state spaces.
 ---
 
+<div align="right" style="float:right;margin:50px">
+  <a href="https://github.com/probing-lab/polar">
+    <img src="../pictures/polar-logo.svg" width="300px" alt="Polar logo" />
+  </a>
+</div>
 
-## Polar
+# Polar
 
 Polar implements a novel static analysis technique to derive higher moments for program variables for a large class
 of probabilistic loops with potentially uncountable state spaces.
 
-<p align="center">
-  <img src="https://github.com/probing-lab/polar/blob/master/logo-dark.svg" width=300/>
-</p>
 
 ## Installation
 
-
 To install Polar, you can do the following steps.
 
-1. Make sure you have python (version &geq; 3.8) and pip installed on your system.
+1. Make sure you have python (version &ge; 3.8) and pip installed on your system.
 Otherwise install it in your preferred way.
 
 2. Clone the repository:
-
 ```
 git clone git@github.com:probing-lab/polar.git
 cd polar
