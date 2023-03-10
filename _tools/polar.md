@@ -7,7 +7,7 @@ description: Polar implements a novel static analysis technique to derive higher
 
 <div align="right" style="float:right;margin:50px">
   <a href="https://github.com/probing-lab/polar">
-    <img src="../pictures/polar-logo.svg" width="300px" alt="Polar logo" />
+    <img src="../assets/logo/polar-logo.svg" width="300px" alt="Polar logo" />
   </a>
 </div>
 

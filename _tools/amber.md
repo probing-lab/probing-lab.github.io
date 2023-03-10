@@ -7,7 +7,7 @@ description: Amber is an academic prototype to decide the probabilistic terminat
 
 <p align="center" style="float:right;margin:50px">
   <a href="https://github.com/probing-lab/amber">
-    <img src="../pictures/amber-logo.svg" width="300px" alt="Amber logo" />
+    <img src="../assets/logo/amber-logo.svg" width="300px" alt="Amber logo" />
   </a>
 </p>
 

@@ -1,13 +1,13 @@
 ---
 name: Michele Chiari
 roles: [PostDoc]
-image: https://probing-lab.github.io/assets/chiari.png
+image: ../assets/chiari.jpg
 description: I am a postdoctoral researcher in the Trustworthy Cyber-Physical Systems Research Group.
 ---
 
 # Michele Chiari
 
-<img class="main-image" src="https://probing-lab.github.io/assets/chiari.png"/>
+<img class="main-image" src="../assets/chiari.jpg"/>
 
 My research interests cover formal methods for the verification of safety-critical and real-time systems, focusing on temporal logic, formal languages and automata theory.
 
