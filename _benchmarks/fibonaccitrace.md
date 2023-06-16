@@ -11,7 +11,7 @@ defective:      "Yes"
 nonpolynomial:  "No"
 ---
 
-2D Robotic Arm
+Fibonacci Trace
 
 ```python
 while true:
