@@ -8,6 +8,7 @@ weight: 5
 # Press
  - [New PhD Program in Trustworthy Autonomous Cyber-Physical Systems to Address Emerging Challenges](https://www.tttech-auto.com/newsroom/new-phd-program-trustworthy-autonomous-cyber-physical-systems-address-emerging-challenges)
  - [New Doctoral College on “Trustworthy Autonomous Cyber-Physical Systems“](https://informatics.tuwien.ac.at/news/2483)
+ - [Michele Chiari listed in TU Wien Informatics' Under 30] (https://informatics.tuwien.ac.at/news/2461)
  - [ICT22 Call – A Funding Firework for TU Wien Informatics](https://informatics.tuwien.ac.at/news/2340)
  - [Radhia Cousot Best Paper Award 2022 goes to researchers from TU Wien Informatics](https://informatics.tuwien.ac.at/news/2334)
  - [Best Paper Award: Inter-faculty Cooperation Honored at QEST 2022](https://informatics.tuwien.ac.at/news/2282)
