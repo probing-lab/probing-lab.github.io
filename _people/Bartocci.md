@@ -9,16 +9,8 @@ description: I am a full professor  at Faculty of Informatics, at TU Wien, leadi
 # Ezio Bartocci
 
 <img class="main-image" src="http://www.eziobartocci.com/img/foto_new.png"/>
- I am a full professor for formal methods in cyber-physical systems engineering
-at Faculty of Informatics at TU Wien.  I am leading the Trustworthy 
- Cyber-Physical Systems (TrustCPS) Group of the Cyber-Physical System Research Unit. 
- The primary focus of my research is to develop formal methods, computational tools and 
- techniques that support the modeling and the automated analysis of complex computational 
- systems, including software systems, cyber-physical systems and biological systems. 
- On these topics I co-authored more than 100 referred papers published in the main international 
- journals and top-tier conferences of my research areas.
+ I am a full professor for for Formal Methods in Cyber-Physical Systems Engineering at the Faculty of Computer Science TU Wien, and I am leading the Trustworthy Cyber-Physical Systems (TrustCPS) Group of the Cyber-Physical System Research Unit. I am also the chair of the Doctoral College on Trustworthy Autonomous Cyber-Physical Systems, the vice-chair for the program admission of the Marie Skłodowska-Curie COFUND doctoral programme LogiCS_at_TUWien, the advisory board member of the Doctoral College on Resilient Embedded Systems, the scientific coordinator of the WWTF project ProbInG and a member of the Cyber-Security Center of TU Wien.
  [Google Scholar](https://scholar.google.com/citations?user=EeK43rAAAAAJ&hl=it&oi=ao). 
- I am the scientific coordinator and principal investigator of the ProgInG project.
  
  
 <div class="container">
