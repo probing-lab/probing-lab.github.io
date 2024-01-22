@@ -6,7 +6,7 @@ weight: 5
 ---
 
 # Press
- - [Das Bundesministerium für Bildung, Wissenschaft und Forschung zeichnete Julian Müllner und Andreas Fuchsberger für seine außergewöhnlichen akademischen Leistungen aus](https://www.tuwien.at/tu-wien/aktuelles/news/news/wuerdigungspreis-fuer-2-tuw-studierende)
+ - [Award to Julian Müllner](https://www.tuwien.at/tu-wien/aktuelles/news/news/wuerdigungspreis-fuer-2-tuw-studierende)
  - [New PhD Program in Trustworthy Autonomous Cyber-Physical Systems to Address Emerging Challenges](https://www.tttech-auto.com/newsroom/new-phd-program-trustworthy-autonomous-cyber-physical-systems-address-emerging-challenges)
  - [New Doctoral College on “Trustworthy Autonomous Cyber-Physical Systems“](https://informatics.tuwien.ac.at/news/2483)
  - [Michele Chiari listed in TU Wien Informatics’ Under 30](https://informatics.tuwien.ac.at/news/2461)
